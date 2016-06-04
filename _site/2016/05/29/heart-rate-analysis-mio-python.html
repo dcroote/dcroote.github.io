@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>    
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>Analyzing Mio Fuse heart rate data in Python</title>
+  <meta name="description" content="I have been using the Mio Fuse (similar to a Fitbit Surge) for a couple months now and I wanted to illustrate how extracting raw heart rate data from your sm...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://yourdomain.com/2016/05/29/heart-rate-analysis-mio-python.html">
+  <link rel="alternate" type="application/atom+xml" title="Derek's blog" href="http://yourdomain.com/feed.xml" />
+  <script src="/scripts/jquery-1.11.2.min.js"></script>
+  <script src="/scripts/pithy.js"></script>
+</head>
+
+
+  <body>
+    <header class="header">
+	<div class="header-container">
+		<h2 style="color:#FFFFFF">Derek Croote</h2>
+		<div class="nav">
+			
+				<li>
+					<a href="/index.html">home</a>
+				</li>			
+			
+			
+				<li>
+					<a href="/about/">about</a>
+				</li>			
+			
+		</div>
+		<div class="description"> Data science, bioinformatics, and immunology </div>		
+		<ul class="social-links">
+			<li>
+				<a href="https://github.com/dcroote" title="Github">
+					<img width="19px" height="19px" src="/images/github.png"/>
+				</a>
+			</li>
+			<li>
+				<a href="/feed.xml" title="RSS">
+					<img width="19px" height="19px" src="/images/rss.png"/>
+				</a>
+			</li>
+		</ul>		
+	</div>
+</header>
+
+    <br>
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+  <br>
+  <header class="post-header">
+    <h1 class="post-title">Analyzing Mio Fuse heart rate data in Python</h1>
+    <p class="post-meta">May 29, 2016</p>
+  </header>
+
+  <article class="post-content">
+    <p>I have been using the <a href="http://www.mioglobal.com/Mio-FUSE-Heart-Rate-Training-Activity-Tracker/Product.aspx" target="_blank">Mio Fuse</a> (similar to a Fitbit Surge) for a couple months now and I wanted to illustrate how extracting raw heart rate data from your smartphone enables improved workout tracking and performance measurement.</p>
+
+<p>If you have considered purchasing a Mio product, you have probably also observed that the companion Android and iPhone apps have a number of negative user reviews. Many people appear to have sync issues, while others lament the limited functionality of the app. Fitbit heart rate tracking devices are an alternative, however they appear to perform poorly during interval training or you cannot directly access the raw heart rate data for performing your own analysis. I ended up taking a leap of faith with the Mio Fuse and have had an overwhelmingly positive experience so far, except for the fact that the app is limited.</p>
+
+<p>Like many recreational or amateur athletes, I am interested in metrics that allow me to compare how my performance is changing over time. However, the Mio Go app (I have an Android phone) is limited to visualizing heart rate only for one workout at a time. I was interested in comparing my steps, distance traveled, and heart rate during weekly soccer matches, which led me to investigating whether I could extract the raw heart rate data from somewhere within app.</p>
+
+<h2 id="what-you-will-need">What you will need:</h2>
+<ul>
+  <li>On your phone:
+    <ul>
+      <li>App: <a href="https://play.google.com/store/apps/details?id=com.mioglobal.android.miogo&amp;hl=en">Mio GO</a> (free)</li>
+      <li>App: <a href="https://play.google.com/store/apps/details?id=com.estrongs.android.pop&amp;hl=en">ES File Explorer</a> (free)</li>
+    </ul>
+  </li>
+  <li>On your computer
+    <ul>
+      <li>Python virtual environment (I use <a href="https://www.continuum.io/why-anaconda">Anaconda</a>) that includes the packages <code class="highlighter-rouge">seaborn</code>, <code class="highlighter-rouge">pandas</code>, and <code class="highlighter-rouge">matplotlib</code></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="setup-instructions">Setup instructions</h2>
+
+<h3 id="workout-while-recording-heart-rate">1) Workout while recording heart rate</h3>
+<ul>
+  <li>To begin recording your heart rate hold the central button until “FINDING” appears</li>
+  <li>Hit the middle button again once your heart rate is being displayed. “GO” should appear.</li>
+  <li>Once your workout is complete, hold the central button until “PAUSED” appears.</li>
+  <li>Hold it again until “QUIT” appears.</li>
+</ul>
+
+<h3 id="sync-the-workout-data-to-your-phone-using-the-mio-go-app">2) Sync the workout data to your phone using the Mio GO app</h3>
+<p>With bluetooth enabled, open the Mio Go app, wait until the device is found, and sync your workout by swiping down on the screen. “SYNC” should appear on the device.</p>
+
+<h3 id="change-the-name-of-the-workout">3) Change the name of the workout</h3>
+<p>This will allow us to extract heart rate and other data relevant to this workout.</p>
+
+<ul>
+  <li>Select the workout that was just sync’d</li>
+  <li>Under Edit select a listed activity or type in your own description; as a habit I avoid spaces or other non-alphanumeric characters.</li>
+  <li>Hit back and the workout description should be updated with the new name.</li>
+</ul>
+
+<h3 id="find-and-tranfer-the-logfile-created-by-the-mio-go-app-to-your-computer">4) Find and tranfer the logfile created by the Mio GO app to your computer</h3>
+<ul>
+  <li><em>This part may vary by phone model</em>. On my phone (Motorola Moto X v.##, Android ##), the logs appear under /storage/emulated/0/MioLogs/.</li>
+  <li>Browse to this folder using the ES File Explorer app</li>
+  <li>Send the logfile (with today’s date) to your computer. I find it easiest to select the logfile (click and hold), hit the options button in the upper left (three vertical dots) and send it to one of my email addresses with the Share option.</li>
+</ul>
+
+<h2 id="analyzing-the-data">Analyzing the data:</h2>
+<p>I thought it would be interesting to compare my how my heart rate varied acrossed 5 different activities of increasing intensity. For each activity I performed 3 replicates, each for five minutes. I attempted to allow enough time in between replicates for my heart rate to return to a somewhat stable value (ideally resting), but I was somewhat impatient. Below is a time series plot created using the python package <code class="highlighter-rouge">seaborn</code> where the shading along each curve represents the 68% confidence interval.
+<img class="centered_img" src="http://yourdomain.com/Mio_heart_rate_analysis/images/hr_5_activities.png" alt="[img] Heart rate time series for 5 activities" /></p>
+
+<h3 id="data-structure">Data structure</h3>
+<p>The logfile is structured as a simple text file as shown below.</p>
+
+<p>JSON and dict</p>
+
+<p>Dataframe and simple plot</p>
+
+<p>Long form seaborn comparison</p>
+
+<h3 id="coming-soon">Coming soon:</h3>
+<p>Standardized workouts as an avenue for cardiovascular fitness tracking!</p>
+
+  </article>
+  <br />
+  <br />
+ 
+   <div id="disqus_thread"></div> <script> /** * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS. * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */ /* var disqus_config = function () { this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable }; */ 
+      (function() { // DON'T EDIT BELOW THIS LINE 
+        var d = document, s = d.createElement('script'); s.src = '//dcroote.disqus.com/embed.js'; s.setAttribute('data-timestamp', +new Date()); (d.head || d.body).appendChild(s); })(); </script> <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  
+
+</div>
+
+      </div>
+    </div>
+    
+    <footer class="footer">
+  <div id="gotop">^</div>
+  <br>
+</footer>
+
+    
+  </body>
+
+</html>
