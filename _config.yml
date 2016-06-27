@@ -1,6 +1,6 @@
 # Site settings
 title: Derek's blog
-motto: Data science, bioinformatics, and immunology
+motto: Data science and bioinformatics
 author: Derek Croote
 email: dcroote@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog/

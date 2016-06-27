@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-  <p>I'm a PhD student at Stanford interested in using bioinformatic tools to solve problems related to allergies and immunology.</p>
+  <p>I'm a PhD student at Stanford broadly interested in bioinformatics, genomics, and immunology.</p>
 
   <p><a href="https://www.linkedin.com/in/dcroote" target="_blank">LinkedIn</a></p>
 
