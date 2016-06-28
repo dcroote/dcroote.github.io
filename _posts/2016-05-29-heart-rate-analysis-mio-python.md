@@ -23,9 +23,9 @@ Before we begin, does the following apply to other Mio products besides the Fuse
 ## Setup instructions
 
 ### 1) Workout while recording heart rate
-- To begin recording your heart rate hold the middle button until FINDING appears
+- To begin recording your heart rate hold the middle button until FIND appears
 - Press the middle button once your heart rate is being displayed. GO should appear. 
-- Once your workout is complete, hold the middle button until PAUSED appears. 
+- Once your workout is complete, hold the middle button until PAUSE appears. 
 - Hold it again until QUIT appears.
 
 ### 2) Sync the workout data to your phone using the Mio GO app
