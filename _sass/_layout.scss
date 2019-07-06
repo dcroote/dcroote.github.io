@@ -57,6 +57,19 @@ li {
     text-decoration: none;
 }
 
+.nav-left {
+    width: 100px;
+    float: left;
+}
+
+.nav-right {
+    margin-left: 100px;
+}
+
+.clear {
+    clear: both;
+}
+
 .title li a {
     color: #FFF;
 }
