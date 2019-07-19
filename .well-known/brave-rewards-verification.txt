@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: dcroote.github.io
+Token: 76433d8807e3477431e7a256837d77a2cad026c2fce9426a12dd0639b0e14a17
