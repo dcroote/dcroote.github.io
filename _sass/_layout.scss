@@ -139,13 +139,24 @@ li {
 	list-style:none;
 }
 
-.post-list li h3 {
+.post-list li h2 {
 	margin-bottom: 5px;
 	font-weight: 500px;
 }
 
 .post-list li a {
 	color: #000;	
+}
+
+.post-list li {
+    margin-bottom: 2em;
+    padding-bottom: 1.5em;
+    border-bottom: 2px solid #eee;
+}
+
+.post-img {
+    text-align: center;
+    margin-bottom: 1.5em;
 }
 
 #line {
