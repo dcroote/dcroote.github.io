@@ -1,14 +1,23 @@
 ---
-layout: post
+layout: page
 title: About
 permalink: /about/
 ---
 
-  <p>I'm a PhD student at Stanford broadly interested in bioinformatics, genomics, and immunology.</p>
+<p>I'm a PhD student at Stanford broadly interested in bioinformatics, genomics, and immunology.</p>
 
-  <p><a href="https://www.linkedin.com/in/dcroote" target="_blank">LinkedIn</a></p>
-  <p><a href="https://scholar.google.com/citations?user=PevRGmgAAAAJ&hl=en" target="_blank">Google Scholar</a></p>
-  <p><a href="https://www.allergenpeptidebrowser.org/" target="_blank">Allergen Peptide Browser</a> - database for facilitating allergen detection in food using mass spectrometry</p>
+Other profiles / ways to connect with me:
+
+<ul>
+  <li><a href="https://twitter.com/DerekCroote" target="_blank">Twitter</a></li>
+  <li><a href="https://www.linkedin.com/in/dcroote" target="_blank">LinkedIn</a></li>
+  <li><a href="https://scholar.google.com/citations?user=PevRGmgAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
+</ul>
+
+Other resources I've built:
+<ul>
+  <li><a href="https://www.allergenpeptidebrowser.org/" target="_blank">Allergen Peptide Browser</a> - database for facilitating allergen detection in food using mass spectrometry</li>
+</ul>
 
 <br />
 <br />
@@ -16,3 +25,4 @@ permalink: /about/
 <p style="text-align:center">
   Theme modified from: <a href="https://github.com/smallmuou/Jekyll-Pithy" target="_blank">Pithy Theme</a> by Pawpaw.
 </p>
+
