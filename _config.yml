@@ -11,3 +11,6 @@ github_username:  dcroote
 markdown: kramdown
 
 include: [".well-known"]
+
+plugins:
+  - jekyll-sitemap
