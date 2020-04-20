@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Analyzing Mio Fuse heart rate data in Python
-image: hr_5_activities.png
+image: images/hr_5_activities.png
 comments: true
 ---
 

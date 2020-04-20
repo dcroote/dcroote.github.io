@@ -1,7 +1,7 @@
 ---
 layout: post
 title: High quality vector graphics in Microsoft Word for Supplementary / Supporting Information
-image: vector_vs_raster.svg
+image: images/vector_vs_raster.svg
 comments: true
 ---
 

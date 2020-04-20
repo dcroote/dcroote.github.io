@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Verifying Brave Rewards on GitHub Pages using Jekyll
-image: brave-bat-partnership.svg
+image: images/brave-bat-partnership.svg
 comments: true
 ---
 
