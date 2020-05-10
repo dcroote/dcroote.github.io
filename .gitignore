@@ -5,3 +5,5 @@ Gemfile.lock
 .jekyll-metadata
 TODO*
 *.pdn
+images/*/inputs
+*_WIP*

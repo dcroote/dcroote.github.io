@@ -1,10 +1,10 @@
 # Site settings
 title: Blog | Derek Croote
-motto: Science, technology, and data
+motto: Science, technology, engineering, and data
 author: Derek Croote
 email: dcroote@gmail.com
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://dcroote.github.io" # the base hostname & protocol for your site
+baseurl: ""
+url: "https://dcroote.github.io"
 github_username:  dcroote
 twitter_username: DerekCroote
 description: Tutorials and thoughts on science, technology, and data from Derek Croote.

@@ -4,7 +4,7 @@ title: About | Derek Croote
 permalink: /about/
 ---
 
-<p>I'm a PhD student at Stanford broadly interested in bioinformatics, genomics, and immunology.</p>
+<p>I am passionate about developing transformative therapies for individuals suffering from allergies.</p>
 
 Other profiles / ways to connect with me:
 
