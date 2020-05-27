@@ -110,12 +110,14 @@ li {
     color: #959BA6;
 }
 
-.social-links a:active {
-    opacity: 0.6;
-}
-
 .social-links a:hover {
     opacity: 0.6;
+    text-decoration: none;
+}
+
+.social-links a:active {
+    opacity: 0.6;
+    text-decoration: none;
 }
 
 .page-content {
