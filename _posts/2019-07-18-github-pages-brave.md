@@ -5,7 +5,7 @@ image: images/brave-bat-partnership.svg
 comments: true
 ---
 
-The [Brave web browser](https://brave.com/dcr800) (<-- affiliate link) is an interesting take on providing greater privacy while still rewarding content creators through ads, views, and tips. To explore it a bit more, I thought I would try to verify this GitHub Pages blog.
+The Brave web browser is an interesting take on providing greater privacy while still rewarding content creators through ads, views, and tips. To explore it a bit more, I thought I would try to verify this GitHub Pages blog.
 
 The [verification process](https://publishers.basicattentiontoken.org/) involves uploading a publicly visible text file to your site, which in this case is the GitHub repository. The issue I ran into was that GitHub builds this blog using the static site generator Jekyll, yet the Brave GitHub Website verification instructions ask you to turn off Jekyll:
 
