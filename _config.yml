@@ -1,5 +1,5 @@
 # Site settings
-title: Blog | Derek Croote
+title: Blog by Derek Croote
 motto: Science, technology, engineering, and data
 author: Derek Croote
 email: dcroote@gmail.com
@@ -7,7 +7,10 @@ baseurl: ""
 url: "https://dcroote.github.io"
 github_username:  dcroote
 twitter_username: DerekCroote
-description: Tutorials and thoughts on science, technology, and data from Derek Croote.
+twitter:
+  username: DerekCroote
+  card: summary
+description: Tutorials and thoughts on science, technology, engineering, and data from Derek Croote.
 
 # Build settings
 markdown: kramdown
@@ -16,3 +19,4 @@ include: [".well-known"]
 
 plugins:
   - jekyll-sitemap
+  - jekyll-seo-tag

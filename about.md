@@ -1,6 +1,7 @@
 ---
 layout: page
-title: About | Derek Croote
+title: About Derek
+description: Find out more about Derek as well as ways to connect.
 permalink: /about/
 ---
 
