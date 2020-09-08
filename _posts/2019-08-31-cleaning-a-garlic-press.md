@@ -2,7 +2,7 @@
 layout: post
 title: How to clean a garlic press
 image: images/garlic_press/cad_combined.png
-comments: true
+comments: false
 ---
 
 I have a cheap garlic press, which means that after each use garlic is stuck in seemingly every one of its 63 holes. The faucet water pressure is insufficient to free the garlic and I am left with the unsatisfactory process of poking garlic free with a toothpick. This is obviously an irritating problem that needs solving. 
