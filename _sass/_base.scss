@@ -33,9 +33,8 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 1.2;
+    margin-bottom: $spacing-unit / 1.5;
 }
-
 
 
 /**
@@ -84,6 +83,9 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
+h1.post-title {
+    color: #486391;
+}
 
 
 /**
@@ -161,6 +163,7 @@ pre {
     margin-left: auto;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
+    padding-top: $spacing-unit;
     @extend %clearfix;
 
     @include media-query($on-laptop) {
