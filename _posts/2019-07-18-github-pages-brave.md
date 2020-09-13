@@ -2,6 +2,7 @@
 layout: post
 title: Verifying Brave Rewards on GitHub Pages using Jekyll
 image: images/brave-bat-partnership.svg
+image-alt: Brave logo
 comments: false
 ---
 

@@ -2,6 +2,7 @@
 layout: post
 title: Migrate to GitHub Actions from Travis CI
 image: images/github_actions/travis_to_github_actions.png
+image-alt: Faded Travis to bright GitHub Actions
 comments: false
 ---
 

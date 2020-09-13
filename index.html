@@ -15,7 +15,9 @@ layout: default
 
         {% if post.image %}
           <div class="post-img">
-            <a href="{{ post.url | prepend: site.baseurl }}"><img src="{{post.image}}" /></a>
+            <a href="{{ post.url | prepend: site.baseurl }}">
+                <img src="{{post.image}}" alt="{{ post.image-alt | default: 'Article image representation' }}" />
+            </a>
           </div>
         {% endif %}
 

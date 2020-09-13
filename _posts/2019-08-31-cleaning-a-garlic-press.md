@@ -2,6 +2,7 @@
 layout: post
 title: How to clean a garlic press
 image: images/garlic_press/cad_combined.png
+image-alt: CAD models of garlic press cleaner
 comments: false
 ---
 
