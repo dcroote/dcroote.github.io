@@ -2,59 +2,49 @@
 	<div class="header-container">
 		<h2 style="color:#FFFFFF">{{ site.author }}</h2>
         <div class="nav-left">
-            <img src="/images/photo.png" width="75px" alt="Photo of Derek Croote"/>
+            <img src="/images/photo.png" width="75" height="89" alt="Photo of Derek Croote"/>
         </div>
         <div class="nav-right">
             <div class="nav">
                 {% if page.path == "index.html" %}
-                <span class="title">
-                    <li>
-                        <a href="/index.html">home</a>
-                    </li>
-                </span>
+                    <li class="active">
                 {% else %}
                     <li>
-                        <a href="/index.html">home</a>
-                    </li>
                 {% endif %}
+                    <a href="/index.html">home</a>
+                    </li>
+
                 {% if page.path == "about.md" %}
-                <span class="title">
-                    <li>
-                        <a href="/about/">about</a>
-                    </li>
-                </span>
+                    <li class="active">
                 {% else %}
                     <li>
-                        <a href="/about/">about</a>
-                    </li>
                 {% endif %}
+                    <a href="/about/">about</a>
+                    </li>
+
                 {% if page.path == "privacy.md" %}
-                <span class="title">
-                    <li>
-                        <a href="/privacy/">privacy</a>
-                    </li>
-                </span>
+                    <li class="active">
                 {% else %}
                     <li>
-                        <a href="/privacy/">privacy</a>
-                    </li>
                 {% endif %}
+                    <a href="/privacy/">privacy</a>
+                    </li>
             </div>
             <div class="description"> {{ site.motto }} </div>
             <ul class="social-links">
                 <li>
                     <a href="https://github.com/{{ site.github_username }}" title="Github">
-                        <img width="19px" height="19px" src="/images/github.png" alt="GitHub icon"/>
+                        <img width="19" height="19" src="/images/github.png" alt="GitHub icon"/>
                     </a>
                 </li>
                 <li>
                     <a href="https://twitter.com/DerekCroote" title="Twitter">
-                        <img width="19px" height="19px" src="/images/twitter.png" alt="Twitter icon"/>
+                        <img width="19" height="19" src="/images/twitter.png" alt="Twitter icon"/>
                     </a>
                 </li>
                 <li>
                     <a href="/feed.xml" title="RSS">
-                        <img width="19px" height="19px" src="/images/rss.png" alt="RSS icon"/>
+                        <img width="19" height="19" src="/images/rss.png" alt="RSS icon"/>
                     </a>
                 </li>
             </ul>
