@@ -142,8 +142,8 @@ li {
 }
 
 .hrline {
-    opacity: 0.1;
-    color: #000;
+    opacity: 1;
+    color: #eee;
 }
 
 /**
@@ -212,6 +212,23 @@ li {
     margin-bottom: 10px;
 }
 
+.PageNavigation a {
+  width: 50%;
+  float: left;
+  margin: 1em 0;
+  padding: 0px 5px;
+  box-sizing: border-box;
+}
+
+.PageNavigation .next {
+  text-align: right;
+}
+
+.PageNavigation:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 /**
   * Share icons
