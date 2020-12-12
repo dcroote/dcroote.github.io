@@ -3,6 +3,7 @@ layout: post
 title: How to clean a garlic press with 3D printing
 image: images/garlic_press/cad_combined.png
 image-alt: CAD models of garlic press cleaner
+last_modified_at: 2020-11-27T21:57:29-08:00
 comments: false
 ---
 
