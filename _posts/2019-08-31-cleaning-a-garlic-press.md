@@ -3,7 +3,7 @@ layout: post
 title: How to clean a garlic press with 3D printing
 image: images/garlic_press/cad_combined.png
 image-alt: CAD models of garlic press cleaner
-last_modified_at: 2020-11-27T21:57:29-08:00
+last_modified_at: 2021-01-09 16:04:23 -0800
 comments: false
 ---
 
@@ -27,3 +27,8 @@ The design required a few iterations in order to perfect the post spacing and po
 
 [![Photos of final garlic press cleaner design](/images/garlic_press/garlic_press_photos.png "Click for a larger version")](/images/garlic_press/garlic_press_photos.png)
 
+## 2021 Update
+
+After over a year of use, I accidentally dropped the 3D printed garlic press cleaner on the floor, breaking a number of posts. Stubbornly, I reprinted another with Shapeways using the MJF Plastic PA12 Glass Beads material to improve stiffness and structural integrity. Photos below.
+
+<img src="/images/garlic_press/broken_and_reprinted_3d_printed_garlic_press_cleaner.png" alt="Photos of broken and reprinted garlic press cleaners" class="centered_img" width="800" height="294" />
