@@ -10,6 +10,10 @@ layout: default
     {% endif %}
     <br />
     {% include reading-time.html %} &nbsp; | &nbsp; {% include share-buttons.html %}
+    {% if page.discuss_on_twitter %}
+      <br />
+      <span style="background: #EEEEEE; border-radius: 5px; padding: 7px"><a href="{{ page.discuss_on_twitter }}" target="_blank">Discuss on twitter</a></span>
+    {% endif %}
     </div>
   </header>
 
