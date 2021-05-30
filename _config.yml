@@ -1,7 +1,9 @@
 # Site settings
 title: Blog by Derek Croote
 motto: Science, engineering, and data. Sometimes with humor.
-author: Derek Croote
+author:
+  name: Derek Croote
+  twitter: DerekCroote
 email: dcroote@gmail.com
 baseurl: ""
 url: "https://dcroote.github.io"
