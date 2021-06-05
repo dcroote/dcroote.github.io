@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Building a Custom 3D Wood Elevation Map
-image: images/elevation_map/elevation_map_complete_card.png
+image: images/elevation_map/elevation_map_complete_card_narrow.png
+twitter:
+  card: summary
 image-alt: Custom 3D Wood Elevation Map
 description: I first saw a wood elevation map at the World-Class Mountain View Art & Wine Festival. The contrast of blue Lake Tahoe, California water and intricate layering of stained wood representing the surrounding mountains was visually captivating and technically impressive. I wondered if I could choose a different lake and build my own wood elevation map.
 comments: false
