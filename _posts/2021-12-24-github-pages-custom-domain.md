@@ -6,7 +6,7 @@ image-alt: www.derekcroote.com
 comments: false
 ---
 
-I recently transitioned my site from GitHub's freely hosted github.io domain to [https://www.derekcroote.com](https://www.derekcroote.com).
+I recently transitioned my site from GitHub's freely hosted github.io domain to [https://www.derekcroote.com](https://www.derekcroote.com) after seeing how quick and inexpensive it was for my sister to create a <a href="https://www.denisecroote.com" target="_blank">beautiful portfolio website</a>.
 This short post walks through the process.
 
 ## 1. Purchase your Namecheap domain name.
