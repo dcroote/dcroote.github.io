@@ -5,7 +5,7 @@ description: Find out more about Derek as well as ways to connect.
 permalink: /about/
 ---
 
-<p>I am passionate about developing transformative therapies for individuals suffering from allergies.</p>
+<p>As a co-founder of <a href="https://iggenix.com" target="_blank">IgGenix</a>, I am passionate about developing transformative therapies for individuals suffering from allergies.</p>
 
 Other profiles / ways to connect with me:
 
