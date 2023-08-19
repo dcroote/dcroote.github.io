@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Launch a Custom Domain Static Website for <$10
+title: Build and Host a Custom Domain Static Website for <$10 a Year
 image: /images/quick_website/logo_blend.png
-image-alt: From nothing to a polished website quickly and cheaply
+image-alt: Using Namecheap, Docker, Hugo, GitHub, and Render to Build and Launch a Custom Domain Static Website
 comments: false
 ---
 
-I built a website for my wife in under a day last weekend and wanted to document the tools and services used to do it quickly and cheaply ($6 at the time of this writing). This abbreviated tutorial assumes some familiarity with `git`, `docker`, and web development, and uses the following services:
+I launched a custom domain static website for my wife in under a day last weekend and wanted to document the tools and services used to do it quickly and cheaply ($6 per year at the time of this writing). This abbreviated tutorial assumes some familiarity with `git`, `docker`, and web development, and uses the following services:
 
 - Custom domain: [Namecheap](https://namecheap.com).
 - Static site generator: [Hugo](https://gohugo.io) and [Docker](https://docker.com)
