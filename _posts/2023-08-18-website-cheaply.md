@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Build and Host a Custom Domain Static Website for <$10 a Year
+title: Build and Host a Custom Domain Static Website for Free
 image: /images/quick_website/logo_blend.png
 image-alt: Using Namecheap, Docker, Hugo, GitHub, and Render to Build and Launch a Custom Domain Static Website
 comments: false
 ---
 
-I launched a custom domain static website for my wife in under a day last weekend and wanted to document the tools and services used to do it quickly and cheaply ($6 per year at the time of this writing). This abbreviated tutorial assumes some familiarity with `git`, `docker`, and web development, and uses the following services:
+Free hosting of custom domain websites? Many companies advertise “free website hosting” and it can be frustrating to finally find, buried in a FAQ, that custom domain hosting is an additional charge. This abbreviated tutorial describes the set of tools and services that allows you to build and host a custom domain website for free (beyond the cost of the domain name itself). I applied this flow to quickly launch a website for my wife, but note that it does assume some familiarity with `git`, `docker`, and web development owing to use of the following services:
 
 - Custom domain: [Namecheap](https://namecheap.com).
 - Static site generator: [Hugo](https://gohugo.io) and [Docker](https://docker.com)
@@ -49,7 +49,7 @@ klakegg/hugo:0.111.2 server
 
 Note there is also an option to build the site without launching a local server, but that won't be necessary since Render will build the site for us later.
 
-## 5. Push site to GitHub
+## 5. Push the site to GitHub
 
 - Create a new repo on GitHub. While GitHub Pages requires the repo be public, Render does not and therefore this can be a private repo.
 - Use the `.gitignore` file [from Hugo](https://github.com/github/gitignore/blob/main/community/Golang/Hugo.gitignore) to avoid pushing unnecessary files. At the time of this writing, it consisted of:
@@ -82,7 +82,7 @@ This process is simplest if you sign up using your GitHub account since you'll n
 
 For the build command, use `hugo --gc --minify` and for the publish directory, use `public` per the [instructions here](https://render.com/docs/deploy-hugo).
 
-## 7. Add custom domain to Render
+## 7. Add the custom domain to Render
 
 The [Render instructions](https://render.com/docs/custom-domains) are very straightforward and even include a dedicated [Namecheap DNS configuration guide](https://render.com/docs/configure-namecheap-dns).
 
