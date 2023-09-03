@@ -94,7 +94,7 @@ h1.post-title {
  */
 a {
     color: $brand-color;
-    text-decoration: none;
+    text-decoration: underline;
 
     &:visited {
         color: darken($brand-color, 15%);

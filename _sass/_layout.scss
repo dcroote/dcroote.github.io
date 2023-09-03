@@ -91,16 +91,15 @@ li {
 
 .social-links a {
     color: #959BA6;
+    text-decoration: none;
 }
 
 .social-links a:hover {
     opacity: 0.6;
-    text-decoration: none;
 }
 
 .social-links a:active {
     opacity: 0.6;
-    text-decoration: none;
 }
 
 .page-content {
@@ -126,6 +125,11 @@ li {
 
 .post-list li a {
     color: #486391;
+    text-decoration: none;
+}
+
+.post-list li a:hover {
+    text-decoration: underline;
 }
 
 .post-list li {
