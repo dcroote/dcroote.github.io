@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Build and Host a Custom Domain Static Website for Free
-image: /images/quick_website/logo_blend.png
-image-alt: Using Namecheap, Docker, Hugo, GitHub, and Render to Build and Launch a Custom Domain Static Website
+image: /images/quick_website/hugo_profile_theme_screenshot.png
+image-alt: Hugo Profile theme screenshot
 comments: false
 ---
 
@@ -32,7 +32,7 @@ klakegg/hugo:0.111.2 new site name-of-my-awesome-site -f=yaml
 
 ## 3. Find a suitable Hugo template
 
-There are a lot of great options at [Hugo Themes](https://themes.gohugo.io). Follow the [creating a site instructions](https://gohugo.io/getting-started/quick-start/#create-a-site) from Hugo for commands to add your theme.
+There are a lot of great options at [Hugo Themes](https://themes.gohugo.io). Follow the [creating a site instructions](https://gohugo.io/getting-started/quick-start/#create-a-site) from Hugo for commands to add your theme. I ended up using the [Hugo Profile](https://themes.gohugo.io/hugo-profile/) theme by [@gurusabarish](https://github.com/gurusabarish).
 
 ## 4. Customize the site based on the template
 
@@ -91,3 +91,7 @@ The [Render instructions](https://render.com/docs/custom-domains) are very strai
 You now have a live website with a custom domain for only the cost of the domain itself.
 
 Perhaps it was some lingering awe over the speed at which an idea became a reality, but something about the process reminded me of the first website I built nearly twenty years ago. Who knows, maybe in twenty more years an AI will build the site directly from electrical signals streamed from a helmet reading my brain waves as I imagine the perfect site.
+
+## Bonus: Contact form (free with no backend!)
+
+[Formspree.io](https://formspree.io) allows you to add a contact form to your website without any backend code. It's a great option if you don't expect many submissions because their "free forever" plan allows for up to 50 submissions per month.
