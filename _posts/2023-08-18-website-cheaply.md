@@ -6,7 +6,7 @@ image-alt: Hugo Profile theme screenshot
 comments: false
 ---
 
-Free hosting of custom domain websites? Many companies advertise “free website hosting” and it can be frustrating to finally find, buried in a FAQ, that custom domain hosting is an additional charge. This abbreviated tutorial describes the set of tools and services that allows you to build and host a custom domain website for free (beyond the cost of the domain name itself). I applied this flow to quickly launch a website for my wife, but note that it does assume some familiarity with `git`, `docker`, and web development owing to use of the following services:
+Free hosting of custom domain websites? Many companies advertise “free website hosting” and it can be frustrating to finally find, buried in a FAQ, that custom domain hosting is an additional charge. This abbreviated tutorial describes the set of tools and services that allows you to build and host a custom domain website for free (beyond the cost of the domain name itself). A big thanks to all of the open source developers and the overall ecosystem of services that make this sort of thing possible, it really is incredible. I applied this flow to quickly launch a website for my wife, but note that it does assume some familiarity with `git`, `docker`, and web development owing to use of the following services:
 
 - Custom domain: [Namecheap](https://namecheap.com).
 - Static site generator: [Hugo](https://gohugo.io) and [Docker](https://docker.com)
