@@ -92,6 +92,10 @@ You now have a live website with a custom domain for only the cost of the domain
 
 Perhaps it was some lingering awe over the speed at which an idea became a reality, but something about the process reminded me of the first website I built nearly twenty years ago. Who knows, maybe in twenty more years an AI will build the site directly from electrical signals streamed from a helmet reading my brain waves as I imagine the perfect site.
 
-## Bonus: Contact form (free with no backend!)
+## Bonus #1: Contact form (free with no backend!)
 
 [Formspree.io](https://formspree.io) allows you to add a contact form to your website without any backend code. It's a great option if you don't expect many submissions because their "free forever" plan allows for up to 50 submissions per month.
+
+## Bonus #2: Free favicon
+
+[RealFaviconGenerator](https://realfavicongenerator.net/) turned out to be a free, straightforward, and comprehensive way to generate a favicon (several in fact, for different devices and browsers). Thanks [@ph_bernard](https://github.com/phbernard/) (I made a small donation).
