@@ -8,3 +8,5 @@ TODO*
 images/*/inputs
 *_WIP*
 .bundle
+run.sh
+.vscode
