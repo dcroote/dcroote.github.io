@@ -5,15 +5,16 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
     <div class="post-meta">{{ page.date | date: "%b %-d, %Y" }}
-    {% if page.last_modified_at %}
+      {% if page.last_modified_at %}
       &nbsp; | &nbsp; Last updated: {{ page.last_modified_at | date: "%b %-d, %Y" }}
-    {% endif %}
-    <br />
-    {% include reading-time.html %} &nbsp; | &nbsp; {% include share-buttons.html %}
-    {% if page.discuss_on_twitter %}
+      {% endif %}
       <br />
-      <span style="background: #EEEEEE; border-radius: 5px; padding: 7px"><a href="{{ page.discuss_on_twitter }}" target="_blank">Discuss on twitter</a></span>
-    {% endif %}
+      {% include reading-time.html %} &nbsp; | &nbsp; {% include share-buttons.html %}
+      {% if page.discuss_on_twitter %}
+      <br />
+      <span style="background: #EEEEEE; border-radius: 5px; padding: 7px"><a href="{{ page.discuss_on_twitter }}"
+          target="_blank">Discuss on twitter</a></span>
+      {% endif %}
     </div>
   </header>
 
@@ -22,7 +23,13 @@ layout: default
 
     {% include share-buttons.html %}
 
-    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text" style="text-align: center; margin-top: 1em">This work by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://dcroote.github.io/">Derek Croote</a> is licensed under <a rel="license" href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="/images/cc.svg" alt="Creative Commons Icon" /><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="/images/by.svg" alt="Creative Commons Attribution Icon" /></a></p>
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text"
+      style="text-align: center; margin-top: 1em">This work by <a rel="cc:attributionURL dct:creator"
+        property="cc:attributionName" href="https://dcroote.github.io/">Derek Croote</a> is licensed under <a
+        rel="license" href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0<img
+          style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="/images/cc.svg"
+          alt="Creative Commons Icon" /><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+          src="/images/by.svg" alt="Creative Commons Attribution Icon" /></a></p>
 
   </article>
 
@@ -31,20 +38,25 @@ layout: default
   <br />
 
   <div class="PageNavigation">
-    <h3 style="margin-bottom: 5px; font-weight: bold">More content:</h3>
+    <h3 style="margin-bottom: 5px; font-weight: bold"><a href="#top" aria-label="Return to top">Return to top</a> or
+      browse more content:</h3>
     {% if page.previous.url %}
-      <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+    <a class="navpost" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
     {% endif %}
     {% if page.next.url %}
-      <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+    <a class="navpost next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
     {% endif %}
   </div>
   <br />
 
   {% if page.comments %}
-    <div id="disqus_thread"></div> <script> /** * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS. * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */ /* var disqus_config = function () { this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable }; */
-      (function() { // DON'T EDIT BELOW THIS LINE 
-        var d = document, s = d.createElement('script'); s.src = '//dcroote.disqus.com/embed.js'; s.setAttribute('data-timestamp', +new Date()); (d.head || d.body).appendChild(s); })(); </script> <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  <div id="disqus_thread"></div>
+  <script> /** * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS. * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */ /* var disqus_config = function () { this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable }; */
+    (function () { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script'); s.src = '//dcroote.disqus.com/embed.js'; s.setAttribute('data-timestamp', +new Date()); (d.head || d.body).appendChild(s);
+    })(); </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments
+      powered by Disqus.</a></noscript>
   {% endif %}
 
 </div>
