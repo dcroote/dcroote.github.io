@@ -42,7 +42,7 @@ You can flip through the book (best viewed in landscape on mobile) by clicking y
 
 This was a fun and meaningful project enabled by technologies that materialized in an extraordinarily short time; slowly, then all of a sudden, as they say. The one challenge I had, and to the astute reader, didn't completely surmount, was character consistency. Not for lack of trying! I attempted several approaches with limited success: extremely descriptive Froggy prompts, uploads of previous Froggy scenes, follow-up prompts requesting modifications to Froggy's appearance when it was off, as well as forcing chatGPT to pass the prompt to DALL·E without modification. Ultimately, I requested variation after variation until it was close enough. At the rate of progress we've seen perhaps this issue will be solved soon, and honestly on the timescale of days or weeks wouldn't even surprise me. Cheers to that.
 
-Credit to <a href="https://github.com/Nodlik" target="_blank">@Nodlik</a> for the flipbook animation code.
+Credit to OpenAI's DALL·E for illustrations, Shutterfly for printing the physical board book, and <a href="https://github.com/Nodlik" target="_blank">@Nodlik</a> for the flipbook animation code.
 
 <script type="application/javascript">
 const pageWidth = document.getElementById('book').offsetWidth / 2;
