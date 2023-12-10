@@ -10,7 +10,7 @@ A father's way of connecting with his daughter, wrapped in a story of a frog's u
 
 I hope she can one day appreciate it as a story that is uniquely hers.
 
-You can flip through the book by clicking your mouse or swiping with your finger:
+You can flip through the book (best viewed in landscape on mobile) by clicking your mouse or swiping with your finger:
 
 <div id="book" style="margin: 10px 0 40px 0">
 <div class="page" data-density="hard"><img src="/images/childrens_book/0.png"></div>
