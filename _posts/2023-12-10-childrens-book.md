@@ -44,16 +44,17 @@ This was a fun and meaningful project enabled by technologies that materialized 
 
 Credit to <a href="https://github.com/Nodlik" target="_blank">@Nodlik</a> for the flipbook animation code.
 
-<script>
+<script type="application/javascript">
 const pageWidth = document.getElementById('book').offsetWidth / 2;
 const pageFlip = new St.PageFlip(document.getElementById('book'),
     {
-        width: pageWidth, // required parameter - base page width
-        height: pageWidth,  // required parameter - base page height
-		showCover: false,
-		drawShadow: false,
-		usePortrait: false,
-		flippingTime: 800
+        size: 'stretch',
+        width: pageWidth,
+        height: pageWidth,
+        showCover: false,
+        drawShadow: false,
+        usePortrait: false,
+        flippingTime: 800
     }
 );
 
