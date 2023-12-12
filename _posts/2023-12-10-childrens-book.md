@@ -10,32 +10,32 @@ A father's way of connecting with his daughter, wrapped in a story of a frog's u
 
 I hope she can one day appreciate it as a story that is uniquely hers.
 
-You can flip through the book (best viewed in landscape on mobile) by clicking your mouse or swiping with your finger:
+You can flip through the book (best viewed in landscape mode if on mobile) by clicking your mouse or swiping with your finger:
 
 <div id="book" style="margin: 10px 0 40px 0">
-<div class="page" data-density="hard"><img src="/images/childrens_book/0.png"></div>
-<div class="page" data-density="hard"><img src="/images/childrens_book/cover.png"></div>
-<div class="page" data-density="hard"><img src="/images/childrens_book/1.png"></div>
-<div class="page" data-density="hard"><img src="/images/childrens_book/2.png"></div>
-<div class="page" data-density="hard"><img src="/images/childrens_book/3.png"></div>
-<div class="page" data-density="hard"><img src="/images/childrens_book/4.png"></div>
-<div class="page" data-density="hard"><img src="/images/childrens_book/5.png"></div>
-<div class="page" data-density="hard"><img src="/images/childrens_book/6.png"></div>
-<div class="page" data-density="hard"><img src="/images/childrens_book/7.png"></div>
-<div class="page" data-density="hard"><img src="/images/childrens_book/8.png"></div>
-<div class="page" data-density="hard"><img src="/images/childrens_book/9.png"></div>
-<div class="page" data-density="hard"><img src="/images/childrens_book/10.png"></div>
-<div class="page" data-density="hard"><img src="/images/childrens_book/11.png"></div>
-<div class="page" data-density="hard"><img src="/images/childrens_book/12.png"></div>
-<div class="page" data-density="hard"><img src="/images/childrens_book/13.png"></div>
-<div class="page" data-density="hard"><img src="/images/childrens_book/14.png"></div>
-<div class="page" data-density="hard"><img src="/images/childrens_book/15.png"></div>
-<div class="page" data-density="hard"><img src="/images/childrens_book/16.png"></div>
-<div class="page" data-density="hard"><img src="/images/childrens_book/17.png"></div>
-<div class="page" data-density="hard"><img src="/images/childrens_book/18.png"></div>
-<div class="page" data-density="hard"><img src="/images/childrens_book/19.png"></div>
-<div class="page" data-density="hard"><img src="/images/childrens_book/20.png"></div>
-<div class="page" data-density="hard"><img src="/images/childrens_book/back.png"></div>
+<div class="page" data-density="hard"><img src="/images/childrens_book/0.webp"></div>
+<div class="page" data-density="hard"><img src="/images/childrens_book/cover.webp"></div>
+<div class="page" data-density="hard"><img src="/images/childrens_book/1.webp"></div>
+<div class="page" data-density="hard"><img src="/images/childrens_book/2.webp"></div>
+<div class="page" data-density="hard"><img src="/images/childrens_book/3.webp"></div>
+<div class="page" data-density="hard"><img src="/images/childrens_book/4.webp"></div>
+<div class="page" data-density="hard"><img src="/images/childrens_book/5.webp"></div>
+<div class="page" data-density="hard"><img src="/images/childrens_book/6.webp"></div>
+<div class="page" data-density="hard"><img src="/images/childrens_book/7.webp"></div>
+<div class="page" data-density="hard"><img src="/images/childrens_book/8.webp"></div>
+<div class="page" data-density="hard"><img src="/images/childrens_book/9.webp"></div>
+<div class="page" data-density="hard"><img src="/images/childrens_book/10.webp"></div>
+<div class="page" data-density="hard"><img src="/images/childrens_book/11.webp"></div>
+<div class="page" data-density="hard"><img src="/images/childrens_book/12.webp"></div>
+<div class="page" data-density="hard"><img src="/images/childrens_book/13.webp"></div>
+<div class="page" data-density="hard"><img src="/images/childrens_book/14.webp"></div>
+<div class="page" data-density="hard"><img src="/images/childrens_book/15.webp"></div>
+<div class="page" data-density="hard"><img src="/images/childrens_book/16.webp"></div>
+<div class="page" data-density="hard"><img src="/images/childrens_book/17.webp"></div>
+<div class="page" data-density="hard"><img src="/images/childrens_book/18.webp"></div>
+<div class="page" data-density="hard"><img src="/images/childrens_book/19.webp"></div>
+<div class="page" data-density="hard"><img src="/images/childrens_book/20.webp"></div>
+<div class="page" data-density="hard"><img src="/images/childrens_book/back.webp"></div>
 </div>
 
 ### Behind the scenes
