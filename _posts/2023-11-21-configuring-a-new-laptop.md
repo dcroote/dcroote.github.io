@@ -4,6 +4,7 @@ title: Configuring a new laptop
 image: /images/configuring_laptop/laptop.webp
 image-alt: A sleek, modern laptop with a glossy screen, open on a minimalist desk. The desk is wooden, clean, and there's a small potted plant to the side. Soft, ambient lighting creates a cozy atmosphere. The laptop screen displays a vibrant wallpaper with abstract geometric shapes in blue and green hues. The scene suggests innovation, productivity, and modern technology. The background is softly blurred, emphasizing the laptop and the work environment.
 comments: false
+last_modified_at: 2024-03-16 12:33:00 -0800
 ---
 
 This post is mostly for my future self, but others may find it useful. It assumes a Windows machine (😱), with most development work done in WSL 2.
@@ -25,18 +26,24 @@ This post is mostly for my future self, but others may find it useful. It assume
 - Brave
 - Docker desktop
 - VS Code - use Settings Sync to easily port entire setup (extensions, keybindings, fonts, etc.) to a new machine or Codespaces
-- Alacritty - modern terminal emulator, configured for WSL 2 as follows in the file `%APPDATA%\alacritty\alacritty.yml`:
-{% highlight  yaml %}
-shell:
-  program: wsl
-  args:
-    - --cd ~
+- Alacritty - modern terminal emulator, configured for WSL 2 as follows in the file `%APPDATA%\alacritty\alacritty.toml`:
+
+{% highlight  toml %}
+[shell]
+args = ["--cd ~"]
+program = "wsl"
 {% endhighlight %}
 
 ## Software dev
 
 ### First things first
 
+Install WSL2 using PowerShell as an administrator:
+{% highlight  bash %}
+wsl --install -d Ubuntu-22.04
+{% endhighlight %}
+
+On WSL2:
 {% highlight  bash %}
 sudo apt update
 sudo apt upgrade
@@ -76,7 +83,6 @@ Create an ssh key for GitHub:
 {% highlight  bash %}
 ssh-keygen -t ed25519 -C "<github_username>@users.noreply.github.com"
 {% endhighlight %}
-
 
 ### Developer experience
 
