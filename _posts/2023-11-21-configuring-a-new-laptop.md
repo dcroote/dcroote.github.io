@@ -93,6 +93,7 @@ ssh-keygen -t ed25519 -C "<github_username>@users.noreply.github.com"
 - [miniforge](https://github.com/conda-forge/miniforge) - python package manager without the environment solving issues. Bonus tip: use `mamba` instead of `conda`.
 - [My own vim preferences](https://github.com/dcroote/vimrc)
 - [gitalias](https://github.com/GitAlias/gitalias) simplifies git e.g. `git c` instead of `git commit` and `git s` instead of `git status`. It might seem unimportant, but the frequency with which these commands are used can accrue nontrivial time and keystroke savings. There are also handy aliases for when you find yourself in some weird merge hell and need to torch everything and reset to upstream / pristine.
+- [difftastic](https://github.com/Wilfred/difftastic) generates diffs that better distinguish meaningful changes from formatting changes e.g. nesting, alignment, and wrapping.
 
 {% highlight  bash %}
 curl https://raw.githubusercontent.com/GitAlias/gitalias/main/gitalias.txt -o ~/.gitalias.txt
