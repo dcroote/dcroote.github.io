@@ -6,8 +6,6 @@ image-alt: Vector illustration of the outline of two credit cards
 comments: false
 ---
 
-<img src="/images/credit_cards/cc-graphic.svg" alt="Vector illustration of the outline of two credit cards" class="centered_img" />
-
 Quantitative appeal almost led me into a career in finance instead of biotech, and while I don't regret that road not taken, I still enjoy the occasional foray.
 
 For example, as a teenager I built a complex Excel retirement savings calculator and portfolio simulator for my parents.
