@@ -6,7 +6,7 @@ image-alt: Vector illustration of the outline of two credit cards
 comments: false
 ---
 
-Quantitative appeal almost led me into a career in finance instead of biotech, and while I don't regret that road not taken, I still enjoy the occasional foray.
+The allure of quantitative analysis almost led me into a career in finance instead of biotech, and while I don't regret that road not taken, I still enjoy the occasional foray.
 
 For example, as a teenager I built a complex Excel retirement savings calculator and portfolio simulator for my parents.
 It handled present and future tax rates, social security and pension disbursements, life expectancy, appropriate tax treatment of different retirement vehicles, Monte Carlo simulations of asset returns according to historical data, and more.
