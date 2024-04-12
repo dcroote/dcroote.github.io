@@ -8,7 +8,7 @@ comments: false
 
 The allure of quantitative analysis almost led me into a career in finance instead of biotech, and while I don't regret that road not taken, I still enjoy the occasional foray.
 
-For example, as a teenager I built a complex Excel retirement savings calculator and portfolio simulator for my parents.
+For example, as a teenager I built an Excel retirement savings calculator and portfolio simulator for my parents.
 It handled present and future tax rates, social security and pension disbursements, life expectancy, appropriate tax treatment of different retirement vehicles, Monte Carlo simulations of asset returns according to historical data, and more.
 Thinking back it would have been interesting to have tried to monetize it since it was quite a bit more sophisticated than other online calculators I could find at the time.
 
@@ -18,7 +18,7 @@ Realizing this myself, I have taken a disciplined approach with the following tw
 1. Simplicity
 2. Profitability <sup>1</sup>
 
-Again, the ordering is important. Simplicity means that the following are disqualifying: rotating categories, complex redemption requirements e.g. through some portal or specific merchant, manual clicking of anything, and linking the card to some other thing e.g. Amazon. I would argue broadly speaking that cards with points, rather than cash back, should be suspect since a point is not necessarily a set fraction of a dollar, and the fact that you probably cannot tell me with a high degree of certainty what one point equals in dollars towards something at any given moment without looking it up, or worse, needing to proceed with purchasing something, is proof enough for me.
+Again, the ordering is important. Simplicity means that the following are disqualifying: rotating categories, complex redemption requirements e.g. through some portal or specific merchant, manual clicking of anything,<sup>2</sup> and linking the card to some other thing e.g. Amazon. I would argue broadly speaking that cards with points, rather than cash back, should be suspect since a point is not necessarily a set fraction of a dollar, and the fact that you probably cannot tell me with a high degree of certainty what one point equals in dollars towards something at any given moment without looking it up,<sup>3</sup> or worse, needing to proceed with purchasing something, is proof enough for me.
 
 Requiring simplicity, thankfully, also limits the number of cards as it would break Rule 1 to have 5 cards and need to remember which one to pull out for each situation and transaction type.
 
@@ -35,4 +35,6 @@ Done!
 
 <ol style="font-size: 0.9em">
 <li>It bears mentioning that this is all moot if you carry a balance on your card because the interest will far exceed the cash back.</li>
+<li>This article was inspired by how ridiculous it seemed that you need to <a href="https://www.bitsaboutmoney.com/archive/anatomy-of-credit-card-rewards-programs/" target="_blank">tell Chase what groceries are</a>, something I learned about from Patrick McKenzie's brilliant newsletter, Bits about Money.</li>
+<li>And for a number I tried looking it up. The website of one I found says "it depends!", lists what redemption categories it depends on, but zero actual numbers. To the credit of this card, and the friend who recommended it (despite owning the card they themselves spent time figuring out what a point was), it does appear quite lucrative for rewards on rent payments should you jump through several hoops.</li>
 </ol>
