@@ -3,6 +3,7 @@ layout: post
 title: Two credit cards
 image: images/credit_cards/cc-graphic.svg
 image-alt: Vector illustration of the outline of two credit cards
+last_modified_at: 2024-04-11 23:13:54 -0700
 comments: false
 ---
 
