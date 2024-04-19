@@ -12,9 +12,10 @@ comments: false
 I first saw a wood elevation map at the World-Class Mountain View Art & Wine Festival.<sup>1</sup> The contrast of blue Lake Tahoe, California water and intricate layering of stained wood representing the surrounding mountains was visually captivating and technically impressive. I wondered if I could choose a different lake and build my own wood elevation map.<sup>2</sup>
 
 ## The approach
+
 1. Acquire elevation data of the area
 2. Computationally slice the elevation into contours
-3. Laser cut the contours out of wood 
+3. Laser cut the contours out of wood
 4. Stain and glue the wood pieces into position
 5. Fill the lake with blue epoxy
 
@@ -28,16 +29,14 @@ To download data as of this writing (2021), you can search for a location within
 
 To process the elevation data in Python, I first created a fresh `conda` environment with the usual data science packages along with `gdal` for working with geospatial data. Next, I activated the environment and launched an interactive jupyter notebook for analysis.
 
-{% highlight  bash %}
-conda create -n elevation python=3 numpy pandas seaborn matplotlib gdal notebook
+<pre><code class="language-bash">conda create -n elevation python=3 numpy pandas seaborn matplotlib gdal notebook
 conda activate elevation
 jupyter notebook
-{% endhighlight %}
+</code></pre>
 
 In the notebook, I imported the above packages:
 
-{% highlight python %}
-import numpy as np
+<pre><code class="language-python">import numpy as np
 import seaborn as sns
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -49,11 +48,11 @@ gdal.UseExceptions()
 
 # generate plots below code cells
 %matplotlib inline
-{% endhighlight %}
+</code></pre>
 
 Next, I loaded the geospatial data and transformed it into a usable format:
-{% highlight python %}
-# read data into osgeo.gdal.Dataset object
+
+<pre><code class="language-python"># read data into osgeo.gdal.Dataset object
 ds = gdal.Open('my_data/lake.img')
 
 # extract elevation as numpy array
@@ -66,7 +65,7 @@ width = ds.RasterXSize
 height = ds.RasterYSize
 x_min = gt[0]
 x_max = gt[0] + width*gt[1] + height*gt[2]
-y_min = gt[3] + width*gt[4] + height*gt[5] 
+y_min = gt[3] + width*gt[4] + height*gt[5]
 y_max = gt[3]
 
 # longitude: left to right (west to east as for north=up map)
@@ -77,22 +76,21 @@ ys = np.linspace(y_max, y_min, height)
 
 # create a dataframe for slicing the data in subsequent steps
 df = pd.DataFrame(data, index=ys, columns=xs)
-{% endhighlight %}
+</code></pre>
 
 I sliced the data to an area that captured the lake and surrounding hills by visually determining the appropriate latitudes and longitudes. I then plotted a heatmap that illustrated the elevation range of the region (shown side-by-side with the contours below).
-{% highlight python %}
-# x_start, x_end, y_start, and y_end determined visually
+
+<pre><code class="language-python"># x_start, x_end, y_start, and y_end determined visually
 sub = df.loc[x_start:x_end, y_start:y_end]
 
 f,ax = plt.subplots(figsize=(4,5), dpi=96)
 # `.iloc[::5, ::5]` is optional and used to reduce the amount of data being plotted
 sns.heatmap(sub.iloc[::5, ::5], square=True, xticklabels=False, yticklabels=False, ax=ax, cmap='viridis')
-{% endhighlight %}
+</code></pre>
 
 The last step was using matplotlib's `plt.contour()` to slice the elevation into contours. I iterated on the number of slices and the elevation intervals, seeking to balance elevation fidelity with practical constraints like the number of total pieces and the absence of overly small pieces unable to be easily cut, stained, and glued. Once satisfied, I saved two copies of the contours as `svg` files for the next step, laser cutting.
 
-{% highlight python %}
-# selected based on the heatmap to produce visually distinct contours
+<pre><code class="language-python"># selected based on the heatmap to produce visually distinct contours
 manual_contours = [152.4,164,187,210,233]
 
 f,ax = plt.subplots(figsize=(10,10))
@@ -103,19 +101,19 @@ ax.set_xticklabels('')
 
 # save as svg for laser cutting
 f.savefig('output/contours.svg')
-{% endhighlight %}
+</code></pre>
 <img src="/images/elevation_map/elevation_heatmap_and_contours.png" alt="Heatmap and contours produced in python" class="centered_img" width="739" height="451" />
 
 ## 3. Laser cutting the wood pieces
 
-For the following steps I originally used Illustrator, but today would use the free and open-source vector graphics editor Inkscape. 
+For the following steps I originally used Illustrator, but today would use the free and open-source vector graphics editor Inkscape.
 
 In the first `svg` file I deleted all contours except the central lake: this would be the template for the recessed epoxy fill and serve as the map's base. To overcome some jagged points along the edge, I made liberal use of the Simplify path function (in Inkscape: Path -> Simplify; repeat as necessary). I then readied the file for upload to the laser cutting service Ponoko, which at the time (2017), had reasonably strict requirements of documents, such as requiring that all lines intended for cutting (as opposed to, for example, engraving) be blue and a specific stroke weight (screenshot below). As of this writing (2021), the document upload process is significantly smoother and has web-based interactivity.
 
- In the second `svg` file, I removed the lake contour, deleted some small contours, and spatially separated the remaining elevation contours, again making liberal use of the path simplify function.
+In the second `svg` file, I removed the lake contour, deleted some small contours, and spatially separated the remaining elevation contours, again making liberal use of the path simplify function.
 <img src="/images/elevation_map/elevation_map_slices.png" alt="Elevation map contours for laser cutting" class="centered_img" width="740" height="360" />
 
-Lastly, I made sure that the `svg` scaling and dimensions were correct for the size I wanted. Having previously been a teaching assistant for an undergraduate design class at Stanford, I can still recall quite a few hilariously missized prints and cuts arising from insufficient attention to dimensions, most amusingly the inconsistent use of millimeters and inches. 
+Lastly, I made sure that the `svg` scaling and dimensions were correct for the size I wanted. Having previously been a teaching assistant for an undergraduate design class at Stanford, I can still recall quite a few hilariously missized prints and cuts arising from insufficient attention to dimensions, most amusingly the inconsistent use of millimeters and inches.
 
 ## 4. Stain and glue the wood pieces
 
@@ -134,8 +132,8 @@ With an added stand, the final product:
 Overall this was quite a fun project. It was not particularly expensive and was reasonably accessible using contract laser cutting, supplies available at a hardware store, and some basic graphics editing and python programming.
 
 ### Footnotes
+
 <ol style="font-size: 0.9em">
 <li>One year the flyer for this festival was itself a work of art, I wish I saved it.</li>
 <li>This is a write-up of a project that I completed in 2017 while a graduate student.</li>
 </ol>
-

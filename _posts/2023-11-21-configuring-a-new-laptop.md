@@ -28,61 +28,57 @@ This post is mostly for my future self, but others may find it useful. It assume
 - VS Code - use Settings Sync to easily port entire setup (extensions, keybindings, fonts, etc.) to a new machine or Codespaces
 - Alacritty - modern terminal emulator, configured for WSL 2 as follows in the file `%APPDATA%\alacritty\alacritty.toml`:
 
-{% highlight  toml %}
-[shell]
+<pre><code class="language-toml">[shell]
 args = ["--cd ~"]
 program = "wsl"
-{% endhighlight %}
+</code></pre>
 
 ## Software dev
 
 ### First things first
 
 Install WSL2 using PowerShell as an administrator:
-{% highlight  bash %}
-wsl --install -d Ubuntu-22.04
-{% endhighlight %}
+
+<pre><code class="language-bash">wsl --install -d Ubuntu-22.04
+</code></pre>
 
 On WSL2:
-{% highlight  bash %}
-sudo apt update
+
+<pre><code class="language-bash">sudo apt update
 sudo apt upgrade
 sudo apt install ripgrep tree tmux
-{% endhighlight %}
+</code></pre>
 
 ### ssh, gpg, and git
 
 Generate a GPG key for signing commits:
 
-{% highlight  bash %}
-gpg --full-generate-key
-{% endhighlight %}
+<pre><code class="language-bash">gpg --full-generate-key
+</code></pre>
 
 WSL 2 needed the following added to `~/.profile` to avoid the error `gpg failed to sign the data`:
-{% highlight  bash %}
-export GPG_TTY=$(tty)
-{% endhighlight %}
+
+<pre><code class="language-bash">export GPG_TTY=$(tty)
+</code></pre>
 
 Configure git:
 
-{% highlight  bash %}
-git config --global user.email "<github_username>@users.noreply.github.com"
-git config --global user.name "<name>"
+<pre><code class="language-bash">git config --global user.email "github_username@users.noreply.github.com"
+git config --global user.name "name"
 git config --global core.editor vim
 git config --global commit.gpgsign true
 gpg --list-secret-keys --keyid-format=long
-{% endhighlight %}
+</code></pre>
 
 Now use signing key from above command:
-{% highlight  bash %}
-git config --global user.signingkey <16 character key>
-{% endhighlight %}
+
+<pre><code class="language-bash">git config --global user.signingkey <16 character key>
+</code></pre>
 
 Create an ssh key for GitHub:
 
-{% highlight  bash %}
-ssh-keygen -t ed25519 -C "<github_username>@users.noreply.github.com"
-{% endhighlight %}
+<pre><code class="language-bash">ssh-keygen -t ed25519 -C "github_username@users.noreply.github.com"
+</code></pre>
 
 ### Developer experience
 
@@ -95,21 +91,19 @@ ssh-keygen -t ed25519 -C "<github_username>@users.noreply.github.com"
 - [gitalias](https://github.com/GitAlias/gitalias) simplifies git e.g. `git c` instead of `git commit` and `git s` instead of `git status`. It might seem unimportant, but the frequency with which these commands are used can accrue nontrivial time and keystroke savings. There are also handy aliases for when you find yourself in some weird merge hell and need to torch everything and reset to upstream / pristine.
 - [difftastic](https://github.com/Wilfred/difftastic) generates diffs that better distinguish meaningful changes from formatting changes e.g. nesting, alignment, and wrapping.
 
-{% highlight  bash %}
-curl https://raw.githubusercontent.com/GitAlias/gitalias/main/gitalias.txt -o ~/.gitalias.txt
+<pre><code class="language-bash">curl https://raw.githubusercontent.com/GitAlias/gitalias/main/gitalias.txt -o ~/.gitalias.txt
 git config --global include.path ~/.gitalias.txt
-{% endhighlight %}
+</code></pre>
 
 `.bashrc` aliases and exports. At a bare minimum, for me:
 
-{% highlight  bash %}
-alias ll='ls -alF'
+<pre><code class="language-bash">alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias v="vim"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
-{% endhighlight %}
+</code></pre>
 
 Let me know if there is anything I missed!

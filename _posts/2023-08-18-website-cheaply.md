@@ -29,11 +29,10 @@ Installations can be a pain, which makes the existence of pre-built Docker image
 
 For creating a new site:
 
-{% highlight bash %}
-docker run --rm -it \
+<pre><code class="language-bash">docker run --rm -it \
 -v $(pwd):/src \
 klakegg/hugo:0.111.2 new site name-of-my-awesome-site -f=yaml
-{% endhighlight %}
+</code></pre>
 
 ## 3. Find a suitable Hugo template
 
@@ -45,12 +44,11 @@ Depending on the chosen theme and the modifications you'd like to make, this can
 
 For building the site and testing it locally on localhost port `1313`, again use Docker:
 
-{% highlight bash %}
-docker run --rm -it \
+<pre><code class="language-bash">docker run --rm -it \
 -v $(pwd):/src \
 -p 1313:1313 \
 klakegg/hugo:0.111.2 server
-{% endhighlight %}
+</code></pre>
 
 Note there is also an option to build the site without launching a local server, but that won't be necessary since Render will build the site for us later.
 
@@ -59,25 +57,20 @@ Note there is also an option to build the site without launching a local server,
 - Create a new repo on GitHub. While GitHub Pages requires the repo be public, Render does not and therefore this can be a private repo.
 - Use the `.gitignore` file [from Hugo](https://github.com/github/gitignore/blob/main/community/Golang/Hugo.gitignore) to avoid pushing unnecessary files. At the time of this writing, it consisted of:
 
-{% highlight bash %}
-
-# Generated files by hugo
-
+<pre><code class="language-bash"># Generated files by hugo
 /public/
 /resources/\_gen/
 /assets/jsconfig.json
 hugo_stats.json
 
 # Executable may be added to repository
-
 hugo.exe
 hugo.darwin
 hugo.linux
 
 # Temporary lock file while building
-
 /.hugo_build.lock
-{% endhighlight %}
+</code></pre>
 
 - Commit the files and push to GitHub
 

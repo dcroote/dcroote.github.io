@@ -5,13 +5,11 @@
   <body>
     {% include header.html %}
     <div class="page-content" role="main">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+      <div class="wrapper">{{ content }}</div>
     </div>
-    
-    {% include footer.html %}
-      
-  </body>
 
+    {% include footer.html %}
+
+    <script src="{{ site.baseurl }}/scripts/prism.js"></script>
+  </body>
 </html>

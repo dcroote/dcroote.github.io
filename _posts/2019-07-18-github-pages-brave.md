@@ -14,11 +14,7 @@ The [verification process](https://publishers.basicattentiontoken.org/) involves
 
 Instead, based on [this GitHub issue comment](https://github.com/keybase/keybase-issues/issues/366#issuecomment-38749201), I included the `.well-known` directory containing the Brave verification text file `brave-rewards-verification.txt` in the Jekyll build by adding the following line to `_config.yml`:
 
-{% highlight yaml %}
-
-include: [".well-known"]
-
-{% endhighlight %}
+<pre><code class="language-yaml">include: [".well-known"]</code></pre>
 
 The verification was then successful as the verification file is visible in its [expected location](https://dcroote.github.io/.well-known/brave-rewards-verification.txt).
 The full commit showing these changes can be seen [here](https://github.com/dcroote/dcroote.github.io/commit/c8eac2b3c937cb4d0ebf5b3b2b018bfdc8ff3416).

@@ -21,12 +21,11 @@ Note that the `Host` should be `www` if you're intending on using the `www` subd
 
 Next, create `A` records, with `@` for the `Host`, pointing to [GitHub Pages servers](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain). At the time of this writing, the `A` record `Values` were:
 
-{% highlight  bash %}
-185.199.108.153
+<pre><code class="language-bash">185.199.108.153
 185.199.109.153
 185.199.110.153
 185.199.111.153
-{% endhighlight %}
+</code></pre>
 
 ## 3. Configure the custom domain on GitHub
 
