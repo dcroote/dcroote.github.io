@@ -4,7 +4,7 @@ title: Configuring a new laptop
 image: /images/configuring_laptop/laptop.webp
 image-alt: A sleek, modern laptop with a glossy screen, open on a minimalist desk. The desk is wooden, clean, and there's a small potted plant to the side. Soft, ambient lighting creates a cozy atmosphere. The laptop screen displays a vibrant wallpaper with abstract geometric shapes in blue and green hues. The scene suggests innovation, productivity, and modern technology. The background is softly blurred, emphasizing the laptop and the work environment.
 comments: false
-last_modified_at: 2024-03-31 21:58:00 -0800
+last_modified_at: 2024-04-21 14:15:00 -0700
 ---
 
 This post is mostly for my future self, but others may find it useful. It assumes a Windows machine (😱), with most development work done in WSL 2.
@@ -12,12 +12,10 @@ This post is mostly for my future self, but others may find it useful. It assume
 ## General
 
 - Replace the preinstalled antivirus trial with something legitimate. If you don't do this first the popups will drive you insane.
-
 - Uninstall bloatware, trials, games, etc.
-
 - Disable personalization and related 'features'
-
 - Disable unnecessary programs at startup in Task Manager
+- Disable Bing in the Windows 11 start menu (<a href="https://www.howtogeek.com/826967/how-to-disable-bing-in-the-windows-11-start-menu/">instructions</a>)
 
 ## Windows programs:
 
