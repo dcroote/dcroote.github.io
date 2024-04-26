@@ -3,7 +3,7 @@ layout: post
 title: Two credit cards
 image: images/credit_cards/cc-graphic.svg
 image-alt: Vector illustration of the outline of two credit cards
-last_modified_at: 2024-04-11 23:13:54 -0700
+last_modified_at: 2024-04-25 22:12:00 -0700
 comments: false
 ---
 
@@ -33,7 +33,7 @@ The second card can even favorably impact your credit score: given a fixed total
 Done!
 
 <h2>Amex Blue Cash Rewards Calculator (as of 2024-04-25)</h2>
-<span style="font-style: italic">This is for informational purposes only. Be sure to do your own research prior to making any financial decisions.</span> If you're curious about the formula, refer to this page's [source](https://github.com/dcroote/dcroote.github.io/blob/master/_posts/2024-04-07-credit-cards.md).
+<span style="font-style: italic">This is for informational purposes only. Be sure to do your own research prior to making any financial decisions.</span> If you're curious about the formula, refer to this page's [source](https://github.com/dcroote/dcroote.github.io/blob/master/_posts/2024-04-07-credit-cards.md?plain=1).
 <div class="container">
   <div class="column">
     <div style="padding: 10px;">
