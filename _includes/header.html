@@ -1,53 +1,43 @@
 <header class="header">
-	<div class="header-container">
-		<h2 style="color:#FFFFFF">{{ site.author.name }}</h2>
-        <div class="nav-left">
-            <img src="/images/photo.png" width="75" height="91" alt="Photo of Derek Croote"/>
-        </div>
-        <div class="nav-right" role="navigation">
-            <ul class="nav">
-                {% if page.path == "index.html" %}
-                    <li class="active">
-                {% else %}
-                    <li>
-                {% endif %}
-                    <a href="/index.html">home</a>
-                    </li>
-
-                {% if page.path == "about.md" %}
-                    <li class="active">
-                {% else %}
-                    <li>
-                {% endif %}
-                    <a href="/about/">about</a>
-                    </li>
-
-                {% if page.path == "privacy.md" %}
-                    <li class="active">
-                {% else %}
-                    <li>
-                {% endif %}
-                    <a href="/privacy/">privacy</a>
-                    </li>
-            </ul>
-            <div class="description"> {{ site.motto }} </div>
-            <ul class="social-links">
-                <li>
-                    <a href="https://github.com/{{ site.github_username }}" title="Github">
-                        <img width="19" height="19" src="/images/github.png" alt="GitHub icon"/>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/DerekCroote" title="Twitter">
-                        <img width="19" height="19" src="/images/twitter.png" alt="Twitter icon"/>
-                    </a>
-                </li>
-                <li>
-                    <a href="/feed.xml" title="RSS">
-                        <img width="19" height="19" src="/images/rss.png" alt="RSS icon"/>
-                    </a>
-                </li>
-            </ul>
-        </div>
+  <div class="header-container">
+    <h2 style="color: #ffffff">{{ site.author.name }}</h2>
+    <div class="nav-left">
+      <img src="/images/photo.png" width="75" height="91" alt="Photo of Derek Croote" />
     </div>
+    <div class="nav-right" role="navigation">
+      <ul class="nav">
+        {% if page.path == "index.html" %}
+        <li class="active"><a href="/index.html">home</a></li>
+        {% else %}
+        <li><a href="/index.html">home</a></li>
+        {% endif %} {% if page.path == "about.md" %}
+        <li class="active"><a href="/about/">about</a></li>
+        {% else %}
+        <li><a href="/about/">about</a></li>
+        {% endif %} {% if page.path == "privacy.md" %}
+        <li class="active"><a href="/privacy/">privacy</a></li>
+        {% else %}
+        <li><a href="/privacy/">privacy</a></li>
+        {% endif %}
+      </ul>
+      <div class="description">{{ site.motto }}</div>
+      <ul class="social-links">
+        <li>
+          <a href="https://github.com/{{ site.github_username }}" title="Github">
+            <img width="19" height="19" src="/images/github.png" alt="GitHub icon" />
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/DerekCroote" title="Twitter">
+            <img width="19" height="19" src="/images/twitter.png" alt="Twitter icon" />
+          </a>
+        </li>
+        <li>
+          <a href="/feed.xml" title="RSS">
+            <img width="19" height="19" src="/images/rss.png" alt="RSS icon" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </header>
