@@ -1,12 +1,14 @@
 ---
 layout: post
-title: AI might be...
-image: images/ai-might/ai.webp
+title: "Embracing Contradictions: AI's Multifaceted Evolution"
+image: images/early-ai-evolutions/ai.webp
 image-alt: "Illustration of the letters AI. Prompt: minimalist logo with the letters 'AI' in a clean, modern, bold, sans-serif font, using a limited color palette, scalable and legible, simple and straightforward"
-description: AI might be feared, celebrated, expensive, inexpensive, specialized, general, larger, smaller, isolated, connected, regulated, open, structured, and creative. Or not. Predicting the future turns out to be pretty hard, but technological progress is exciting nonetheless.
+description: "Artificial intelligence is evolving in seemingly contradictory directions: it's feared, celebrated, expensive, inexpensive, specialized, general, larger, smaller, isolated, connected, regulated, open, structured, and creative."
 comments: false
-last_modified_at: 2024-06-20 17:04:00 -0700
+last_modified_at: 2024-09-13 16:10:00 -0700
 ---
+
+Artificial intelligence is evolving in seemingly contradictory directions because it's simultaneously:
 
 Feared <sup>1</sup><br />
 Celebrated <sup>2</sup>
@@ -29,7 +31,7 @@ Open <sup>12</sup>
 Structured <sup>13</sup><br />
 Creative <sup>14</sup>
 
-and perhaps, one day, a lens through which we understand the beauty of intelligence. Or not. And certainly not as soon as hyped. Predicting the future turns out to be pretty hard, but technological progress is exciting nonetheless.
+Perhaps, one day, AI will even be a lens through which we understand the beauty of intelligence. Or not? Predicting the future turns out to be pretty hard, but technological progress is incredibly exciting nonetheless.
 
 ### Footnotes
 
