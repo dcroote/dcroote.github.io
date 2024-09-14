@@ -19,12 +19,30 @@
         {% else %}
         <li><a href="/privacy/">privacy</a></li>
         {% endif %}
+      </ul>
+      <div class="description">{{ site.motto }}</div>
+      <ul class="social-links">
+        <li>
+          <a href="https://github.com/{{ site.github_username }}" title="Github">
+            <img width="19" height="19" src="/images/github.png" alt="GitHub icon" />
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/DerekCroote" title="Twitter">
+            <img width="19" height="19" src="/images/twitter.png" alt="Twitter icon" />
+          </a>
+        </li>
+        <li>
+          <a href="/feed.xml" title="RSS">
+            <img width="19" height="19" src="/images/rss.png" alt="RSS icon" />
+          </a>
+        </li>
         <li>
           <button id="theme-toggle" aria-label="Toggle dark mode">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
+              width="17"
+              height="17"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -44,24 +62,6 @@
               <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
             </svg>
           </button>
-        </li>
-      </ul>
-      <div class="description">{{ site.motto }}</div>
-      <ul class="social-links">
-        <li>
-          <a href="https://github.com/{{ site.github_username }}" title="Github">
-            <img width="19" height="19" src="/images/github.png" alt="GitHub icon" />
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/DerekCroote" title="Twitter">
-            <img width="19" height="19" src="/images/twitter.png" alt="Twitter icon" />
-          </a>
-        </li>
-        <li>
-          <a href="/feed.xml" title="RSS">
-            <img width="19" height="19" src="/images/rss.png" alt="RSS icon" />
-          </a>
         </li>
       </ul>
     </div>

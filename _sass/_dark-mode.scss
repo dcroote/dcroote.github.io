@@ -79,7 +79,6 @@ body.dark-mode {
     background-color: #4a9eff;
     color: #ffffff;
     border: none;
-    padding: 5px 10px;
     cursor: pointer;
 
     &:hover {
@@ -94,18 +93,8 @@ body.dark-mode {
   cursor: pointer;
   padding: 0;
   color: #EEEEEE;
-  margin-left: 10px;
-  width: 20px;
-  height: 20px;
-}
-
-#theme-toggle svg {
-  max-width: 100%;
-  max-height: 100%;
-  vertical-align: bottom;
-}
-
-#theme-toggle button {
-  padding: 0;
-  align-items: bottom;
+  margin-left: 40px;
+  width: 17px;
+  height: 17px;
+  vertical-align: middle;
 }
