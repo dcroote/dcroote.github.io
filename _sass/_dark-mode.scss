@@ -1,0 +1,111 @@
+body.dark-mode {
+  color: #f0f0f0;
+  background-color: #2d2d2d;
+
+  .content {
+    color: #f0f0f0;
+  }
+
+  .wrapper {
+  	background-color: #2d2d2d;
+  }
+  
+  .post-list li a, .wrapper a {
+  	color: #4a9eff;
+    
+    &:hover {
+      color: #7fbfff;
+    }
+  }
+
+  .post-list li h1 a {
+  	color: #b3deff;
+  }
+  
+  .post-list li {
+  	border-bottom-color: #444;
+  }
+  
+  blockquote {
+  	color: #bbb;
+  	border-left-color: #444;
+  }
+  
+  .icon > svg path {
+  	fill: #bbb;
+  }
+  .header {
+    background-color: #454545;
+  }
+
+  pre, code {
+    background-color: #2d2d2d;
+    border-color: #7fbfff;
+  }
+  .post-meta {
+    color: #bbb;
+  }
+  .post-title {
+    color: #b3deff;  // Matching color for consistency
+  }
+
+  // Add these new styles for the table
+  table {
+    color: #f0f0f0;
+    border-color: #555;
+  }
+
+  th, td {
+    border-color: #555;
+  }
+
+  #rewards tr:nth-child(even) {
+    background-color: #3a3a3a;
+  }
+
+  #rewards tr:nth-child(odd) {
+    background-color: #2d2d2d;
+  }
+
+  // Ensure input fields are readable in dark mode
+  input[type="number"] {
+    background-color: #3a3a3a;
+    color: #f0f0f0;
+    border: 1px solid #555;
+  }
+
+  // Style for the calculate button in dark mode
+  button {
+    background-color: #4a9eff;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #3a7fcf;
+    }
+  }
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: #EEEEEE;
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+#theme-toggle svg {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: bottom;
+}
+
+#theme-toggle button {
+  padding: 0;
+  align-items: bottom;
+}

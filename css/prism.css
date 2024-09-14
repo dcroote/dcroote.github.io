@@ -315,3 +315,89 @@ pre > code.diff-highlight .token.token.inserted:not(.prefix) {
 .command-line .command-line-prompt > span:before {
 	color: #3c526dda;
 }
+
+/* Dark mode styles */
+.dark-mode code[class*="language-"],
+.dark-mode pre[class*="language-"] {
+	color: #e0e0e0;
+	background: #2d2d2d;
+}
+
+.dark-mode :not(pre) > code[class*="language-"],
+.dark-mode pre[class*="language-"] {
+	background: #2d2d2d;
+}
+
+.dark-mode .token.comment,
+.dark-mode .token.prolog,
+.dark-mode .token.doctype,
+.dark-mode .token.cdata {
+	color: #999;
+}
+
+.dark-mode .token.punctuation {
+	color: #ccc;
+}
+
+.dark-mode .token.tag,
+.dark-mode .token.attr-name,
+.dark-mode .token.namespace,
+.dark-mode .token.deleted {
+	color: #e2777a;
+}
+
+.dark-mode .token.function-name {
+	color: #6196cc;
+}
+
+.dark-mode .token.boolean,
+.dark-mode .token.number,
+.dark-mode .token.function {
+	color: #f08d49;
+}
+
+.dark-mode .token.property,
+.dark-mode .token.class-name,
+.dark-mode .token.constant,
+.dark-mode .token.symbol {
+	color: #f8c555;
+}
+
+.dark-mode .token.selector,
+.dark-mode .token.important,
+.dark-mode .token.atrule,
+.dark-mode .token.keyword,
+.dark-mode .token.builtin {
+	color: #cc99cd;
+}
+
+.dark-mode .token.string,
+.dark-mode .token.char,
+.dark-mode .token.attr-value,
+.dark-mode .token.regex,
+.dark-mode .token.variable {
+	color: #7ec699;
+}
+
+.dark-mode .token.operator,
+.dark-mode .token.entity,
+.dark-mode .token.url {
+	color: #67cdcc;
+}
+
+.dark-mode .token.important,
+.dark-mode .token.bold {
+	font-weight: bold;
+}
+
+.dark-mode .token.italic {
+	font-style: italic;
+}
+
+.dark-mode .token.entity {
+	cursor: help;
+}
+
+.dark-mode .token.inserted {
+	color: green;
+}
