@@ -85,6 +85,11 @@ body.dark-mode {
       background-color: #3a7fcf;
     }
   }
+
+  .ai-text-block {
+    background-color: #000419;
+    color: var(--text-color, inherit);
+  }
 }
 
 #theme-toggle {
