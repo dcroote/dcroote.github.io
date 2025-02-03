@@ -5,7 +5,7 @@ description: Find out more about Derek as well as ways to connect.
 permalink: /about/
 ---
 
-<p>As a co-founder of <a href="https://iggenix.com" target="_blank">IgGenix</a>, I am passionate about developing transformative therapies for individuals suffering from allergies.</p>
+<p>As Chief Technical Officer and co-founder of <a href="https://iggenix.com" target="_blank">IgGenix</a>, I am passionate about developing transformative therapies for individuals suffering from allergies. Our peanut allergy therapeutic, IGNX001, is currently being studied in a <a href="/2024/08/22/accelerate-website.html">Phase 1 clinical trial</a>.</p>
 
 Other profiles / ways to connect with me:
 
