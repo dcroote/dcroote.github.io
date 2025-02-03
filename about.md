@@ -16,8 +16,10 @@ Other profiles / ways to connect with me:
 </ul>
 
 Other resources I've built:
+
 <ul>
   <li><a href="https://www.allergenpeptidebrowser.org/" target="_blank">Allergen Peptide Browser</a> - database for facilitating allergen detection in food using mass spectrometry</li>
+  <li><a href="https://github.com/dcroote/stanford-thesis-example/" target="_blank">Stanford LaTeX thesis template</a></li>
 </ul>
 
 <br />
@@ -26,4 +28,3 @@ Other resources I've built:
 <p style="text-align:center">
   Theme modified from: <a href="https://github.com/smallmuou/Jekyll-Pithy" target="_blank">Pithy Theme</a> by Pawpaw.
 </p>
-
