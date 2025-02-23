@@ -13,6 +13,7 @@ Other profiles / ways to connect with me:
   <li><a href="https://twitter.com/DerekCroote" target="_blank">Twitter</a></li>
   <li><a href="https://www.linkedin.com/in/dcroote" target="_blank">LinkedIn</a></li>
   <li><a href="https://scholar.google.com/citations?user=PevRGmgAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
+  <li><a href="https://orcid.org/0000-0003-4907-1865" target="_blank">ORCID</a></li>
 </ul>
 
 Other resources I've built:
