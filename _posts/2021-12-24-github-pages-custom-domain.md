@@ -5,6 +5,7 @@ image: images/custom-domain/derekcroote-domain.png
 image-alt: www.derekcroote.com
 description: "I recently transitioned my site from GitHub's freely hosted github.io domain to https://www.derekcroote.com after seeing how quick and inexpensive it was for my sister to create a beautiful portfolio website. This short post walks through the process."
 comments: false
+last_modified_at: 2025-03-16 15:38:00 -0700
 ---
 
 I recently transitioned my site from GitHub's freely hosted github.io domain to [https://www.derekcroote.com](https://www.derekcroote.com) after seeing how quick and inexpensive it was for my sister to create a <a href="https://www.denisecroote.com" target="_blank">beautiful portfolio website</a>.
