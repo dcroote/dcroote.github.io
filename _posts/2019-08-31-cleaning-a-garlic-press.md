@@ -17,7 +17,7 @@ I have a cheap garlic press, which means that after each use garlic is stuck in 
 
 ## CAD model
 
-This is a simple design consisting of an extruded base and an array of posts (extruded circles). There are 7 rows of 9 posts, with alternating rows offset from one another. The full model is [available on  Onshape](https://cad.onshape.com/documents/cb2f7780bde13603780e855c/w/8bb77d57f5a67c7b4d3e95ad/e/037f1c0159a5ebba17e23b8f), which is a free online service if you don't mind your designs being public.
+This is a simple design consisting of an extruded base and an array of posts (extruded circles). There are 7 rows of 9 posts, with alternating rows offset from one another. The full model is [available on Onshape](https://cad.onshape.com/documents/cb2f7780bde13603780e855c/w/8bb77d57f5a67c7b4d3e95ad/e/037f1c0159a5ebba17e23b8f), which is a free online service if you don't mind your designs being public.
 
 [![CAD sketch and rendering](/images/garlic_press/cad_combined.png "Click for a larger version")](/images/garlic_press/cad_combined.png)
 

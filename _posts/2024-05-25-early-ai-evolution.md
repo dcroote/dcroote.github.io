@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Embracing Contradictions: AI's Multifaceted Evolution"
+title: "AI's Multifaceted Evolution"
 image: images/early-ai-evolutions/ai.webp
 image-alt: "Illustration of the letters AI. Prompt: minimalist logo with the letters 'AI' in a clean, modern, bold, sans-serif font, using a limited color palette, scalable and legible, simple and straightforward"
-description: "Artificial intelligence is evolving in seemingly contradictory directions: it's feared, celebrated, expensive, inexpensive, specialized, general, larger, smaller, isolated, connected, regulated, open, structured, and creative."
+description: "Artificial intelligence is evolving to be simultaneously feared, celebrated, expensive, inexpensive, specialized, general, larger, smaller, isolated, connected, regulated, open, structured, and creative."
 comments: false
 last_modified_at: 2024-09-13 16:10:00 -0700
 ---

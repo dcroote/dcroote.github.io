@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Quickly configure a custom Namecheap domain for GitHub Pages
+title: Quickly configure a Namecheap domain for GitHub Pages
 image: images/custom-domain/derekcroote-domain.png
 image-alt: www.derekcroote.com
 description: "I recently transitioned my site from GitHub's freely hosted github.io domain to https://www.derekcroote.com after seeing how quick and inexpensive it was for my sister to create a beautiful portfolio website. This short post walks through the process."
