@@ -3,6 +3,8 @@ layout: post
 title: Froggy's Grand Adventure - A Children's Book
 image: /images/childrens_book/FroggyChildrensBook.webp
 image-alt: First two pages of the children's book Froggy's Grand Adventure by Derek Croote.
+description: Create and print your own children's board book with AI and Shutterfly
+last_modified_at: 2025-05-04 13:31:00 -0700
 comments: false
 ---
 
