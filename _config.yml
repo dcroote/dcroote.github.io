@@ -12,7 +12,7 @@ twitter_username: DerekCroote
 twitter:
   username: DerekCroote
   card: summary_large_image
-description: Tutorials and thoughts on science, technology, engineering, and data.
+description: Perspectives on science, technology, and engineering.
 
 # Build settings
 markdown: kramdown
