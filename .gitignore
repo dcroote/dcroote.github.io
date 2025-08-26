@@ -10,3 +10,4 @@ images/*/inputs
 .bundle
 run.sh
 .vscode
+.DS_Store
