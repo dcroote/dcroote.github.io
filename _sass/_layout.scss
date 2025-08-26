@@ -1,300 +1,313 @@
 html,
 body {
-    -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /**
  * Header
  */
 .header {
-    padding: 50px 20px 40px;
-    background-color: #515865;
+  padding: 50px 20px 40px;
+  background-color: #515865;
 }
 
 .header-container {
-    max-width: 700px;
-    margin: 0px auto;
+  max-width: 700px;
+  margin: 0px auto;
 }
 
 .nav {
-    color: #707070;
-    font-size: 1.1em;
-    font-family: "Montserrat", sans-serif;
-    display: inline;
-    margin-left: 0px;
+  color: #707070;
+  font-size: 1.1em;
+  font-family: "Montserrat", sans-serif;
+  display: inline;
+  margin-left: 0px;
 }
 
 .nav li {
-    padding-right: 20px;
-    display: inline-block;
-    line-height: 1;
+  padding-right: 20px;
+  display: inline-block;
+  line-height: 1;
 }
 
 li {
-    margin-left: 0px;
+  margin-left: 0px;
 }
 
 .nav a {
-    color: #EEEEEE;
+  color: #eeeeee;
 }
 
 .nav a:link {
-    opacity: 1;
-    transition: all 0.15s linear 0s;
-    text-decoration: none;
+  opacity: 1;
+  transition: all 0.15s linear 0s;
+  text-decoration: none;
 }
 
 .nav li a:visited {
-    opacity: 1;
-    transition: all 0.15s linear 0s;
-    text-decoration: none;
+  opacity: 1;
+  transition: all 0.15s linear 0s;
+  text-decoration: none;
 }
 
 .nav li a:hover {
-    opacity: 0.6;
-    cursor: pointer;
-    text-decoration: none;
+  opacity: 0.6;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .nav li.active a:any-link {
-    color: #b3deff;
+  color: #b3deff;
 }
 
 .nav-left {
-    width: 100px;
-    float: left;
+  width: 100px;
+  float: left;
 }
 
 .nav-right {
-    margin-left: 100px;
+  margin-left: 100px;
 }
 
 .clear {
-    clear: both;
+  clear: both;
 }
 
 .description {
-    padding-top: 10px;
-    line-height: 1.5em;
-    color: #EEE;
+  padding-top: 10px;
+  line-height: 1.5em;
+  color: #eee;
 }
 
 .social-links {
-    padding-top: 10px;
-    margin-left: 0px;
+  padding-top: 10px;
+  margin-left: 0px;
 }
 
 .social-links li {
-    display: inline;
-    padding-right: 10px;
-    line-height: 0;
+  display: inline;
+  padding-right: 10px;
+  line-height: 0;
 }
 
 .social-links a {
-    color: #959BA6;
-    text-decoration: none;
+  color: #959ba6;
+  text-decoration: none;
 }
 
 .social-links a:hover {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 .social-links a:active {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 .page-content {
-    min-height: 100%;
-    height: 100%;
+  min-height: 100%;
+  height: 100%;
 }
 
 .post-meta {
-    color: #333;
-    font-size: 14px;
-    margin-left: 0px;
-    margin-bottom: 1.5em;
+  color: #333;
+  font-size: 14px;
+  margin-left: 0px;
+  margin-bottom: 1.5em;
 }
 
 .content {
-    margin-top: 20px;
-    color: #333;
+  margin-top: 20px;
+  color: #333;
 }
 
 .post-list {
-    list-style: none;
-    margin-left: 0px;
+  list-style: none;
+  margin-left: 0px;
 }
 
 .post-list li a {
-    color: #486391;
-    text-decoration: none;
+  color: #486391;
+  text-decoration: none;
 }
 
 .post-list li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .post-list li {
-    margin-bottom: 2em;
-    padding-bottom: 1.5em;
-    border-bottom: 2px solid #eee;
+  margin-bottom: 2em;
+  padding-bottom: 1.5em;
+  border-bottom: 2px solid #eee;
 }
 
 .post-img {
-    text-align: center;
-    margin-top: 1em;
-    margin-bottom: 1.5em;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
 }
 
 .post-img img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
 }
 
 .hrline {
-    opacity: 1;
-    color: #eee;
+  opacity: 1;
+  color: #eee;
 }
 
 /**
  * Artist
  */
 .well {
-    color: #000;
-    font-family: Monaco, "Courier New", monospace;
+  color: #000;
+  font-family: Monaco, "Courier New", monospace;
 }
 
 .well ul {
-    color: #AAA;
-    font-size: 14px;
-    list-style: none;
+  color: #aaa;
+  font-size: 14px;
+  list-style: none;
 }
 
 .well ul a {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .well ul a:hover {
-    color: #000;
+  color: #000;
 }
 
 /**
  * Category
  */
 .category-box {
-    font-weight: bold;
-    font-size: 16px;
+  font-weight: bold;
+  font-size: 16px;
 }
-
 
 /**
  * About
  */
 .about {
-    color: #333;
+  color: #333;
 }
 
 /**
  * Footer
  */
 .footer {
-    font-size: 11px;
-    text-align: center;
-    color: #333;
+  font-size: 11px;
+  text-align: center;
+  color: #333;
 }
 
 .centered_img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .PageNavigation a.navpost {
-    width: 50%;
-    float: left;
-    margin: 1em 0;
-    padding: 0px 5px;
-    box-sizing: border-box;
+  width: 50%;
+  float: left;
+  margin: 1em 0;
+  padding: 0px 5px;
+  box-sizing: border-box;
 }
 
 .PageNavigation .navpost .next {
-    text-align: right;
+  text-align: right;
 }
 
 .PageNavigation:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /**
   * Share icons
   */
 .share-buttons {
-    display: inline-block;
-    vertical-align: middle;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .share-buttons:after {
-    content: "";
-    display: block;
-    clear: both;
+  content: "";
+  display: block;
+  clear: both;
 }
 
-.share-buttons>div {
-    text-align: left;
-    height: 36px;
-    width: 32px;
-    float: left;
-    text-align: center;
+.share-buttons > div {
+  text-align: left;
+  height: 36px;
+  width: 32px;
+  float: left;
+  text-align: center;
 }
 
-.share-buttons>div>svg {
-    height: 16px;
-    fill: #d5d5d5;
-    margin-top: 10px;
+.share-buttons > div > svg {
+  height: 16px;
+  fill: #d5d5d5;
+  margin-top: 10px;
 }
 
-.share-buttons>div:hover {
-    cursor: pointer;
+.share-buttons > div:hover {
+  cursor: pointer;
 }
 
-.share-buttons>div.facebook:hover>svg {
-    fill: #3B5998;
+.share-buttons > div.facebook:hover > svg {
+  fill: #3b5998;
 }
 
-.share-buttons>div.twitter:hover>svg {
-    fill: #55ACEE;
+.share-buttons > div.twitter:hover > svg {
+  fill: #55acee;
 }
 
-.share-buttons>div.linkedin:hover>svg {
-    fill: #0077b5;
+.share-buttons > div.linkedin:hover > svg {
+  fill: #0077b5;
 }
 
-.share-buttons>div.mail:hover>svg {
-    fill: #7D7D7D;
+.share-buttons > div.mail:hover > svg {
+  fill: #7d7d7d;
 }
 
-.share-buttons>div.facebook>svg {
-    height: 18px;
-    margin-top: 9px;
+.share-buttons > div.facebook > svg {
+  height: 18px;
+  margin-top: 9px;
 }
 
-.share-buttons>div.twitter>svg {
-    height: 20px;
-    margin-top: 8px;
+.share-buttons > div.twitter > svg {
+  height: 20px;
+  margin-top: 8px;
 }
 
-.share-buttons>div.linkedin>svg {
-    height: 19px;
-    margin-top: 7px;
+.share-buttons > div.linkedin > svg {
+  height: 19px;
+  margin-top: 7px;
 }
 
-.share-buttons>div.mail>svg {
-    height: 14px;
-    margin-top: 11px;
+.share-buttons > div.mail > svg {
+  height: 14px;
+  margin-top: 11px;
+}
+
+/**
+ * Story intro box
+ */
+.story-intro {
+  background-color: #f9f9f9;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 20px 0;
+  font-style: italic;
+  text-align: center;
+  color: #555;
 }

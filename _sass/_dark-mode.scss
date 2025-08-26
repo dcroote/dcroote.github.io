@@ -7,38 +7,40 @@ body.dark-mode {
   }
 
   .wrapper {
-  	background-color: #2d2d2d;
+    background-color: #2d2d2d;
   }
-  
-  .post-list li a, .wrapper a {
-  	color: #4a9eff;
-    
+
+  .post-list li a,
+  .wrapper a {
+    color: #4a9eff;
+
     &:hover {
       color: #7fbfff;
     }
   }
 
   .post-list li h2 a {
-  	color: #b3deff;
+    color: #b3deff;
   }
-  
+
   .post-list li {
-  	border-bottom-color: #444;
+    border-bottom-color: #444;
   }
-  
+
   blockquote {
-  	color: #bbb;
-  	border-left-color: #444;
+    color: #bbb;
+    border-left-color: #444;
   }
-  
+
   .icon > svg path {
-  	fill: #bbb;
+    fill: #bbb;
   }
   .header {
     background-color: #454545;
   }
 
-  pre, code {
+  pre,
+  code {
     background-color: #2d2d2d;
     border-color: #7fbfff;
   }
@@ -46,7 +48,7 @@ body.dark-mode {
     color: #bbb;
   }
   .post-title {
-    color: #b3deff;  // Matching color for consistency
+    color: #b3deff; // Matching color for consistency
   }
 
   // Add these new styles for the table
@@ -55,7 +57,8 @@ body.dark-mode {
     border-color: #555;
   }
 
-  th, td {
+  th,
+  td {
     border-color: #555;
   }
 
@@ -90,6 +93,17 @@ body.dark-mode {
     background-color: #000419;
     color: var(--text-color, inherit);
   }
+
+  .story-intro {
+    background-color: #3a3a3a;
+    border: 2px solid #555;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px 0;
+    font-style: italic;
+    text-align: center;
+    color: #ccc;
+  }
 }
 
 #theme-toggle {
@@ -97,7 +111,7 @@ body.dark-mode {
   border: none;
   cursor: pointer;
   padding: 0;
-  color: #EEEEEE;
+  color: #eeeeee;
   margin-left: 40px;
   width: 17px;
   height: 17px;

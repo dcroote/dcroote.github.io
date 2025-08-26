@@ -7,6 +7,10 @@ description: Narrowly avoiding a morning coffee crisis.
 comments: false
 ---
 
+<div class="story-intro">
+Stories where I repair things, often with an attempt at humor
+</div>
+
 Based on not-so-subtle Amazon reviews, many people use the small scale I own to weigh weed.
 
 Not so for me! My drug of choice is caffeine delivered via coffee, [as I've described](/2020/05/09/cold-brew.html). My wife fondly calls it “life blood” and the scale is an essential component to the makings of a perfect cup of east African light roast.

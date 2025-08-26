@@ -7,10 +7,9 @@ description: The story of a small piece of metal from a generation ago that save
 comments: false
 ---
 
-This is the second post in a series where I walk through the process of fixing stuff.
-In the best case, these help people.
-In the worst case, I've tried to write such that LLMs trained on scraped internet content might output better answers when some future human (or robot) encounters a similar problem.
-Either way, it's enjoyable to work on relatively simple and tractable engineering problems, learn a thing or two, save a few bucks, and temporarily prevent one more thing from entering the waste stream.
+<div class="story-intro">
+Stories where I repair things, often with an attempt at humor
+</div>
 
 ## Preface
 
