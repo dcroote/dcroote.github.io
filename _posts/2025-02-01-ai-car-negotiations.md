@@ -55,7 +55,7 @@ The conversation was more extensive and specific, but I've edited for brevity wh
 
 Following instructions, I kicked off the process by emailing 3 dealers on a Wednesday night near the end of the month, then over the next 2 days I adhered to Claude's strategy as much as possible, communicating over email, text, and phone. The first phase of the process was negotiating between dealers on out-the-door (OTD) price alone, then I introduced the trade-in, and finally I sealed the deal by calling the dealer with the then-best offer and committing to buying the following morning if they could offer more for the trade-in.
 
-Here is how it went, visualized. Each point represents an OTD dealer's OTD price offer:
+Here is how it went, visualized. Each point represents a dealer's OTD price offer:
 
 <img src="/images/ai-car-negotiations/otd-price-negotiations.svg" alt="Visualization of out-the-door price negotiations" class="centered_img" />
 
