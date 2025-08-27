@@ -83,7 +83,7 @@ Create an ssh key for GitHub:
 - [starship](https://starship.rs/) - fast and useful prompt e.g. displays current git branch and Node version
 - [fzf](https://github.com/junegunn/fzf) - fast finding. I suggest installing with `git` since package manager versions can be quite outdated. Enable key bindings.
 - [ripgrep](https://github.com/BurntSushi/ripgrep) - rust alternative of `grep`, installed in command above
-- [zoxide](https://github.com/ajeetdsouza/zoxide) - avoid repeatedly typing ridiculous change directory commands like `cd ../../../../other/path/to/somewhere/else/i/usually/go`
+- [zoxide](https://github.com/ajeetdsouza/zoxide) - avoid repeatedly typing ridiculous change directory commands like `cd ../some/other/long/path`
 - [nvm](https://github.com/nvm-sh/nvm) - install and switch between multiple `node` environments seamlessly
 - [miniforge](https://github.com/conda-forge/miniforge) - python package manager without the environment solving issues. Bonus tip: use `mamba` instead of `conda`.
 - [My own vim preferences](https://github.com/dcroote/vimrc)
