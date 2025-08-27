@@ -41,8 +41,13 @@ body.dark-mode {
 
   pre,
   code {
-    background-color: #2d2d2d;
-    border-color: #7fbfff;
+    background-color: #404040 !important;
+    border-color: #404040;
+    color: #e0e0e0;
+  }
+
+  code {
+    color: #000;
   }
   .post-meta {
     color: #bbb;
