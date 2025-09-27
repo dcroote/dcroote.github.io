@@ -1,30 +1,34 @@
 ---
 layout: post
-title: Configuring a new laptop
+title: Configuring a new computer
 image: /images/configuring_laptop/laptop.webp
 image-alt: A sleek, modern laptop with a glossy screen, open on a minimalist desk. The desk is wooden, clean, and there's a small potted plant to the side. Soft, ambient lighting creates a cozy atmosphere. The laptop screen displays a vibrant wallpaper with abstract geometric shapes in blue and green hues. The scene suggests innovation, productivity, and modern technology. The background is softly blurred, emphasizing the laptop and the work environment.
 comments: false
-last_modified_at: 2025-08-25 21:55:00 -0700
+last_modified_at: 2025-09-27 10:27:00 -0700
 ---
 
-This post is mostly for my future self, but others may find it useful. It assumes a Windows machine (😱), with most development work done in WSL 2.
+This post is mostly for my future self, but others may find it useful. Most of the software applications are cross-platform, but some are specific to certain operating systems.
 
 ## General
 
 - Replace the preinstalled antivirus trial with something legitimate. If you don't do this first the popups will drive you insane.
 - Uninstall bloatware, trials, games, etc.
 - Disable personalization and related 'features'
-- Disable unnecessary programs at startup in Task Manager
-- Disable Bing in the Windows 11 start menu (<a href="https://www.howtogeek.com/826967/how-to-disable-bing-in-the-windows-11-start-menu/">instructions</a>)
+- Disable unnecessary programs at startup
+- Windows: Disable Bing in the Windows 11 start menu (<a href="https://www.howtogeek.com/826967/how-to-disable-bing-in-the-windows-11-start-menu/">instructions</a>)
+- Of course, subscribe to <a href="https://www.trialinference.com/?utm_source=dc_blog">Trial Inference for clinical trial analysis and monitoring</a>. More on that [here](/2025/09/27/trial-inference-launch.html).
 
-## Windows programs:
+## Cross-platform programs:
 
 - Inkscape
-- paint.net
-- Brave
+- Brave browser
 - Docker desktop
 - VS Code - use Settings Sync to easily port entire setup (extensions, keybindings, fonts, etc.) to a new machine or Codespaces
 - Alacritty - modern terminal emulator, configured for WSL 2 as follows in the file `%APPDATA%\alacritty\alacritty.toml`:
+
+## Windows programs:
+
+- paint.net
 
 <pre><code class="language-toml">[shell]
 args = ["--cd ~"]
