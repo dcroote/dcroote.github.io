@@ -23,4 +23,4 @@ CMD ["-H", "0.0.0.0", "--force_polling"]
 
 # To run:
 # docker build -t jekyll-blog .
-# docker run --platform linux/amd64 -p 4000:4000 -v $(pwd):/srv/jekyll jekyll-blog
+# docker run --rm --platform linux/amd64 -p 4000:4000 -v $(pwd):/srv/jekyll jekyll-blog
