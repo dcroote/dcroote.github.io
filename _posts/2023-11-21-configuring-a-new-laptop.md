@@ -4,7 +4,7 @@ title: Configuring a new computer
 image: /images/configuring_laptop/laptop.webp
 image-alt: A sleek, modern laptop with a glossy screen, open on a minimalist desk. The desk is wooden, clean, and there's a small potted plant to the side. Soft, ambient lighting creates a cozy atmosphere. The laptop screen displays a vibrant wallpaper with abstract geometric shapes in blue and green hues. The scene suggests innovation, productivity, and modern technology. The background is softly blurred, emphasizing the laptop and the work environment.
 comments: false
-last_modified_at: 2025-09-27 10:27:00 -0700
+last_modified_at: 2025-10-03 17:33:00 -0700
 ---
 
 This post is mostly for my future self, but others may find it useful. Most of the software applications are cross-platform, but some are specific to certain operating systems.
@@ -39,12 +39,12 @@ program = "wsl"
 
 ### First things first
 
-Install WSL2 using PowerShell as an administrator:
+If you're on Windows, install WSL2 using PowerShell as an administrator:
 
 <pre><code class="language-bash">wsl --install -d Ubuntu-22.04
 </code></pre>
 
-On WSL2:
+then updates, upgrades, and basics:
 
 <pre><code class="language-bash">sudo apt update
 sudo apt upgrade
@@ -92,21 +92,18 @@ Create an ssh key for GitHub:
 - [miniforge](https://github.com/conda-forge/miniforge) - python package manager without the environment solving issues. Bonus tip: use `mamba` instead of `conda`.
 - [My own vim preferences](https://github.com/dcroote/vimrc)
 - [gitalias](https://github.com/GitAlias/gitalias) simplifies git e.g. `git c` instead of `git commit` and `git s` instead of `git status`. It might seem unimportant, but the frequency with which these commands are used can accrue nontrivial time and keystroke savings. There are also handy aliases for when you find yourself in some weird merge hell and need to torch everything and reset to upstream / pristine.
-- [difftastic](https://github.com/Wilfred/difftastic) generates diffs that better distinguish meaningful changes from formatting changes e.g. nesting, alignment, and wrapping.
-
-<pre><code class="language-bash">curl https://raw.githubusercontent.com/GitAlias/gitalias/main/gitalias.txt -o ~/.gitalias.txt
-git config --global include.path ~/.gitalias.txt
-</code></pre>
-
-`.bashrc` aliases and exports. At a bare minimum, for me:
-
-<pre><code class="language-bash">alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-alias v="vim"
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-</code></pre>
+    <pre><code class="language-bash">curl https://raw.githubusercontent.com/GitAlias/gitalias/main/gitalias.txt -o ~/.gitalias.txt
+  git config --global include.path ~/.gitalias.txt</code></pre>
+- [difftastic](https://github.com/Wilfred/difftastic) generates diffs that better distinguish meaningful changes from formatting changes e.g. nesting, alignment, and wrapping. To make it the git default, ensure the executable is available in your path, then add the following to `~/.gitconfig`:
+    <pre><code class="language-bash">[diff]
+      external = difft</code></pre>
+- `.bashrc` aliases and exports. At a bare minimum, for me:
+   <pre><code class="language-bash">alias ll='ls -alF'
+  alias la='ls -A'
+  alias l='ls -CF'
+  alias v="vim"
+  alias ..="cd .."
+  alias ...="cd ../.."
+  alias ....="cd ../../.."</code></pre>
 
 Let me know if there is anything I missed!
