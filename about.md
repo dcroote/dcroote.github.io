@@ -19,6 +19,7 @@ Other profiles / ways to connect with me:
 Other resources I've built:
 
 <ul>
+  <li><a href="https://www.trialinference.com/?utm_source=dc_blog" target="_blank">Trial Inference</a> - a platform for clinical trial intelligence</li>
   <li><a href="https://www.allergenpeptidebrowser.org/" target="_blank">Allergen Peptide Browser</a> - database for facilitating allergen detection in food using mass spectrometry</li>
   <li><a href="https://github.com/dcroote/stanford-thesis-example/" target="_blank">Stanford LaTeX thesis template</a></li>
 </ul>
