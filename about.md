@@ -5,12 +5,14 @@ description: Find out more about Derek Croote as well as ways to connect.
 permalink: /about/
 ---
 
-<p>As Chief Technical Officer and co-founder of <a href="https://iggenix.com" target="_blank">IgGenix</a>, I am passionate about developing transformative therapies for individuals suffering from allergies. Our peanut allergy therapeutic, IGNX001, is currently being studied in a <a href="/2024/08/22/accelerate-website.html">Phase 1 clinical trial</a>.</p>
+<p>I am an action-oriented biotech executive, entrepreneur, and technical leader with responsibilities spanning management, corporate strategy, intellectual property, scientific communication, technology development, basic research, and software engineering, including bioinformatic pipeline development and AI implementations.
+
+<p>In my current role as co-founder and Chief Technical Officer of <a href="https://iggenix.com" target="_blank">IgGenix</a>, I am developing transformative therapies for individuals suffering from allergies. Our peanut allergy therapeutic, IGNX001, is currently being studied in a <a href="/2024/08/22/accelerate-website.html">Phase 1 clinical trial</a>.</p>
 
 Other profiles / ways to connect with me:
 
 <ul>
-  <li><a href="https://twitter.com/DerekCroote" target="_blank">Twitter</a></li>
+  <li><a href="https://x.com/DerekCroote" target="_blank">X (Twitter)</a></li>
   <li><a href="https://www.linkedin.com/in/dcroote" target="_blank">LinkedIn</a></li>
   <li><a href="https://scholar.google.com/citations?user=PevRGmgAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
   <li><a href="https://orcid.org/0000-0003-4907-1865" target="_blank">ORCID</a></li>
