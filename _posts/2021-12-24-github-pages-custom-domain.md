@@ -3,13 +3,13 @@ layout: post
 title: Quickly configure a Namecheap domain for GitHub Pages
 image: images/custom-domain/derekcroote-domain.png
 image-alt: www.derekcroote.com
-description: "I recently transitioned my site from GitHub's freely hosted github.io domain to https://www.derekcroote.com after seeing how quick and inexpensive it was for my sister to create a beautiful portfolio website. This short post walks through the process."
+description: "Simple tutorial on using a Namecheap domain with GitHub Pages."
 comments: false
-last_modified_at: 2025-03-16 15:38:00 -0700
+last_modified_at: 2025-10-13 10:05:00 -0700
 ---
 
-I recently transitioned my site from GitHub's freely hosted github.io domain to [https://www.derekcroote.com](https://www.derekcroote.com) after seeing how quick and inexpensive it was for my sister to create a <a href="https://www.denisecroote.com" target="_blank">beautiful portfolio website</a>.
-This short post walks through the process.
+I recently transitioned this site from GitHub's freely hosted github.io domain to [https://www.derekcroote.com](https://www.derekcroote.com), purchased on Namecheap, after seeing how quick and inexpensive it was for my sister to create a <a href="https://www.denisecroote.com" target="_blank">beautiful portfolio website</a>.
+This short post walks through the process of using a Namecheap domain with GitHub Pages.
 
 **Update**: I now have a separate blog post on [building and hosting a custom domain static website for free](/2023/08/18/website-cheaply.html) that uses Render for hosting rather than GitHub Pages because Render allows you more choice in the web app framework you use for static site generation, while still being free.
 
