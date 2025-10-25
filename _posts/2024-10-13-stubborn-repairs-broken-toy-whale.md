@@ -1,14 +1,15 @@
 ---
 layout: post
-title: Stubborn Repairs Ep 1 - Broken Toy Whale
-image: images/stubborn_repairs/ep1_broken_whale.webp
+title: Stubborn Problems Ep 1 - Broken Toy Whale
+image: images/stubborn_problems/ep1_broken_whale.webp
 image-alt: Fixing a broken toy whale that stopped spraying water
 description: The whale is a bath time favorite of my daughter- it flashes colors and sprays water into the air. One day, the whale stopped spraying.
 comments: false
+last_modified_at: 2025-10-25 15:13:00 -0700
 ---
 
 <div class="story-intro">
-Stories where I repair things, often with an attempt at humor
+Stories of problem solving, often with an attempt at humor.
 </div>
 
 ## Problem statement
@@ -28,7 +29,7 @@ Instead, I decided to take the whale apart to inspect the motor.
 Upon opening the toy whale the cause was immediately obvious, and it struck me how I've encountered this problem countless times before. I grew up on a lake overrun by seaweed that routinely clogged jet ski intakes and choked props.
 Here, in similar fashion, a wad of hair (pictured, lower left) had wound itself around the motor shaft.
 
-<img src="/images/stubborn_repairs/ep1_broken_whale.webp" alt="A wad of hair wound around the motor shaft of a toy whale, preventing it from spraying." class="centered_img" />
+<img src="/images/stubborn_problems/ep1_broken_whale.webp" alt="A wad of hair wound around the motor shaft of a toy whale, preventing it from spraying." class="centered_img" />
 
 ## Solution
 

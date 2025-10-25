@@ -1,17 +1,20 @@
 ---
 layout: post
-title: Stubborn Repairs Ep 4 - Invalid code
-image: images/stubborn_repairs/ep4_time.png
+title: Stubborn Problems Ep 4 - Invalid Code
+image: images/stubborn_problems/ep4_time.png
 image-alt: Clock with the time 00:04
 description: "A story of time and two-factor authentication."
 comments: false
+last_modified_at: 2025-10-25 15:13:00 -0700
 ---
 
 <div class="story-intro">
-Stories where I solve problems, often with an attempt at humor.
+Stories of problem solving, often with an attempt at humor.
 </div>
 
-"Invalid code." Wait what?? We just scanned the QR code and entered the six digit time-based one-time password (TOTP) from the service's "approved" authenticator app.
+"Invalid code."
+
+Wait what?? We just scanned the QR code and entered the six digit time-based one-time password (TOTP) from the service's "approved" authenticator app.
 
 I was trying to help a colleague with their two-factor authentication (2FA) and my expectations of a quick fix had suddenly vanished.
 
@@ -33,7 +36,7 @@ WAIT.
 
 I look at my phone. I look back at their phone. Their phone was 4 minutes off!!!
 
-<img src="/images/stubborn_repairs/ep4_time.png" width="200" height="104" alt="Clock with the time 00:04" class="centered_img" />
+<img src="/images/stubborn_problems/ep4_time.png" width="200" height="104" alt="Clock with the time 00:04" class="centered_img" />
 
 We discover in their phone's settings that somehow, for reasons unknown, their phone was no longer set to automatically update the date and time. Apparently, in the relatively short time since their travel, their phone's clock had diverged from the true time and, in doing so, generated codes that could never match the corresponding code on the service's servers.
 

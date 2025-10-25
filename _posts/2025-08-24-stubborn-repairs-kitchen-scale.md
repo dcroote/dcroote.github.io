@@ -1,17 +1,18 @@
 ---
 layout: post
-title: Stubborn Repairs Ep 3 - Kitchen Scale
-image: images/stubborn_repairs/ep3_kitchen_scale.png
+title: Stubborn Problems Ep 3 - Kitchen Scale
+image: images/stubborn_problems/ep3_kitchen_scale.png
 image-alt: Open back of a broken kitchen scale
 description: Narrowly avoiding a morning coffee crisis.
 comments: false
+last_modified_at: 2025-10-25 15:13:00 -0700
 ---
 
 <div class="story-intro">
-Stories where I repair things, often with an attempt at humor
+Stories of problem solving, often with an attempt at humor.
 </div>
 
-Based on not-so-subtle Amazon reviews, many people use the small scale I own to weigh weed.
+Based on not-so-subtle Amazon reviews, many people use the small scale I own to weigh a particular elicit substance.
 
 Not so for me! My drug of choice is caffeine delivered via coffee, [as I've described](/2020/05/09/cold-brew.html). My wife fondly calls it “life blood” and the scale is an essential component to the makings of a perfect cup of east African light roast.
 
@@ -25,7 +26,7 @@ But before submitting to the undoubtedly disastrous brew that would have resulte
 
 Inspecting carefully, I noticed one of the battery contacts had fouled. Some quick sanding later and it was alive. Crisis averted.
 
-<img src="/images/stubborn_repairs/ep3_kitchen_scale.png" width="400" height="464" alt="Open back of a broken kitchen scale" class="centered_img" />
+<img src="/images/stubborn_problems/ep3_kitchen_scale.png" width="400" height="464" alt="Open back of a broken kitchen scale" class="centered_img" />
 
 ### Footnotes
 

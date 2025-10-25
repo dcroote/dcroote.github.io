@@ -1,19 +1,20 @@
 ---
 layout: post
-title: Stubborn Repairs Ep 2 - Old Van
-image: images/stubborn_repairs/ep2_320k-mileage.jpg
+title: Stubborn Problems Ep 2 - Old Van
+image: images/stubborn_problems/ep2_320k-mileage.jpg
 image-alt: 320k miles on our rented camper van
 description: The story of a small piece of metal from a generation ago that saved our campervan vacation.
 comments: false
+last_modified_at: 2025-10-25 15:13:00 -0700
 ---
 
 <div class="story-intro">
-Stories where I repair things, often with an attempt at humor
+Stories of problem solving, often with an attempt at humor.
 </div>
 
 ## Preface
 
-This one isn't going where you might think it's going, and to be fair I'm stretching the definition of "repair" here. Perhaps it's more about "repairing" an imploding vacation.
+This one isn't going where you think it's going.
 
 ## Problem statement
 
@@ -51,7 +52,7 @@ So what was it?
 The solution was a metal <a href="https://www.oreillyauto.com/detail/c/dorman-help/hardware---fasteners/retaining-clips---connectors/hold-down-clips-clamps/115bcf9d8125/dorman-help-car-seat-retainer/mtm0/74356">car seat retainer</a>, also called a car seat locking clip, which is an ancient yet simple device that locks the shoulder and waist portions of the seat belt together.
 All it requires is all of one's strength while kneeling in the car seat in order to attach the clip with enough belt tension to hold the car seat securely.
 
-<img src="/images/stubborn_repairs/ep2_car-seat-locking-clip-instructions.jpg" width="600" height="793" alt="Car seat locking clip instruction sheet" class="centered_img" />
+<img src="/images/stubborn_problems/ep2_car-seat-locking-clip-instructions.jpg" width="600" height="793" alt="Car seat locking clip instruction sheet" class="centered_img" />
 
 It was functional, but still a colossal pain because we needed to repeatedly install and uninstall it to travel and lay the seats down for nap and sleep.
 
