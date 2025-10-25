@@ -14,11 +14,11 @@ Stories of problem solving, often with an attempt at humor.
 
 "Invalid code."
 
-Wait what?? We just scanned the QR code and entered the six digit time-based one-time password (TOTP) from the service's "approved" authenticator app.
+Wait what?? We just scanned the QR code and entered the six digit time-based one-time password (TOTP) from the authenticator app.
 
 I was trying to help a colleague with their two-factor authentication (2FA) and my expectations of a quick fix had suddenly vanished.
 
-We tried the next code. Same result.
+We try the next code. Same result.
 
 I try logging out and logging into the same service with my account, also using a TOTP. It worked fine, meaning the service’s 2FA flow was operational.
 
