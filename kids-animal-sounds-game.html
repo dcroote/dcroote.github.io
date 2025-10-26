@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <title>Animal Sounds Game</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: fixed;
+        touch-action: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #438f6e 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #shuffle-button {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 70px;
+        height: 70px;
+        background: rgba(255, 255, 255, 0.9);
+        border: 4px solid white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        cursor: pointer;
+        z-index: 1000;
+        touch-action: auto;
+        transition: all 0.3s;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      #shuffle-button:active {
+        transform: scale(0.9) rotate(180deg);
+        background: rgba(255, 255, 255, 1);
+      }
+
+      @media (max-width: 1024px) {
+        #shuffle-button {
+          width: 30px !important;
+          height: 30px !important;
+          top: 8px !important;
+          right: 8px !important;
+          font-size: 14px !important;
+          border: 2px solid white !important;
+        }
+      }
+
+      #game-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      .animal-box {
+        flex: 1;
+        max-width: 300px;
+        aspect-ratio: 1;
+        background: white;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s ease;
+        pointer-events: auto;
+        touch-action: auto;
+      }
+
+      .animal-box:active {
+        transform: scale(0.95);
+        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.4);
+      }
+
+      .animal-box.playing {
+        background-color: #90ee90;
+      }
+
+      .animal-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .animal-content img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        padding: 20px;
+      }
+
+      .animal-content.emoji {
+        font-size: 200px;
+      }
+
+      @media (max-width: 900px) {
+        #game-container {
+          gap: 50px;
+          padding: 15px;
+        }
+
+        .animal-box {
+          max-width: 250px;
+        }
+
+        .animal-content.emoji {
+          font-size: 300px;
+        }
+      }
+
+      @media (max-width: 500px) {
+        #game-container {
+          flex-direction: column;
+          gap: 20px;
+          padding: 10px;
+        }
+
+        .animal-box {
+          width: 60%;
+          max-width: 300px;
+        }
+
+        .animal-content.emoji {
+          font-size: 100px;
+        }
+      }
+
+      @media (max-height: 700px) and (min-width: 601px) {
+        .animal-box {
+          max-width: 160px;
+        }
+
+        .animal-content.emoji {
+          font-size: 140px;
+        }
+      }
+
+      /* Fullscreen styles */
+      .fullscreen-enter {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 12px 24px;
+        background: rgba(255, 255, 255, 0.9);
+        border: none;
+        border-radius: 20px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        z-index: 999;
+        touch-action: auto;
+      }
+
+      @media (max-width: 1024px) {
+        .fullscreen-enter {
+          right: 8px !important;
+          bottom: 8px !important;
+          padding: 4px 8px !important;
+          font-size: 9px !important;
+          border-radius: 8px !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="shuffle-button">🔀</div>
+
+    <div id="game-container">
+      <div class="animal-box" data-index="0">
+        <div class="animal-content"></div>
+      </div>
+      <div class="animal-box" data-index="1">
+        <div class="animal-content"></div>
+      </div>
+      <div class="animal-box" data-index="2">
+        <div class="animal-content"></div>
+      </div>
+    </div>
+
+    <script>
+      // Animal data structure
+      const animals = [
+        {
+          name: "cow",
+          sound: "/data/kids-animal-sounds-game/cow.wav",
+          emoji: "🐮",
+        },
+        {
+          name: "dog",
+          sound: "/data/kids-animal-sounds-game/dog.wav",
+          emoji: "🐕",
+        },
+        {
+          name: "cat",
+          sound: "/data/kids-animal-sounds-game/cat.wav",
+          emoji: "🐱",
+        },
+        {
+          name: "goose",
+          sound: "/data/kids-animal-sounds-game/goose.wav",
+          emoji: "🦢",
+        },
+        {
+          name: "rooster",
+          sound: "/data/kids-animal-sounds-game/rooster.wav",
+          emoji: "🐓",
+        },
+        {
+          name: "horse",
+          sound: "/data/kids-animal-sounds-game/horse.wav",
+          emoji: "🐴",
+        },
+        {
+          name: "lion",
+          sound: "/data/kids-animal-sounds-game/lion.wav",
+          emoji: "🦁",
+        },
+        {
+          name: "bird",
+          sound: "/data/kids-animal-sounds-game/bird.wav",
+          emoji: "🐦‍⬛",
+        },
+      ];
+
+      let currentAnimals = [null, null, null]; // Array to track 3 current animals
+      let audioElements = [null, null, null]; // Array to track audio for each box
+
+      // Get DOM elements
+      const shuffleButton = document.getElementById("shuffle-button");
+      const animalBoxes = document.querySelectorAll(".animal-box");
+
+      // Prevent all default touch behaviors on document
+      document.addEventListener(
+        "touchstart",
+        (e) => {
+          // Only allow touches on our specific interactive elements
+          if (
+            !e.target.closest(".animal-box") &&
+            !e.target.closest("#shuffle-button")
+          ) {
+            e.preventDefault();
+          }
+        },
+        { passive: false }
+      );
+
+      document.addEventListener(
+        "touchmove",
+        (e) => {
+          e.preventDefault();
+        },
+        { passive: false }
+      );
+
+      document.addEventListener(
+        "touchend",
+        (e) => {
+          if (
+            !e.target.closest(".animal-box") &&
+            !e.target.closest("#shuffle-button")
+          ) {
+            e.preventDefault();
+          }
+        },
+        { passive: false }
+      );
+
+      // Prevent scrolling and bouncing on iOS
+      document.addEventListener("gesturestart", (e) => {
+        e.preventDefault();
+      });
+
+      // Function to get 3 random unique animals
+      function getThreeRandomAnimals() {
+        const shuffled = [...animals].sort(() => Math.random() - 0.5);
+        return shuffled.slice(0, 3);
+      }
+
+      // Function to display animal in a specific box
+      function displayAnimal(animal, boxIndex) {
+        const animalBox = animalBoxes[boxIndex];
+        const animalContent = animalBox.querySelector(".animal-content");
+
+        currentAnimals[boxIndex] = animal;
+
+        animalContent.innerHTML = animal.emoji;
+        animalContent.classList.add("emoji");
+      }
+
+      // Function to play animal sound for a specific box
+      function playAnimalSound(boxIndex) {
+        const animal = currentAnimals[boxIndex];
+        if (!animal) return;
+
+        const animalBox = animalBoxes[boxIndex];
+
+        // Stop previous audio for this box if playing
+        if (audioElements[boxIndex]) {
+          audioElements[boxIndex].pause();
+          audioElements[boxIndex].currentTime = 0;
+        }
+
+        // Add playing class to turn background light green
+        animalBox.classList.add("playing");
+
+        // Try to play sound file
+        audioElements[boxIndex] = new Audio(animal.sound);
+
+        // When sound ends, fade back to white
+        audioElements[boxIndex].addEventListener("ended", () => {
+          animalBox.classList.remove("playing");
+        });
+
+        audioElements[boxIndex].play().catch((error) => {
+          console.log("Sound file not found or cannot play:", error);
+          // If sound doesn't play, still fade back after a short delay
+          setTimeout(() => {
+            animalBox.classList.remove("playing");
+          }, 1000);
+        });
+      }
+
+      // Initialize: Display 3 random animals
+      function initializeAnimals() {
+        const threeAnimals = getThreeRandomAnimals();
+        threeAnimals.forEach((animal, index) => {
+          displayAnimal(animal, index);
+        });
+      }
+
+      // Add click handlers to each animal box
+      animalBoxes.forEach((box, index) => {
+        // Touch handler
+        box.addEventListener(
+          "touchstart",
+          (e) => {
+            e.stopPropagation();
+            playAnimalSound(index);
+          },
+          { passive: true }
+        );
+
+        // Mouse click handler (for desktop testing)
+        box.addEventListener("click", (e) => {
+          e.stopPropagation();
+          playAnimalSound(index);
+        });
+      });
+
+      // Shuffle button handler
+      function handleShuffle(e) {
+        e.stopPropagation();
+
+        // Stop all currently playing audio and remove playing class
+        audioElements.forEach((audio, index) => {
+          if (audio) {
+            audio.pause();
+            audio.currentTime = 0;
+          }
+          animalBoxes[index].classList.remove("playing");
+        });
+
+        // Get 3 new random animals and display them
+        const threeAnimals = getThreeRandomAnimals();
+        threeAnimals.forEach((animal, index) => {
+          displayAnimal(animal, index);
+        });
+      }
+
+      shuffleButton.addEventListener("touchstart", handleShuffle, {
+        passive: true,
+      });
+      shuffleButton.addEventListener("click", handleShuffle);
+
+      // Optional: Fullscreen button
+      function addFullscreenButton() {
+        const fullscreenBtn = document.createElement("button");
+        fullscreenBtn.className = "fullscreen-enter";
+        fullscreenBtn.textContent = "📱 Fullscreen";
+        fullscreenBtn.style.pointerEvents = "auto";
+        fullscreenBtn.style.touchAction = "auto";
+
+        fullscreenBtn.addEventListener("click", () => {
+          const elem = document.documentElement;
+          if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+          } else if (elem.webkitRequestFullscreen) {
+            elem.webkitRequestFullscreen();
+          }
+          fullscreenBtn.remove();
+        });
+
+        document.body.appendChild(fullscreenBtn);
+      }
+
+      // Check if not in fullscreen on load
+      if (!document.fullscreenElement && !document.webkitFullscreenElement) {
+        addFullscreenButton();
+      }
+
+      // Initialize game with 3 random animals
+      initializeAnimals();
+    </script>
+  </body>
+</html>
