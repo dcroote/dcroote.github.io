@@ -170,7 +170,7 @@
         }
 
         .animal-content.emoji {
-          font-size: 140px;
+          font-size: 110px;
         }
       }
 
@@ -411,8 +411,15 @@
       });
       shuffleButton.addEventListener("click", handleShuffle);
 
-      // Optional: Fullscreen button
+      // Optional: Fullscreen button (desktop only)
       function addFullscreenButton() {
+        // Don't show fullscreen button on mobile devices
+        // Mobile browsers (especially iOS Safari) don't support the Fullscreen API
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        if (isMobile) {
+          return;
+        }
+
         const fullscreenBtn = document.createElement("button");
         fullscreenBtn.className = "fullscreen-enter";
         fullscreenBtn.textContent = "📱 Fullscreen";
