@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Interactive Animal Sounds Game for Kids
+title: Kids Animal Sounds Game
 image: images/kids-animal-sounds-game/kids-animal-sounds-game.png
-image-alt: Interactive animal sounds game for kids
+image-alt: Interactive kids animal sounds game
 description: 'The beauty here is not that AI could build a kids game, though a mere 6 years ago this would have been unimaginable, but rather that AI increasingly moves us from "yes, I could build this, but I don''t really want to spend the time" to the existence of something new and useful.'
 comments: false
 ---
@@ -17,7 +17,7 @@ I would like to build a very simple kids web app game that works on a mobile web
 
 After a round of "user testing," the final version of the <a href="https://www.derekcroote.com/kids-animal-sounds-game.html">kids animal sounds game</a> features a single screen of 3 animals, a small shuffle button in the corner, and a color effect accompanying the sound for when an animal is clicked. Importantly, any click (or thumb hold) outside of the animal icon is ignored and doesn't prevent recognition of an animal being appropriately clicked.
 
-<a href="/kids-animal-sounds-game.html"><img src="/images/kids-animal-sounds-game/kids-animal-sounds-game.png" width="1200" height="630" alt="Interactive animal sounds game for kids" /></a>
+<a href="/kids-animal-sounds-game.html"><img src="/images/kids-animal-sounds-game/kids-animal-sounds-game.png" width="1200" height="630" alt="Interactive kids animal sounds game" /></a>
 
 It's worth mentioning a few characteristics that make this a great vibe coding project:
 
