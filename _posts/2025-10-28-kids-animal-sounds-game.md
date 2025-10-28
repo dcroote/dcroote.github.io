@@ -7,7 +7,7 @@ description: 'The beauty here is not that AI could build a kids game, though a m
 comments: false
 ---
 
-My daughter likes to play an online animal sounds game, but she gets frustrated by a few aspects of its particular implementation: there are too many animals on a given screen and any touch that isn't perfectly on an animal causes the screen to haphazardly scroll horizontally and/or vertically. It also isn't great on mobile because if she holds the phone with one hand and her thumb accidentally touches the screen, it either scrolls or prevents correct clicks from being recognized.
+My daughter likes to play an online animal sounds game, but she gets frustrated by a few aspects of its implementation: there are too many animals on a given screen and any touch that isn't perfectly on an animal causes the screen to haphazardly scroll horizontally and/or vertically. It also isn't great on mobile because if she holds the phone with one hand and her thumb accidentally touches the screen, it either scrolls or prevents correct clicks from being recognized.
 
 I thought it would be fun to make a version better suited to her, so I vibe coded<sup>1</sup> one with AI. The specifics aren't particularly important as I'm confident any decent contemporary large language model (LLM) could do it, but for completeness I used Claude 4.5 Sonnet in Cursor. Combining the relatively low effort starting prompt below with free <a href="https://pixabay.com/sound-effects/search/eagle/" target="_blank">pixabay</a> and <a href="https://mixkit.co/free-sound-effects/animals/" target="_blank">mixkit.co</a> animal sounds, I had a working prototype comprising a single HTML file and some javascript in about a half hour. I didn't even need images for the animals as emojis sufficed.
 
