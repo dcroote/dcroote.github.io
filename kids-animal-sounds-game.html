@@ -326,6 +326,7 @@
 
       let currentAnimals = [null, null, null]; // Array to track 3 current animals
       let audioElements = [null, null, null]; // Array to track audio for each box
+      let isPlaying = false; // Global flag to track if any sound is playing
 
       const shuffleButton = document.getElementById("shuffle-button");
       const animalBoxes = document.querySelectorAll(".animal-box");
@@ -392,6 +393,9 @@
         const animal = currentAnimals[boxIndex];
         if (!animal) return;
 
+        // Block if any sound is already playing
+        if (isPlaying) return;
+
         const animalBox = animalBoxes[boxIndex];
 
         // Stop previous audio for this box if playing
@@ -400,15 +404,19 @@
           audioElements[boxIndex].currentTime = 0;
         }
 
+        // Set global playing flag
+        isPlaying = true;
+
         // Add playing class to turn background light green
         animalBox.classList.add("playing");
 
         // Try to play sound file
         audioElements[boxIndex] = new Audio(animal.sound);
 
-        // When sound ends, fade back to white
+        // When sound ends, fade back to white and clear playing flag
         audioElements[boxIndex].addEventListener("ended", () => {
           animalBox.classList.remove("playing");
+          isPlaying = false;
         });
 
         audioElements[boxIndex].play().catch((error) => {
@@ -416,6 +424,7 @@
           // If sound doesn't play, still fade back after a short delay
           setTimeout(() => {
             animalBox.classList.remove("playing");
+            isPlaying = false;
           }, 1000);
         });
       }
@@ -457,6 +466,8 @@
           }
           animalBoxes[index].classList.remove("playing");
         });
+
+        isPlaying = false;
 
         // Get 3 new random animals and display them
         const threeAnimals = getThreeRandomAnimals();
