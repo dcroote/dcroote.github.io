@@ -8,7 +8,72 @@
     />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
-    <title>Animal Sounds Game</title>
+
+    <title>Interactive Animal Sounds Game for Kids</title>
+    <meta
+      name="description"
+      content="A fun, interactive animal sounds game for toddlers and young children. Tap to hear real animal sounds from cows, dogs, cats, birds, and more. Perfect for early learning and education."
+    />
+    <meta
+      name="keywords"
+      content="animal sounds, kids game, toddler game, educational game, animal sounds for kids, learning game, interactive game, children's app, preschool game"
+    />
+    <meta name="author" content="Derek Croote" />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="canonical"
+      href="https://www.derekcroote.com/kids-animal-sounds-game.html"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.derekcroote.com/kids-animal-sounds-game.html"
+    />
+    <meta
+      property="og:title"
+      content="Interactive Animal Sounds Game for Kids"
+    />
+    <meta
+      property="og:description"
+      content="A fun, interactive animal sounds game for toddlers and young children. Tap to hear real animal sounds from cows, dogs, cats, birds, and more."
+    />
+    <meta property="og:site_name" content="Blog by Derek Croote" />
+    <meta property="og:locale" content="en_US" />
+    <meta
+      property="og:image"
+      content="https://www.derekcroote.com/images/kids-animal-sounds-game/kids-animal-sounds-game.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Animal sounds game with animal emojis"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:url"
+      content="https://www.derekcroote.com/kids-animal-sounds-game.html"
+    />
+    <meta
+      name="twitter:title"
+      content="Interactive Animal Sounds Game for Kids"
+    />
+    <meta
+      name="twitter:description"
+      content="A fun, interactive animal sounds game for toddlers and young children. Tap to hear real animal sounds from cows, dogs, cats, birds, and more."
+    />
+    <meta name="twitter:creator" content="@DerekCroote" />
+    <meta
+      name="twitter:image"
+      content="https://www.derekcroote.com/images/kids-animal-sounds-game/kids-animal-sounds-game.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Animal sounds game with animal emojis"
+    />
+
     <style>
       * {
         margin: 0;
@@ -174,7 +239,6 @@
         }
       }
 
-      /* Fullscreen styles */
       .fullscreen-enter {
         position: fixed;
         bottom: 20px;
@@ -217,7 +281,6 @@
     </div>
 
     <script>
-      // Animal data structure
       const animals = [
         {
           name: "cow",
@@ -264,7 +327,6 @@
       let currentAnimals = [null, null, null]; // Array to track 3 current animals
       let audioElements = [null, null, null]; // Array to track audio for each box
 
-      // Get DOM elements
       const shuffleButton = document.getElementById("shuffle-button");
       const animalBoxes = document.querySelectorAll(".animal-box");
 
@@ -326,7 +388,6 @@
         animalContent.classList.add("emoji");
       }
 
-      // Function to play animal sound for a specific box
       function playAnimalSound(boxIndex) {
         const animal = currentAnimals[boxIndex];
         if (!animal) return;
@@ -359,7 +420,6 @@
         });
       }
 
-      // Initialize: Display 3 random animals
       function initializeAnimals() {
         const threeAnimals = getThreeRandomAnimals();
         threeAnimals.forEach((animal, index) => {
@@ -386,7 +446,6 @@
         });
       });
 
-      // Shuffle button handler
       function handleShuffle(e) {
         e.stopPropagation();
 
@@ -411,7 +470,6 @@
       });
       shuffleButton.addEventListener("click", handleShuffle);
 
-      // Optional: Fullscreen button (desktop only)
       function addFullscreenButton() {
         // Don't show fullscreen button on mobile devices
         // Mobile browsers (especially iOS Safari) don't support the Fullscreen API
@@ -439,12 +497,10 @@
         document.body.appendChild(fullscreenBtn);
       }
 
-      // Check if not in fullscreen on load
       if (!document.fullscreenElement && !document.webkitFullscreenElement) {
         addFullscreenButton();
       }
 
-      // Initialize game with 3 random animals
       initializeAnimals();
     </script>
   </body>
