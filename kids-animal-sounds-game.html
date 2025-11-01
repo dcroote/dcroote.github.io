@@ -8,6 +8,8 @@
     />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#667eea" />
+    <link rel="manifest" href="/manifest.json" />
 
     <title>Interactive Animal Sounds Game for Kids</title>
     <meta
@@ -513,6 +515,20 @@
       }
 
       initializeAnimals();
+
+      // Register Service Worker for PWA functionality
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("/sw.js")
+            .then((registration) => {
+              console.log("ServiceWorker registered:", registration.scope);
+            })
+            .catch((error) => {
+              console.log("ServiceWorker registration failed:", error);
+            });
+        });
+      }
     </script>
   </body>
 </html>

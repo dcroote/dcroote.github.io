@@ -17,7 +17,7 @@ description: Perspectives on science, technology, and engineering.
 # Build settings
 markdown: kramdown
 
-include: [".well-known"]
+include: [".well-known", "manifest.json", "sw.js"]
 
 plugins:
   - jekyll-sitemap

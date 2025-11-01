@@ -1,0 +1,27 @@
+{
+  "name": "Animal Sounds Game for Kids",
+  "short_name": "Animal Sounds",
+  "description": "A fun, interactive animal sounds game for toddlers and young children. Tap to hear real animal sounds!",
+  "start_url": "/kids-animal-sounds-game.html",
+  "display": "standalone",
+  "background_color": "#667eea",
+  "theme_color": "#667eea",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/images/kids-animal-sounds-game/kids-animal-sounds-game.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/kids-animal-sounds-game/kids-animal-sounds-game.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["games", "education", "kids"],
+  "scope": "/",
+  "prefer_related_applications": false
+}
