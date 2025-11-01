@@ -5,6 +5,7 @@ image: images/kids-animal-sounds-game/kids-animal-sounds-game.png
 image-alt: Interactive kids animal sounds game
 description: 'The beauty here is not that AI could build a kids game, though a mere 6 years ago this would have been unimaginable, but rather that AI increasingly moves us from "yes, I could build this, but I don''t really want to spend the time" to the existence of something new and useful.'
 comments: false
+last_modified_at: 2025-11-01 15:38:00 -0700
 ---
 
 My daughter likes to play an online animal sounds game, but she gets frustrated by a few aspects of its implementation: there are too many animals on a given screen and any touch that isn't perfectly on an animal causes the screen to haphazardly scroll horizontally and/or vertically. It also isn't great on mobile because if she holds the phone with one hand and her thumb accidentally touches the screen, it either scrolls or prevents correct clicks from being recognized.
@@ -18,6 +19,8 @@ I would like to build a very simple kids web app game that works on a mobile web
 After a round of "user testing," the final version of the <a href="https://www.derekcroote.com/kids-animal-sounds-game.html">kids animal sounds game</a> features a single screen of 3 animals, a small shuffle button in the corner, and a color effect accompanying the sound for when an animal is clicked. Importantly, any click (or thumb hold) outside of the animal icon is ignored and doesn't prevent recognition of an animal being appropriately clicked.
 
 <a href="/kids-animal-sounds-game.html"><img src="/images/kids-animal-sounds-game/kids-animal-sounds-game.png" width="1200" height="630" alt="Interactive kids animal sounds game" /></a>
+
+<span style="text-decoration:underline;">\*Update\*</span>: the game can now be played fullscreen on Android, rather than simply within a browser tab; this helps to prevent errant clicks on other browser buttons when it's being played. To save it, simply open the game in a web browser, click Options (3 dot button), click "Add to Home screen", then when prompted, click "Install" rather than "Create shortcut". Nothing is actually "installed" in the typical app store sense, rather this is how a progressive web app functions.
 
 It's worth mentioning a few characteristics that make this a great vibe coding project:
 
