@@ -20,7 +20,7 @@ After a round of "user testing," the final version of the <a href="https://www.d
 
 <a href="/kids-animal-sounds-game.html"><img src="/images/kids-animal-sounds-game/kids-animal-sounds-game.png" width="1200" height="630" alt="Interactive kids animal sounds game" /></a>
 
-<span style="text-decoration:underline;">\*Update\*</span>: the game can now be played fullscreen on Android, rather than simply within a browser tab; this helps to prevent errant clicks on other browser buttons when it's being played. To save it, simply open the game in a web browser, click Options (3 dot button), click "Add to Home screen", then when prompted, click "Install" rather than "Create shortcut". Nothing is actually "installed" in the typical app store sense, rather this is how a progressive web app functions.
+<span style="text-decoration:underline;">\*Update\*</span>: the game can now be played fullscreen on Android, rather than simply within a browser tab; this helps to prevent errant clicks on other browser buttons when it's being played. Simply open the game in a web browser, click Options (3 dot button), click "Add to Home screen", then when prompted, click "Install" rather than "Create shortcut". Nothing is actually "installed" in the typical app store sense, rather this is how a progressive web app functions. The GitHub commit for how I (Claude) implemented this is <a href="https://github.com/dcroote/dcroote.github.io/commit/f990686aefcbbee6dce98d5042b46dbde2ee3c84">here</a>.
 
 It's worth mentioning a few characteristics that make this a great vibe coding project:
 
