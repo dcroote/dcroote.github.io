@@ -4,7 +4,7 @@ title: Configuring a new computer
 image: /images/configuring_laptop/laptop.webp
 image-alt: A sleek, modern laptop with a glossy screen, open on a minimalist desk. The desk is wooden, clean, and there's a small potted plant to the side. Soft, ambient lighting creates a cozy atmosphere. The laptop screen displays a vibrant wallpaper with abstract geometric shapes in blue and green hues. The scene suggests innovation, productivity, and modern technology. The background is softly blurred, emphasizing the laptop and the work environment.
 comments: false
-last_modified_at: 2025-10-03 17:33:00 -0700
+last_modified_at: 2025-12-14 15:19:00 -0700
 ---
 
 This post is mostly for my future self, but others may find it useful. Most of the software applications are cross-platform, but some are specific to certain operating systems.
@@ -77,6 +77,11 @@ Now use signing key from above command:
 <pre><code class="language-bash">git config --global user.signingkey <16 character key>
 </code></pre>
 
+To add the key to GitHub:
+
+<pre><code class="language-bash">gpg --armor --export <16 character key>
+</code></pre>
+
 Create an ssh key for GitHub:
 
 <pre><code class="language-bash">ssh-keygen -t ed25519 -C "github_username@users.noreply.github.com"
@@ -86,6 +91,8 @@ Create an ssh key for GitHub:
 
 - [starship](https://starship.rs/) - fast and useful prompt e.g. displays current git branch and Node version
 - [fzf](https://github.com/junegunn/fzf) - fast finding. I suggest installing with `git` since package manager versions can be quite outdated. Enable key bindings.
+  <pre><code class="language-bash">git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install</code></pre>
 - [ripgrep](https://github.com/BurntSushi/ripgrep) - rust alternative of `grep`, installed in command above
 - [zoxide](https://github.com/ajeetdsouza/zoxide) - avoid repeatedly typing ridiculous change directory commands like `cd ../some/other/long/path`
 - [nvm](https://github.com/nvm-sh/nvm) - install and switch between multiple `node` environments seamlessly
@@ -104,6 +111,9 @@ Create an ssh key for GitHub:
   alias v="vim"
   alias ..="cd .."
   alias ...="cd ../.."
-  alias ....="cd ../../.."</code></pre>
+  alias ....="cd ../../.."
+  # fix WSL directory colors
+  export LS_COLORS=$LS_COLORS:'ow=01;36:'
+</code></pre>
 
 Let me know if there is anything I missed!
