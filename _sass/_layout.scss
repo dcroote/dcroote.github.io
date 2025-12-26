@@ -311,3 +311,64 @@ li {
   text-align: center;
   color: #555;
 }
+
+/**
+ * Image Modal
+ */
+.image-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+}
+
+.image-modal-content {
+  margin: auto;
+  display: block;
+  width: 90%;
+  max-height: 90vh;
+  object-fit: contain;
+  animation-name: zoom;
+  animation-duration: 0.3s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.image-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.image-modal-close:hover,
+.image-modal-close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .image-modal-content {
+    width: 100%;
+  }
+}
