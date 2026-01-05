@@ -27,12 +27,13 @@ In the holiday spirit, I will donate $50 to the charity of choice for the first 
   height="1149"
   onclick="openImageModal(this.src)"
   style="cursor: zoom-in"
+  alt="A screenshot of the IgGenix SEQ SIFTER slide with a hidden message."
 />
 <br />
 
 <div id="image-modal" class="image-modal" onclick="this.style.display='none'">
   <span class="image-modal-close">&times;</span>
-  <img class="image-modal-content" id="image-modal-img" />
+  <img class="image-modal-content" id="image-modal-img" alt="An enlarged screenshot of the IgGenix SEQ SIFTER slide with a hidden message." />
 </div>
 
 To check your answer, type it in the box below (case insensitive). And don't be tempted to cheat by looking at this page's source code— I compare salted hashes rather than hardcode the plaintext answer (salted to avoid <a href="https://proton.me/blog/what-is-rainbow-table-attack" target="_blank">rainbow table attacks</a>).
