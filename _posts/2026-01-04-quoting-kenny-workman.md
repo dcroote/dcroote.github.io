@@ -3,7 +3,7 @@ layout: post
 title: Quoting Kenny Workman on Harness Design
 image: images/quoting-kenny-workman/harness-comparison.jpeg
 image-alt: A chart depicting the impact of harness design on SpatialBench benchmark scores.
-description: The impact of harness design on spatial biology benchmark scores is striking.
+description: The impact of harness design on spatial biology benchmark scores is striking and suggests we're early in optimizing AI model performance on biological tasks.
 comments: false
 ---
 
