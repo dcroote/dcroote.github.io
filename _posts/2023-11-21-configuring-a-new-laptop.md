@@ -4,7 +4,7 @@ title: Configuring a new computer
 image: /images/configuring_laptop/laptop.webp
 image-alt: A sleek, modern laptop with a glossy screen, open on a minimalist desk. The desk is wooden, clean, and there's a small potted plant to the side. Soft, ambient lighting creates a cozy atmosphere. The laptop screen displays a vibrant wallpaper with abstract geometric shapes in blue and green hues. The scene suggests innovation, productivity, and modern technology. The background is softly blurred, emphasizing the laptop and the work environment.
 comments: false
-last_modified_at: 2025-12-14 15:19:00 -0700
+last_modified_at: 2026-01-21 08:47:00 -0700
 tags: [software]
 ---
 
@@ -26,6 +26,10 @@ This post is mostly for my future self, but others may find it useful. Most of t
 - Docker desktop
 - VS Code - use Settings Sync to easily port entire setup (extensions, keybindings, fonts, etc.) to a new machine or Codespaces
 - Alacritty - modern terminal emulator, configured for WSL 2 as follows in the file `%APPDATA%\alacritty\alacritty.toml`:
+
+## Mac programs:
+
+- Rectangle - window management
 
 ## Windows programs:
 
