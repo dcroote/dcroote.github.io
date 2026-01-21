@@ -6,6 +6,7 @@ image-alt:
 description: "A message has been hidden for years in an IgGenix slide- care for a challenge in finding it?"
 comments: false
 last_modified_at: 2025-12-28 15:38:00 -0700
+tags: [biotech]
 ---
 
 I recently held a challenge on LinkedIn: I would donate $50 to the charity of choice for the first person to find the message hidden in an IgGenix slide. It ended a lot faster than I thought— just ten minutes after posting, with the donation going to Doctors Without Borders— but if you'd like to give it a try, I've copied the post and image below, after which you can check if you're right. Click the image to zoom in.

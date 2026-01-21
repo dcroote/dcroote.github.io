@@ -6,6 +6,7 @@ image-alt: 320k miles on our rented camper van
 description: The story of a small piece of metal from a generation ago that saved our campervan vacation.
 comments: false
 last_modified_at: 2025-10-25 15:13:00 -0700
+tags: [stubborn problems]
 ---
 
 <div class="story-intro">

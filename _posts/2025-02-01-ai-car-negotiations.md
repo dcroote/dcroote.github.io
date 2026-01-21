@@ -6,6 +6,7 @@ image-alt: Visualization of out-the-door price negotiations
 last_modified_at: 2025-02-01 17:00:00 -0700
 comments: false
 description: Leverage AI to craft and deploy a strategic step-by-step car buying negotiation plan that saved us over $4,000 on a new hybrid SUV.
+tags: [AI]
 ---
 
 We loved our 2011 Subaru Forester, but recently driving various rentals made us realize how far cars had come. My wife felt heated steering and it was game over.

@@ -13,6 +13,7 @@ layout: default
         >{{ post.date | date: "%b %-d, %Y" }} {% if post.last_modified_at %} &nbsp; | &nbsp; Last updated: {{
         post.last_modified_at | date: "%b %-d, %Y" }} {% endif %}
       </span>
+      {% include tag-list.html tags=post.tags show_label=true %}
       <div class="content">
         {% if post.description %} {{ post.description }} {% else %} {{ post.excerpt }} {% endif %} {% if post.image %}
         <div class="post-img">

@@ -6,6 +6,7 @@ image-alt: Clock with the time 00:04
 description: "A story of time and two-factor authentication."
 comments: false
 last_modified_at: 2025-10-25 15:13:00 -0700
+tags: [stubborn problems, software]
 ---
 
 <div class="story-intro">

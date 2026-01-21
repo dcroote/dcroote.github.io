@@ -6,6 +6,7 @@ image-alt: Vector illustration of the outline of two credit cards
 last_modified_at: 2024-04-25 22:12:00 -0700
 comments: false
 description: A practical guide to maximizing credit card rewards with just two cards. Learn how prioritizing simplicity and profitability can optimize your cashback without the complexity of points systems.
+tags: [finance]
 ---
 
 The allure of quantitative analysis almost led me into a career in finance instead of biotech, and while I don't regret that road not taken, I still enjoy the occasional foray.

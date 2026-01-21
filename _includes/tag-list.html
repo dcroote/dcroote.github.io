@@ -1,0 +1,17 @@
+{% comment %}
+Renders a list of tag "pills".
+Usage: {% include tag-list.html tags=page.tags %}
+{% endcomment %}
+
+{% assign tags = include.tags %}
+{% assign show_label = include.show_label %}
+{% if tags and tags.size > 0 %}
+<div class="tag-list" aria-label="Tags">
+  {% if show_label %}
+  <span class="tag-label">Tags:</span>
+  {% endif %}
+  {% for tag in tags %}
+  <a class="tag-pill" href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}">{{ tag }}</a>
+  {% endfor %}
+</div>
+{% endif %}

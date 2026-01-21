@@ -115,6 +115,71 @@ li {
   margin-bottom: 1.5em;
 }
 
+.tag-list,
+.tag-index {
+  margin-top: 0.6em;
+}
+
+.post-list .post-meta {
+  display: inline;
+  margin-bottom: 0;
+}
+
+.post-list .tag-list {
+  display: inline-block;
+  margin-left: 6px;
+}
+
+.post-content .tag-list {
+  display: inline-block;
+}
+
+.tag-list .tag-label {
+  display: none;
+  margin-right: 6px;
+  color: #333;
+}
+
+.post-content .tag-list .tag-label {
+  display: inline;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .post-list .post-meta {
+    display: block;
+    margin-bottom: 0.4em;
+  }
+
+  .post-list .tag-list {
+    display: block;
+    margin-left: 0;
+  }
+
+  .post-list .tag-list .tag-label {
+    display: inline;
+  }
+}
+
+.tag-pill {
+  display: inline-block;
+  margin: 0 0.35em 0.35em 0;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid #d7d7d7;
+  background: #f4f4f4;
+  color: #486391;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+
+.tag-pill:hover {
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
 .content {
   margin-top: 20px;
   color: #333;
@@ -244,7 +309,7 @@ li {
   clear: both;
 }
 
-.share-buttons > div {
+.share-buttons>div {
   text-align: left;
   height: 36px;
   width: 32px;
@@ -252,48 +317,48 @@ li {
   text-align: center;
 }
 
-.share-buttons > div > svg {
+.share-buttons>div>svg {
   height: 16px;
   fill: #d5d5d5;
   margin-top: 10px;
 }
 
-.share-buttons > div:hover {
+.share-buttons>div:hover {
   cursor: pointer;
 }
 
-.share-buttons > div.facebook:hover > svg {
+.share-buttons>div.facebook:hover>svg {
   fill: #3b5998;
 }
 
-.share-buttons > div.twitter:hover > svg {
+.share-buttons>div.twitter:hover>svg {
   fill: #55acee;
 }
 
-.share-buttons > div.linkedin:hover > svg {
+.share-buttons>div.linkedin:hover>svg {
   fill: #0077b5;
 }
 
-.share-buttons > div.mail:hover > svg {
+.share-buttons>div.mail:hover>svg {
   fill: #7d7d7d;
 }
 
-.share-buttons > div.facebook > svg {
+.share-buttons>div.facebook>svg {
   height: 18px;
   margin-top: 9px;
 }
 
-.share-buttons > div.twitter > svg {
+.share-buttons>div.twitter>svg {
   height: 20px;
   margin-top: 8px;
 }
 
-.share-buttons > div.linkedin > svg {
+.share-buttons>div.linkedin>svg {
   height: 19px;
   margin-top: 7px;
 }
 
-.share-buttons > div.mail > svg {
+.share-buttons>div.mail>svg {
   height: 14px;
   margin-top: 11px;
 }
@@ -344,6 +409,7 @@ li {
     transform: scale(0.7);
     opacity: 0;
   }
+
   to {
     transform: scale(1);
     opacity: 1;

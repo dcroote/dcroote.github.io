@@ -6,6 +6,7 @@ image-alt: "Illustration of the letters AI. Prompt: minimalist logo with the let
 description: "Artificial intelligence is evolving to be simultaneously feared, celebrated, expensive, inexpensive, specialized, general, larger, smaller, isolated, connected, regulated, open, structured, and creative."
 comments: false
 last_modified_at: 2024-09-13 16:10:00 -0700
+tags: [AI]
 ---
 
 Artificial intelligence is evolving in seemingly contradictory directions because it's simultaneously:

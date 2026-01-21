@@ -6,6 +6,7 @@ image-alt: www.derekcroote.com
 description: "Simple tutorial on using a Namecheap domain with GitHub Pages."
 comments: false
 last_modified_at: 2025-10-13 10:05:00 -0700
+tags: [software]
 ---
 
 I recently transitioned this site from GitHub's freely hosted github.io domain to [https://www.derekcroote.com](https://www.derekcroote.com), purchased on Namecheap, after seeing how quick and inexpensive it was for my sister to create a <a href="https://www.denisecroote.com" target="_blank">beautiful portfolio website</a>.

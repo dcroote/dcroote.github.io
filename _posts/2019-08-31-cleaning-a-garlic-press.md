@@ -5,6 +5,7 @@ image: images/garlic_press/cad_combined.png
 image-alt: CAD models of garlic press cleaner
 last_modified_at: 2022-01-11 17:30:41 -0800
 comments: false
+tags: [engineering, software]
 ---
 
 I have a cheap garlic press, which means that after each use garlic is stuck in seemingly every one of its 63 holes. The faucet water pressure is insufficient to free the garlic and I am left with the unsatisfactory process of poking garlic free with a toothpick. This is obviously an irritating problem that needs solving.

@@ -56,6 +56,16 @@ body.dark-mode {
     color: #b3deff; // Matching color for consistency
   }
 
+  .tag-pill {
+    border-color: #555;
+    background: #3a3a3a;
+    color: #b3deff;
+  }
+
+  .tag-pill:hover {
+    opacity: 0.95;
+  }
+
   // Add these new styles for the table
   table {
     color: #f0f0f0;

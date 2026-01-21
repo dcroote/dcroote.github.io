@@ -6,6 +6,7 @@ image-alt: First two pages of the children's book Froggy's Grand Adventure by De
 description: Create and print your own children's board book with AI and Shutterfly
 last_modified_at: 2025-05-04 13:31:00 -0700
 comments: false
+tags: [AI]
 ---
 
 <script src="/scripts/page-flip.browser.js"></script>

@@ -6,6 +6,7 @@ image-alt: Trial Inference - Replace protracted ClinicalTrials.gov research with
 description: The best products are built by those who have the need themselves, and this is one very personal example. Introducing a platform for clinical intelligence - Trial Inference.
 comments: false
 last_modified_at: 2025-09-29 08:27:00 -0700
+tags: [biotech, software]
 ---
 
 The best products are built by those who have the need themselves, and this is one very personal example.

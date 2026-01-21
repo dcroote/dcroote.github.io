@@ -11,9 +11,8 @@ layout: default
       <br />
       {% include reading-time.html %} &nbsp; | &nbsp; {% include share-buttons.html %} {% if page.discuss_on_twitter %}
       <br />
-      <span style="background: #eeeeee; border-radius: 5px; padding: 7px"
-        ><a href="{{ page.discuss_on_twitter }}" target="_blank">Discuss on twitter</a></span
-      >
+      <span style="background: #eeeeee; border-radius: 5px; padding: 7px"><a href="{{ page.discuss_on_twitter }}"
+          target="_blank">Discuss on twitter</a></span>
       {% endif %}
     </div>
   </header>
@@ -21,29 +20,21 @@ layout: default
   <article class="post-content">
     {{ content }} {% include share-buttons.html %}
 
-    <p
-      xmlns:dct="http://purl.org/dc/terms/"
-      xmlns:cc="http://creativecommons.org/ns#"
-      class="license-text"
-      style="text-align: center; margin-top: 1em"
-    >
+    <br />
+    {% include tag-list.html tags=page.tags show_label=true %}
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text"
+      style="text-align: center; margin-top: 1em">
       This work by
-      <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.derekcroote.com"
-        >Derek Croote</a
-      >
+      <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.derekcroote.com">Derek
+        Croote</a>
       is licensed under
-      <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0"
-        >CC BY-NC 4.0<img
-          style="height: 22px !important; margin-left: 5px; vertical-align: text-bottom"
-          src="/images/cc.svg"
+      <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0">CC BY-NC 4.0<img
+          style="height: 22px !important; margin-left: 5px; vertical-align: text-bottom" src="/images/cc.svg"
           alt="Creative Commons Icon" /><img
-          style="height: 22px !important; margin-left: 3px; vertical-align: text-bottom"
-          src="/images/by.svg"
+          style="height: 22px !important; margin-left: 3px; vertical-align: text-bottom" src="/images/by.svg"
           alt="Creative Commons Attribution Icon" /><img
-          style="height: 22px !important; margin-left: 3px; vertical-align: text-bottom"
-          src="/images/nc.svg"
-          alt="Creative Commons Noncommercial Icon"
-      /></a>
+          style="height: 22px !important; margin-left: 3px; vertical-align: text-bottom" src="/images/nc.svg"
+          alt="Creative Commons Noncommercial Icon" /></a>
     </p>
   </article>
 
@@ -76,9 +67,7 @@ layout: default
       (d.head || d.body).appendChild(s);
     })();
   </script>
-  <noscript
-    >Please enable JavaScript to view the
-    <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript
-  >
+  <noscript>Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
   {% endif %}
 </div>

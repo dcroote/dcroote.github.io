@@ -5,6 +5,7 @@ image: /images/quick_website/hugo_profile_theme_screenshot.png
 image-alt: Hugo Profile theme screenshot
 comments: false
 description: Build and host a custom domain website for free using Hugo, GitHub, and Render. This step-by-step guide walks through creating a professional static website with zero hosting costs.
+tags: [software]
 ---
 
 Free hosting of custom domain websites? Many companies advertise "free website hosting" and it can be frustrating to finally find, buried in a FAQ, that custom domain hosting is an additional charge.

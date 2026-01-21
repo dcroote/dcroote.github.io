@@ -1,0 +1,35 @@
+---
+layout: page
+title: Tags
+permalink: /tags/
+---
+
+{% assign sorted_tags = site.tags | sort %}
+
+<div class="tag-index" aria-label="All tags" style="margin-bottom: 20px;">
+  {% for tag in sorted_tags %}
+  {% assign tag_name = tag[0] %}
+  {% assign tag_posts = tag[1] %}
+  <a class="tag-pill" href="#{{ tag_name | slugify }}">{{ tag_name }} ({{ tag_posts | size }})</a>
+  {% endfor %}
+</div>
+
+<hr class="hrline" />
+<br />
+{% for tag in sorted_tags %}
+{% assign tag_name = tag[0] %}
+{% assign tag_posts = tag[1] %}
+{% assign tag_posts_sorted = tag_posts | sort: 'date' | reverse %}
+
+<h2 id="{{ tag_name | slugify }}">{{ tag_name }}</h2>
+<ul class="post-list">
+  {% for post in tag_posts_sorted %}
+  <li>
+    <h3 style="margin-bottom: 0.25em">
+      <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </h3>
+    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  </li>
+  {% endfor %}
+</ul>
+{% endfor %}

@@ -6,6 +6,7 @@ image-alt: Interactive kids animal sounds game
 description: 'The beauty here is not that AI could build a kids game, though a mere 6 years ago this would have been unimaginable, but rather that AI increasingly moves us from "yes, I could build this, but I don''t really want to spend the time" to the existence of something new and useful.'
 comments: false
 last_modified_at: 2025-11-01 15:38:00 -0700
+tags: [AI]
 ---
 
 My daughter likes to play an online animal sounds game, but she gets frustrated by a few aspects of its implementation: there are too many animals on a given screen and any touch that isn't perfectly on an animal causes the screen to haphazardly scroll horizontally and/or vertically. It also isn't great on mobile because if she holds the phone with one hand and her thumb accidentally touches the screen, it either scrolls or prevents correct clicks from being recognized.

@@ -4,6 +4,7 @@ title: Analyzing Mio Fuse heart rate data in Python
 image: images/hr_5_activities.png
 image-alt: Activity-dependent heart rate
 comments: true
+tags: [data science, software]
 ---
 
 I have been using the <a href="http://www.mioglobal.com/Mio-FUSE-Heart-Rate-Training-Activity-Tracker/Product.aspx" target="_blank">Mio Fuse</a> (similar to a Fitbit Charge HR) for a couple months now and I wanted to illustrate how to perform your own data analysis on raw heart rate data extracted from the device.

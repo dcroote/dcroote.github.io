@@ -4,6 +4,7 @@ title: Verifying Brave Rewards on GitHub Pages using Jekyll
 image: images/brave-bat-partnership.svg
 image-alt: Brave logo
 comments: false
+tags: [software]
 ---
 
 The Brave web browser is an interesting take on providing greater privacy while still rewarding content creators through ads, views, and tips. To explore it a bit more, I thought I would try to verify this GitHub Pages blog.

@@ -6,6 +6,7 @@ image-alt: Comparing vector and raster formats
 last_modified_at: 2020-12-12 10:43:06 -0800
 comments: false
 description: Use Enhanced MetaFile (.emf) format to embed high quality vector graphics in Microsoft Word
+tags: [software]
 ---
 
 ## Background
