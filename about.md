@@ -35,6 +35,11 @@ permalink: /about/
   <li><a href="https://github.com/dcroote/stanford-thesis-example/" target="_blank">Stanford LaTeX thesis template</a></li>
 </ul>
 
+<h2>Privacy Policy</h2>
+<p>
+You can view the privacy policy <a href="/privacy/">here</a>.
+</p>
+
 <br />
 <br />
 <br />
