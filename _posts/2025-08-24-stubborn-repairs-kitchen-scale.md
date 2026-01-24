@@ -6,7 +6,7 @@ image-alt: Open back of a broken kitchen scale
 description: Narrowly avoiding a morning coffee crisis.
 comments: false
 last_modified_at: 2025-10-25 15:13:00 -0700
-tags: [stubborn problems]
+tags: [coffee, stubborn problems]
 ---
 
 <div class="story-intro">

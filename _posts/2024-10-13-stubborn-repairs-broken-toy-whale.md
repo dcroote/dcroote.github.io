@@ -6,7 +6,7 @@ image-alt: Fixing a broken toy whale that stopped spraying water
 description: The whale is a bath time favorite of my daughter- it flashes colors and sprays water into the air. One day, the whale stopped spraying.
 comments: false
 last_modified_at: 2025-10-25 15:13:00 -0700
-tags: [stubborn problems]
+tags: [engineering, stubborn problems]
 ---
 
 <div class="story-intro">
