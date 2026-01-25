@@ -3,7 +3,7 @@ layout: post
 title: Owned Content
 image: images/owned-content/flower-sidewalk.jpg
 image-alt: A flower growing in the sidewalk.
-description: The free and open internet is slowly fading as proprietary social media and publishing platforms become the dominant venue for content.
+description: Social media, proprietary platforms, and AI threaten the free and open internet.
 comments: false
 tags: [AI, opinions, social media, software]
 ---
