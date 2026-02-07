@@ -6,7 +6,11 @@ permalink: /about/
 ---
 
 <p>Hi all,</p>
-<p>Thanks for visiting the site. You can find social profiles, project links, and flavors of my bio below. You can also email me directly at first initial last name at gmail.</p>
+<p>Thanks for visiting the site. You can find social profiles, project links, and flavors of my bio below. </p>
+
+<h2>Contact</h2>
+
+Feel free to email me directly at first initial last name at gmail.
 
 <h2>Summary Bio</h2>
 

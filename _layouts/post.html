@@ -9,19 +9,19 @@ layout: default
       {{ page.date | date: "%b %-d, %Y" }} {% if page.last_modified_at %} &nbsp; | &nbsp; Last updated: {{
       page.last_modified_at | date: "%b %-d, %Y" }} {% endif %}
       <br />
-      {% include reading-time.html %} &nbsp; | &nbsp; {% include share-buttons.html %} {% if page.discuss_on_twitter %}
-      <br />
-      <span style="background: #eeeeee; border-radius: 5px; padding: 7px"><a href="{{ page.discuss_on_twitter }}"
-          target="_blank">Discuss on twitter</a></span>
-      {% endif %}
+      {% include reading-time.html %} &nbsp; | &nbsp; {% include share-buttons.html %}
     </div>
   </header>
 
   <article class="post-content">
-    {{ content }} {% include share-buttons.html %}
-
+    {{ content }}
+    
     <br />
     {% include post-feedback.html %}
+    <hr />
+    <br />
+    {% include share-buttons.html %}
+
     <br />
     {% include tag-list.html tags=page.tags show_label=true %}
     <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text"
@@ -40,7 +40,6 @@ layout: default
     </p>
   </article>
 
-  <br />
   <hr />
   <br />
 
