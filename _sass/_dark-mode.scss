@@ -119,6 +119,16 @@ body.dark-mode {
     text-align: center;
     color: #ccc;
   }
+
+  // Fix contrast for "Tags:" label
+  .tag-list .tag-label {
+    color: #f0f0f0;
+  }
+
+  // Fix contrast for "Share on:" text
+  .share-label {
+    color: #f0f0f0;
+  }
 }
 
 #theme-toggle {
