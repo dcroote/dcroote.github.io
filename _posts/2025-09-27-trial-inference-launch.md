@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Trial Inference - A Clinical Trial Intelligence Platform
+title: Trial Inference - Monitor Clinical Trials That Matter to You
 image: images/trial_inference/og-image.jpg
-image-alt: Trial Inference - Replace protracted ClinicalTrials.gov research with rapid, actionable insights. Leverage automated trial monitoring, stunning visualizations, and predictive enrollment analytics to gain insights faster and stay ahead of the competition.
-description: The best products are built by those who have the need themselves, and this is one very personal example. Introducing a platform for clinical intelligence - Trial Inference.
+image-alt: Trial Inference - Replace protracted ClinicalTrials․gov research with rapid, actionable insights. Leverage automated trial monitoring, stunning visualizations, and predictive enrollment analytics whether you're a clinical operations specialist, physician, KOL, patient, or caregiver.
+description: The best products are built by those who have the need themselves, and this is one very personal example. Introducing a platform for clinical intelligence and monitoring - Trial Inference.
 comments: false
 last_modified_at: 2025-09-29 08:27:00 -0700
 tags: [biotech, software]
@@ -13,7 +13,7 @@ The best products are built by those who have the need themselves, and this is o
 
 I was solving for my need to deeply understand clinical trials in a rare disease.
 
-I wanted to track specific trials. I wanted notifications when trials changed, and succinct summaries of those changes. I wanted to know when new trials launched. I wanted enrollment rates, breakdowns of trials by phase, sponsor, intervention, and more. I wanted filters that updated visualizations in real time. I wanted maps, aggregated trial site data, and top enrolling sites. And I wanted a beautiful user interface in which to do it all (no offense clinicaltrials dot gov).
+I wanted to track specific trials. I wanted notifications when trials changed, and succinct summaries of those changes. I wanted to know when new trials launched. I wanted enrollment rates, breakdowns of trials by phase, sponsor, intervention, and more. I wanted filters that updated visualizations in real time. I wanted maps, aggregated trial site data, and top enrolling sites. And I wanted a beautiful user interface in which to do it all (no offense clinicaltrials․gov).
 
 So I built it. Introducing, Trial Inference!
 
