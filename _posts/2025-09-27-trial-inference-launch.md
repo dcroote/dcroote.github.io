@@ -3,9 +3,9 @@ layout: post
 title: Trial Inference - Monitor Clinical Trials That Matter to You
 image: images/trial_inference/og-image.jpg
 image-alt: Trial Inference - Replace protracted ClinicalTrials․gov research with rapid, actionable insights. Leverage automated trial monitoring, stunning visualizations, and predictive enrollment analytics whether you're a clinical operations specialist, physician, KOL, patient, or caregiver.
-description: The best products are built by those who have the need themselves, and this is one very personal example. Introducing a platform for clinical intelligence and monitoring - Trial Inference.
+description: The best products are built by those who have the need themselves, and this is one very personal example. Introducing a platform for clinical trial intelligence and monitoring - Trial Inference.
 comments: false
-last_modified_at: 2025-09-29 08:27:00 -0700
+last_modified_at: 2026-03-07 14:27:00 -0700
 tags: [biotech, software]
 ---
 
