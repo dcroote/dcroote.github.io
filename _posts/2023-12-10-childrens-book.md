@@ -7,6 +7,7 @@ description: Create and print your own children's board book with AI and Shutter
 last_modified_at: 2025-05-04 13:31:00 -0700
 comments: false
 tags: [AI]
+discuss_on_twitter: https://x.com/DerekCroote/status/1742214643651895661
 ---
 
 <script src="/scripts/page-flip.browser.js"></script>

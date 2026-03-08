@@ -7,6 +7,7 @@ last_modified_at: 2025-02-01 17:00:00 -0700
 comments: false
 description: Leverage AI to craft and deploy a strategic step-by-step car buying negotiation plan that saved us over $4,000 on a new hybrid SUV.
 tags: [AI, finance]
+discuss_on_twitter: https://x.com/DerekCroote/status/1894186422128840932
 ---
 
 We loved our 2011 Subaru Forester, but recently driving various rentals made us realize how far cars had come. My wife felt heated steering and it was game over.

@@ -6,6 +6,7 @@ image-alt: A chart depicting the impact of harness design on SpatialBench benchm
 description: The impact of harness design on spatial biology benchmark scores is striking and suggests we're early in optimizing AI model performance on biological tasks.
 comments: false
 tags: [biotech]
+discuss_on_twitter: https://x.com/DerekCroote/status/2007888746281328808
 ---
 
 Describing results from their manuscript "SpatialBench: Can Agents Analyze Real-World Spatial Biology Data?" (<a href="https://arxiv.org/abs/2512.21907" target="_blank">arxiv</a>), Kenny Workman <a href="https://x.com/kenbwork/status/2004573985355571478" target="_blank">writes</a>:

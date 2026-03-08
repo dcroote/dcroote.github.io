@@ -7,6 +7,7 @@ description: 'The beauty here is not that AI could build a kids game, though a m
 comments: false
 last_modified_at: 2025-11-01 15:38:00 -0700
 tags: [AI]
+discuss_on_twitter: https://x.com/DerekCroote/status/1984742692698677392
 ---
 
 My daughter likes to play an online animal sounds game, but she gets frustrated by a few aspects of its implementation: there are too many animals on a given screen and any touch that isn't perfectly on an animal causes the screen to haphazardly scroll horizontally and/or vertically. It also isn't great on mobile because if she holds the phone with one hand and her thumb accidentally touches the screen, it either scrolls or prevents correct clicks from being recognized.

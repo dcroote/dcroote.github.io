@@ -7,6 +7,7 @@ description: The whale is a bath time favorite of my daughter- it flashes colors
 comments: false
 last_modified_at: 2025-10-25 15:13:00 -0700
 tags: [engineering, stubborn problems]
+discuss_on_twitter: https://x.com/DerekCroote/status/1873876959262097592
 ---
 
 <div class="story-intro">

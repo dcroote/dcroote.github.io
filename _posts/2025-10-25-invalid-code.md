@@ -7,6 +7,7 @@ description: "A story of time and two-factor authentication."
 comments: false
 last_modified_at: 2025-10-25 15:13:00 -0700
 tags: [stubborn problems, software]
+discuss_on_twitter: https://x.com/DerekCroote/status/1982212157036179733
 ---
 
 <div class="story-intro">

@@ -6,6 +6,7 @@ image-alt: A sleek, modern laptop with a glossy screen, open on a minimalist des
 comments: false
 last_modified_at: 2026-01-21 08:47:00 -0700
 tags: [software]
+discuss_on_twitter: https://x.com/DerekCroote/status/1727231950057029762
 ---
 
 This post is mostly for my future self, but others may find it useful. Most of the software applications are cross-platform, but some are specific to certain operating systems.

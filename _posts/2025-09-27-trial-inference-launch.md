@@ -7,6 +7,7 @@ description: The best products are built by those who have the need themselves, 
 comments: false
 last_modified_at: 2026-03-07 14:27:00 -0700
 tags: [biotech, software]
+discuss_on_twitter: https://x.com/DerekCroote/status/1970869855307104620
 ---
 
 The best products are built by those who have the need themselves, and this is one very personal example.

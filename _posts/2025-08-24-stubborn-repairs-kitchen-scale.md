@@ -7,6 +7,7 @@ description: Narrowly avoiding a morning coffee crisis.
 comments: false
 last_modified_at: 2025-10-25 15:13:00 -0700
 tags: [coffee, stubborn problems]
+discuss_on_twitter: https://x.com/DerekCroote/status/1965065658301075481
 ---
 
 <div class="story-intro">
