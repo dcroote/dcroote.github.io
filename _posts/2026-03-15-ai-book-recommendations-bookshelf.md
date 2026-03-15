@@ -10,13 +10,13 @@ tags: [AI, biotech]
 
 I had a great experience recently in using AI, specifically Gemini 3 Pro and Claude Sonnet 4.6, to recommend my set next books. I simply provided an image of my bookshelf and the following prompt:
 
-<img src="/images/ai-book-recommendations/bookshelf.jpg" alt="Photograph of my bookshelf" class="centered_img" width="800" height="600" />
-
 <div class="ai-text-block" markdown="1">
-The attached image is a bookshelf. First, list the books depicted. Next, based on that list, provide ten recommendations that belong to the <insert genre here> genre.
+The attached image is a bookshelf. First, list the books depicted. Next, based on that list, provide ten recommendations that belong to the &#60;insert genre here&#62; genre.
 </div>
 
-Why list the books first? The idea is to force the names of the books into the model's context and form the basis for the recommendations.
+<img src="/images/ai-book-recommendations/bookshelf.jpg" alt="Photograph of my bookshelf" class="centered_img" width="800" height="600" />
+
+Why list the books first? The idea is to force the names of the books into the model's context and maximize the probability they form the basis for the recommendations.
 
 For my first prompt, I used `adventure` as the genre and it provided a few excellent recommendations, two of which I’ll mention:
 
