@@ -29,7 +29,7 @@ For my next prompt, I used `biotech` as the genre. The first ten were too heavy 
 Ten more please, but none related to synthetic biology or gene editing.
 </div>
 
-In the resulting list had a couple that caught my eye:
+The resulting list had a couple that caught my eye:
 
 1. <span style="text-decoration: underline;">Empire of Pain: The Secret History of the Sackler Dynasty</span> by Patrick Radden Keefe - I took this suggestion and read the book. It was so evocative that I remained in a relatively bad mood for days, torn by the inhumanity and selfishness that gave rise to the opioid crisis. Much of my disgust arose from the juxtaposition of the main characters with myself and so many I personally know in biotech and pharma that are working to genuinely better the human condition. Biology can be devastatingly cruel and so many require our help.
 2. <span style="text-decoration: underline;">The Great American Drug Deal: A New Prescription for Innovative and Affordable Medicines</span> by Peter Kolchinsky - this will be my next read and I look forward to the deep web of complexity that is drug pricing.
