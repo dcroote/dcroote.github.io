@@ -8,7 +8,7 @@ description: With a picture and a prompt, AI can provide some excellent book rec
 tags: [AI, biotech]
 ---
 
-I had a great experience recently in using AI, specifically Gemini 3 Pro and Claude Sonnet 4.6, to recommend my set next books. I simply provided an image of my bookshelf and the following prompt:
+I had a great experience recently in using AI, specifically Gemini 3 Pro and Claude Sonnet 4.6, to recommend my next set of books. I simply provided an image of my bookshelf and the following prompt:
 
 <div class="ai-text-block" markdown="1">
 The attached image is a bookshelf. First, list the books depicted. Next, based on that list, provide ten recommendations that belong to the &#60;insert genre here&#62; genre.
