@@ -7,6 +7,7 @@ comments: false
 description: With a picture and a prompt, AI can provide some excellent book recommendations.
 tags: [AI, biotech]
 discuss_on_twitter: https://x.com/DerekCroote/status/2033925079432892610
+discuss_on_linkedin: https://www.linkedin.com/posts/dcroote_have-a-bookshelf-take-a-picture-and-ask-activity-7439689992643354624-C8xu
 ---
 
 I had a great experience recently in using AI, specifically Gemini 3 Pro and Claude Sonnet 4.6, to recommend my next set of books. I simply provided an image of my bookshelf and the following prompt:
