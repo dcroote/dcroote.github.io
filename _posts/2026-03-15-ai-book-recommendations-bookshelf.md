@@ -6,6 +6,7 @@ image-alt: Photograph of my bookshelf
 comments: false
 description: With a picture and a prompt, AI can provide some excellent book recommendations.
 tags: [AI, biotech]
+discuss_on_twitter: https://x.com/DerekCroote/status/2033925079432892610
 ---
 
 I had a great experience recently in using AI, specifically Gemini 3 Pro and Claude Sonnet 4.6, to recommend my next set of books. I simply provided an image of my bookshelf and the following prompt:
