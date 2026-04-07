@@ -1,12 +1,11 @@
 ---
 layout: page
-title: About Derek
+title: About Derek Croote
 description: Find out more about Derek Croote as well as ways to connect.
 permalink: /about/
 ---
 
-<p>Hi all,</p>
-<p>Thanks for visiting the site. You can find social profiles, project links, and flavors of my bio below. </p>
+<p>Thanks for visiting the site! You can find social profiles, project links, and flavors of my bio below. </p>
 
 <h2 id="contact">Contact</h2>
 
@@ -16,7 +15,7 @@ Feel free to email me directly at first initial last name at gmail.
 
 <p>I am an action-oriented biotech executive, entrepreneur, and technical leader with responsibilities spanning management, corporate strategy, intellectual property, scientific communication, technology development, basic research, and software engineering, including bioinformatic pipeline development and AI implementations.
 
-<p>In my current role as co-founder and Chief Technical Officer of <a href="https://iggenix.com" target="_blank">IgGenix</a>, I am developing transformative therapies for individuals suffering from allergies. Our peanut allergy therapeutic, IGNX001, completed a Phase 1 clinical trial in November 2025. I wrote about the <a href="/2024/08/22/accelerate-website.html">study launch here.</a></p>
+<p>In my current role as co-founder and Chief Technical Officer of <a href="https://iggenix.com" target="_blank">IgGenix</a>, I am developing transformative therapies for individuals suffering from allergies. Our internally developed peanut allergy therapeutic, IGNX001, completed a Phase 1 clinical trial in November 2025. I wrote about the <a href="/2024/08/22/accelerate-website.html">study launch here.</a></p>
 
 <h2>Speaker Bio</h2>
 
@@ -34,7 +33,8 @@ Feel free to email me directly at first initial last name at gmail.
 <h2>Projects</h2>
 
 <ul>
-  <li><a href="https://www.trialinference.com/?utm_source=dc_blog" target="_blank">Trial Inference</a> - a platform for clinical trial intelligence</li>
+  <li><a href="https://www.trialinference.com/?utm_source=dc_blog" target="_blank">Trial Inference</a> - a platform for monitoring clinical trials that matter to you</li>
+  <li><a href="https://github.com/dcroote/lambs" target="_blank">LAMBS</a> - a free, private, and open-source tool for Local Analysis of mAb Sequences</li>
   <li><a href="https://www.allergenpeptidebrowser.org/" target="_blank">Allergen Peptide Browser</a> - database for facilitating allergen detection in food using mass spectrometry</li>
   <li><a href="https://github.com/dcroote/stanford-thesis-example/" target="_blank">Stanford LaTeX thesis template</a></li>
 </ul>
@@ -48,5 +48,5 @@ You can view the privacy policy <a href="/privacy/">here</a>.
 <br />
 <br />
 <p style="text-align:center">
-  Theme modified from: <a href="https://github.com/smallmuou/Jekyll-Pithy" target="_blank">Pithy Theme</a> by Pawpaw.
+  Blog theme modified from: <a href="https://github.com/smallmuou/Jekyll-Pithy" target="_blank">Pithy Theme</a> by Pawpaw.
 </p>
