@@ -8,7 +8,7 @@ comments: false
 tags: [AI, opinions, social media, software]
 ---
 
-The free and open internet is slowly fading as proprietary social media and publishing platforms become the dominant venue for content. With the rise of AI and its insatiable need for data, these platforms have increasingly become walled gardens in order to keep this content for themselves. It's logical for the parties involved: individuals benefit from the visibility, connections, and features provided by the service and platforms monetize this attention while discouraging external activities. Still, it's a sad direction for the Internet.
+The free and open internet is slowly fading as proprietary social media and publishing platforms become the dominant venue for content. With the rise of AI and its insatiable need for data, these platforms have increasingly become walled gardens in order to keep this content for themselves. It's not illogical: individuals benefit from the visibility, connections, and features provided by the service and platforms monetize this attention while discouraging external activities. Still, it's a sad direction for the Internet.
 
 Software engineering leader Will Larson [describes](https://lethain.com/newsletter-mailchimp-to-buttondown/) a way to fight back, and that is to maintain ownership of your content. It resonated with me.
 
