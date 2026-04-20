@@ -1,4 +1,8 @@
-body.dark-mode {
+html.dark-mode {
+  color-scheme: dark;
+}
+
+html.dark-mode body {
   color: #f0f0f0;
   background-color: #2d2d2d;
 
@@ -141,4 +145,18 @@ body.dark-mode {
   width: 17px;
   height: 17px;
   vertical-align: middle;
+  position: relative;
+}
+
+/* Icons follow html.dark-mode (set in <head>) */
+#theme-toggle .theme-toggle-icon--sun {
+  display: none;
+}
+
+html.dark-mode #theme-toggle .theme-toggle-icon--sun {
+  display: inline-flex;
+}
+
+html.dark-mode #theme-toggle .theme-toggle-icon--moon {
+  display: none;
 }
