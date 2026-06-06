@@ -14,6 +14,10 @@ twitter:
   card: summary_large_image
 description: Perspectives on science, technology, and engineering.
 
+# Post likes (Supabase). Leave empty to hide the like button. See supabase/README.md.
+supabase_url: "https://stobgqjkojlraavbbykk.supabase.co"
+supabase_publishable_key: "sb_publishable_dxlmntuz2OVBpoXfp6Z8Ig_0UFJK-TH"
+
 # Build settings
 markdown: kramdown
 

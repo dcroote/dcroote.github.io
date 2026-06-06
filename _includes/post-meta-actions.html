@@ -1,0 +1,9 @@
+<span class="post-meta-line">
+  {% include reading-time.html %}
+  {% if site.supabase_url != "" and site.supabase_publishable_key != "" %}
+  <span class="post-meta-sep">&nbsp;&nbsp;|&nbsp;</span>
+  {% include like-button.html %}
+  {% endif %}
+  <span class="post-meta-sep post-meta-sep--share">&nbsp;|&nbsp;&nbsp;</span>
+  <span class="post-meta-share">{% include share-buttons.html %}</span>
+</span>

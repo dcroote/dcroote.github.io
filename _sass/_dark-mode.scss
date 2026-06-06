@@ -96,8 +96,7 @@ html.dark-mode body {
     border: 1px solid #555;
   }
 
-  // Style for the calculate button in dark mode
-  button {
+  button:not(.like-button):not(#theme-toggle) {
     background-color: #4a9eff;
     color: #ffffff;
     border: none;
@@ -105,6 +104,16 @@ html.dark-mode body {
 
     &:hover {
       background-color: #3a7fcf;
+    }
+  }
+
+  .like-button {
+    background: none;
+    color: inherit;
+    border: none;
+
+    &:hover:not(:disabled) {
+      background: none;
     }
   }
 
@@ -124,6 +133,22 @@ html.dark-mode body {
     color: #ccc;
   }
 
+  .post-feedback {
+    color: #ccc;
+
+    a {
+      color: #9ecfff;
+
+      &:hover {
+        color: #c5e0ff;
+      }
+    }
+  }
+
+  .like-count {
+    color: #ccc;
+  }
+
   // Fix contrast for "Tags:" label
   .tag-list .tag-label {
     color: #f0f0f0;
@@ -132,6 +157,24 @@ html.dark-mode body {
   // Fix contrast for "Share on:" text
   .share-label {
     color: #f0f0f0;
+  }
+
+  .license-text {
+    color: #bbb;
+  }
+
+  .like-icon {
+    fill: #9a9a9a;
+  }
+
+  .like-button:hover:not(:disabled) .like-icon,
+  .like-button--active .like-icon {
+    fill: #f08a96;
+  }
+
+  .like-button:hover:not(:disabled),
+  .like-button--active {
+    color: #f08a96;
   }
 }
 

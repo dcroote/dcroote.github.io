@@ -9,50 +9,40 @@ layout: default
       {{ page.date | date: "%b %-d, %Y" }} {% if page.last_modified_at %} &nbsp; | &nbsp; Last updated: {{
       page.last_modified_at | date: "%b %-d, %Y" }} {% endif %}
       <br />
-      {% include reading-time.html %} &nbsp; | &nbsp; {% include share-buttons.html %}
+      {% include post-meta-actions.html %}
     </div>
   </header>
 
   <article class="post-content">
     {{ content }}
-    
-    <br />
-    {% include post-feedback.html %}
-    <hr />
-    <br />
-    {% include share-buttons.html %}
 
-    <br />
-    {% include tag-list.html tags=page.tags show_label=true %}
-    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text"
-      style="text-align: center; margin-top: 1em">
+    {% include post-feedback.html %}
+
+     <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">
       This work by
       <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.derekcroote.com">Derek
         Croote</a>
       is licensed under
       <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0">CC BY-NC 4.0<img
-          style="height: 22px !important; margin-left: 5px; vertical-align: text-bottom" src="/images/cc.svg"
-          alt="Creative Commons Icon" /><img
-          style="height: 22px !important; margin-left: 3px; vertical-align: text-bottom" src="/images/by.svg"
-          alt="Creative Commons Attribution Icon" /><img
-          style="height: 22px !important; margin-left: 3px; vertical-align: text-bottom" src="/images/nc.svg"
-          alt="Creative Commons Noncommercial Icon" /></a>
-    </p>
+          class="license-icon" src="/images/cc.svg" alt="Creative Commons Icon" /><img
+          class="license-icon" src="/images/by.svg" alt="Creative Commons Attribution Icon" /><img
+          class="license-icon" src="/images/nc.svg" alt="Creative Commons Noncommercial Icon" /></a>
+    </p>   
+
   </article>
 
-  <hr />
-  <br />
-
-  <div class="PageNavigation">
-    <p style="margin-bottom: 5px; font-weight: bold">
+  <nav class="PageNavigation">
+    <p class="pagenav-intro">
       <a href="#top" aria-label="Return to top">Return to top</a> or browse more content:
     </p>
-    {% if page.previous.url %}
-    <a class="navpost" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
-    {% endif %} {% if page.next.url %}
-    <a class="navpost next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
-    {% endif %}
-  </div>
+    <div class="pagenav-links">
+      {% if page.previous.url %}
+      <a class="navpost prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+      {% endif %} {% if page.next.url %}
+      <a class="navpost next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+      {% endif %}
+    </div>
+  </nav>
   <br />
 
   {% if page.comments %}
@@ -70,5 +60,15 @@ layout: default
   </script>
   <noscript>Please enable JavaScript to view the
     <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  {% endif %}
+
+  {% if site.supabase_url != "" and site.supabase_publishable_key != "" %}
+  <script>
+    window.__SUPABASE__ = {
+      url: {{ site.supabase_url | jsonify }},
+      publishableKey: {{ site.supabase_publishable_key | jsonify }}
+    };
+  </script>
+  <script src="{{ '/scripts/likes.js' | prepend: site.baseurl }}" defer></script>
   {% endif %}
 </div>
