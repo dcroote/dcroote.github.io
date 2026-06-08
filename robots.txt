@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /supabase/
+
+Sitemap: https://www.derekcroote.com/sitemap.xml
