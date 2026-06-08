@@ -21,6 +21,9 @@ supabase_publishable_key: "sb_publishable_dxlmntuz2OVBpoXfp6Z8Ig_0UFJK-TH"
 # Build settings
 markdown: kramdown
 
+exclude:
+  - supabase
+
 include: [".well-known", "manifest.json", "sw.js"]
 
 plugins:
