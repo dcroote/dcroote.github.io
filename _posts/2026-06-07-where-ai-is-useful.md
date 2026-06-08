@@ -4,7 +4,7 @@ title: Where AI is Useful
 image: images/where-ai-is-useful/desktop-gpus.jpg
 image-alt: A desktop with two Nvidia GPUs.
 comments: false
-description: Is AI taking everyone's jobs? The truth bares a more moderate tone, but AI is an increasingly useful tool. Here I provide a list of scenarios where I've found AI useful.
+description: Is AI taking everyone's job? The truth bears a more moderate tone, but AI is an increasingly useful tool. Here I provide scenarios where I've found AI useful.
 tags: [AI, software]
 ---
 
@@ -16,7 +16,7 @@ Everybody who's against it is too against it and everybody who's for it is too f
 
 And it's no surprise why. Attention is the internet's currency and "IT'S COMING FOR YOUR JOBS" sure does drive engagement.
 
-The truth, of course, bares a more moderate tone, where AI is an increasingly useful tool in some domains and for certain tasks, many related to computers and especially programming. In support, I'd like to offer a list of scenarios where I've found AI useful. Perhaps these can serve as some inspiration; I'm sure there are many more!
+The truth, of course, bears a more moderate tone, where AI is an increasingly useful tool in some domains and for certain tasks, many related to computers and especially programming. In support, I'd like to offer scenarios where I've found AI useful. Perhaps these can serve as some inspiration; I'm sure there are many more!
 
 - <a href="/2023/12/10/childrens-book.html">Illustrating a children's book</a>
 - <a href="/2025/02/01/ai-car-negotiations.html">Negotiating a car purchase</a>
