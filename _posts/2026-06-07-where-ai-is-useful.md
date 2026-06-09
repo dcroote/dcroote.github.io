@@ -6,6 +6,7 @@ image-alt: A desktop with two Nvidia GPUs.
 comments: false
 description: Is AI taking everyone's job? The truth bears a more moderate tone, but AI is an increasingly useful tool. Here I provide scenarios where I've found AI useful.
 tags: [AI, software]
+last_modified_at: 2026-06-09 08:21:00 -0700
 ---
 
 I think <a href="https://mastodon.social/@danielpunkass/116639318125898071" target="_blank">Daniel Jalkut</a> has captured the AI zeitgeist:
@@ -21,6 +22,7 @@ The truth, of course, bears a more moderate tone, where AI is an increasingly us
 - <a href="/2023/12/10/childrens-book.html">Illustrating a children's book</a>
 - <a href="/2025/02/01/ai-car-negotiations.html">Negotiating a car purchase</a>
 - <a href="/2026/03/15/ai-book-recommendations-bookshelf.html">Recommending books</a>
+- <a href="https://x.com/DerekCroote/status/1880137176455016852?s=20" _target="blank">Autonomously navigating the San Francisco Bay Area</a>
 - Creating calendar events from a soccer schedule spreadsheet
 - Dissecting patents
 - Brainstorming interview questions
