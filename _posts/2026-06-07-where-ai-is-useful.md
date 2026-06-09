@@ -22,7 +22,7 @@ The truth, of course, bears a more moderate tone, where AI is an increasingly us
 - <a href="/2023/12/10/childrens-book.html">Illustrating a children's book</a>
 - <a href="/2025/02/01/ai-car-negotiations.html">Negotiating a car purchase</a>
 - <a href="/2026/03/15/ai-book-recommendations-bookshelf.html">Recommending books</a>
-- <a href="https://x.com/DerekCroote/status/1880137176455016852?s=20" _target="blank">Autonomously navigating the San Francisco Bay Area</a>
+- <a href="https://x.com/DerekCroote/status/1880137176455016852?s=20" target="_blank">Autonomously navigating the San Francisco Bay Area</a>
 - Creating calendar events from a soccer schedule spreadsheet
 - Dissecting patents
 - Brainstorming interview questions
