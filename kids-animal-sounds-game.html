@@ -142,24 +142,48 @@
         }
       }
 
+      .game-shell {
+        container-type: size;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
       #game-container {
+        --pad: 4cqmin;
+        --item-gap: 10cqmin;
+        --box-scale: 0.86;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 100px;
+        gap: var(--item-gap);
         width: 100%;
         height: 100%;
-        padding: 20px;
+        max-width: 100%;
+        max-height: 100%;
+        padding: var(--pad);
         box-sizing: border-box;
       }
 
       .animal-box {
-        flex: 1;
-        max-width: 300px;
+        container-type: size;
+        flex: 0 1 auto;
         aspect-ratio: 1;
+        width: min(
+          calc(
+            (
+                100cqw - 2 * var(--pad) - 2 * var(--item-gap)
+              ) /
+              3 *
+              var(--box-scale)
+          ),
+          calc((100cqh - 2 * var(--pad)) * var(--box-scale))
+        );
         background: white;
-        border-radius: 30px;
+        border-radius: max(12px, 6cqi);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -169,6 +193,25 @@
         transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s ease;
         pointer-events: auto;
         touch-action: auto;
+      }
+
+      @container (aspect-ratio <= 1) {
+        #game-container {
+          flex-direction: column;
+        }
+
+        .animal-box {
+          width: min(
+            calc(85cqw * var(--box-scale)),
+            calc(
+              (
+                  100cqh - 2 * var(--pad) - 2 * var(--item-gap)
+                ) /
+                3 *
+                var(--box-scale)
+            )
+          );
+        }
       }
 
       .animal-box:active {
@@ -192,53 +235,12 @@
         width: 100%;
         height: 100%;
         object-fit: contain;
-        padding: 20px;
+        padding: 8cqi;
       }
 
       .animal-content.emoji {
-        font-size: 200px;
-      }
-
-      @media (max-width: 900px) {
-        #game-container {
-          gap: 50px;
-          padding: 15px;
-        }
-
-        .animal-box {
-          max-width: 250px;
-        }
-
-        .animal-content.emoji {
-          font-size: 300px;
-        }
-      }
-
-      @media (max-width: 500px) {
-        #game-container {
-          flex-direction: column;
-          gap: 20px;
-          padding: 10px;
-        }
-
-        .animal-box {
-          width: 60%;
-          max-width: 300px;
-        }
-
-        .animal-content.emoji {
-          font-size: 100px;
-        }
-      }
-
-      @media (max-height: 700px) and (min-width: 601px) {
-        .animal-box {
-          max-width: 160px;
-        }
-
-        .animal-content.emoji {
-          font-size: 110px;
-        }
+        font-size: 58cqi;
+        line-height: 1;
       }
 
       .fullscreen-enter {
@@ -270,15 +272,17 @@
   <body>
     <div id="shuffle-button">🔀</div>
 
-    <div id="game-container">
-      <div class="animal-box" data-index="0">
-        <div class="animal-content"></div>
-      </div>
-      <div class="animal-box" data-index="1">
-        <div class="animal-content"></div>
-      </div>
-      <div class="animal-box" data-index="2">
-        <div class="animal-content"></div>
+    <div class="game-shell">
+      <div id="game-container">
+        <div class="animal-box" data-index="0">
+          <div class="animal-content"></div>
+        </div>
+        <div class="animal-box" data-index="1">
+          <div class="animal-content"></div>
+        </div>
+        <div class="animal-box" data-index="2">
+          <div class="animal-content"></div>
+        </div>
       </div>
     </div>
 
@@ -327,7 +331,10 @@
       ];
 
       let currentAnimals = [null, null, null]; // Array to track 3 current animals
-      let audioElements = [null, null, null]; // Array to track audio for each box
+      let audioElements = [new Audio(), new Audio(), new Audio()];
+      audioElements.forEach((audio) => {
+        audio.preload = "auto";
+      });
       let isPlaying = false; // Global flag to track if any sound is playing
 
       const shuffleButton = document.getElementById("shuffle-button");
@@ -389,46 +396,44 @@
 
         animalContent.innerHTML = animal.emoji;
         animalContent.classList.add("emoji");
+
+        const audio = audioElements[boxIndex];
+        audio.src = animal.sound;
+        audio.load();
       }
 
       function playAnimalSound(boxIndex) {
         const animal = currentAnimals[boxIndex];
         if (!animal) return;
 
-        // Block if any sound is already playing
         if (isPlaying) return;
 
         const animalBox = animalBoxes[boxIndex];
+        const audio = audioElements[boxIndex];
 
-        // Stop previous audio for this box if playing
-        if (audioElements[boxIndex]) {
-          audioElements[boxIndex].pause();
-          audioElements[boxIndex].currentTime = 0;
-        }
-
-        // Set global playing flag
-        isPlaying = true;
-
-        // Add playing class to turn background light green
+        audio.pause();
+        audio.currentTime = 0;
         animalBox.classList.add("playing");
 
-        // Try to play sound file
-        audioElements[boxIndex] = new Audio(animal.sound);
-
-        // When sound ends, fade back to white and clear playing flag
-        audioElements[boxIndex].addEventListener("ended", () => {
+        audio.onended = () => {
           animalBox.classList.remove("playing");
           isPlaying = false;
-        });
+        };
 
-        audioElements[boxIndex].play().catch((error) => {
-          console.log("Sound file not found or cannot play:", error);
-          // If sound doesn't play, still fade back after a short delay
-          setTimeout(() => {
+        const playAttempt = audio.play();
+        if (playAttempt === undefined) {
+          isPlaying = true;
+          return;
+        }
+        playAttempt
+          .then(() => {
+            isPlaying = true;
+          })
+          .catch((error) => {
+            console.log("Sound file not found or cannot play:", error);
             animalBox.classList.remove("playing");
             isPlaying = false;
-          }, 1000);
-        });
+          });
       }
 
       function initializeAnimals() {
@@ -440,19 +445,22 @@
 
       // Add click handlers to each animal box
       animalBoxes.forEach((box, index) => {
-        // Touch handler
+        let lastTouchEnd = 0;
+
         box.addEventListener(
-          "touchstart",
+          "touchend",
           (e) => {
             e.stopPropagation();
+            e.preventDefault();
+            lastTouchEnd = Date.now();
             playAnimalSound(index);
           },
-          { passive: true }
+          { passive: false }
         );
 
-        // Mouse click handler (for desktop testing)
         box.addEventListener("click", (e) => {
           e.stopPropagation();
+          if (Date.now() - lastTouchEnd < 500) return;
           playAnimalSound(index);
         });
       });
