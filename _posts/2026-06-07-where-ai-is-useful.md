@@ -7,6 +7,7 @@ comments: false
 description: Is AI taking everyone's job? The truth bears a more moderate tone, but AI is an increasingly useful tool. Here I provide scenarios where I've found AI useful.
 tags: [AI, software]
 last_modified_at: 2026-06-09 08:21:00 -0700
+discuss_on_twitter: https://x.com/DerekCroote/status/2066559755997577476
 ---
 
 I think <a href="https://mastodon.social/@danielpunkass/116639318125898071" target="_blank">Daniel Jalkut</a> has captured the AI zeitgeist:
