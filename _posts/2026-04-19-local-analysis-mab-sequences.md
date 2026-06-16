@@ -6,6 +6,7 @@ image-alt: Screenshot of LAMBS single mAb analysis
 comments: false
 description: Free, private, local, and open source analysis of mAb sequences that doesn't require installation, setup, or bioinformatics expertise.
 tags: [biotech, software]
+last_modified_at: 2026-06-15 22:44:00 -0700
 discuss_on_twitter: https://x.com/DerekCroote/status/2036095999316557839
 ---
 
@@ -23,7 +24,7 @@ LAMBS is under active development and currently features:
 - Batch analysis with sequence clustering, multiple sequence alignment, AA conservation plots, and consensus sequences.
 - Privacy: everything runs locally in the browser without tracking or data being sent anywhere.
 
-<img src="/images/lambs/screenshot_lambs_single_mab_analysis.png" alt="Screenshot of LAMBS single mAb analysis" class="centered_img" width="800" height="681" onclick="openImageModal(this.src)" style="cursor: zoom-in" />
+<img src="/images/lambs/screenshot_lambs_single_mab_analysis.png" alt="Screenshot of LAMBS single mAb analysis" class="centered_img" width="800" height="813" onclick="openImageModal(this.src)" style="cursor: zoom-in" />
 <div id="image-modal" class="image-modal" onclick="this.style.display='none'">
   <span class="image-modal-close">&times;</span>
   <img class="image-modal-content" id="image-modal-img" alt="An enlarged screenshot of LAMBS single mAb analysis." />
