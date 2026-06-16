@@ -6,6 +6,7 @@ image-alt: Screenshot of LAMBS single mAb analysis
 comments: false
 description: Free, private, local, and open source analysis of mAb sequences that doesn't require installation, setup, or bioinformatics expertise.
 tags: [biotech, software]
+last_modified_at: 2026-06-16 08:00:00 -0700
 discuss_on_twitter: https://x.com/DerekCroote/status/2036095999316557839
 ---
 
