@@ -130,5 +130,5 @@ As you will notice from the table below, I am a fan of a several Hammer Nutritio
 </style>
 
 <p style="font-size: 0.9em">
-Data lives in <a href="https://github.com/dcroote/dcroote.github.io/blob/main/_data/energy_gel_ratings.csv">_data/energy_gel_ratings.csv</a> on GitHub.
+Data lives in <a href="https://github.com/dcroote/dcroote.github.io/blob/master/_data/energy_gel_ratings.csv">_data/energy_gel_ratings.csv</a> on GitHub.
 </p>
