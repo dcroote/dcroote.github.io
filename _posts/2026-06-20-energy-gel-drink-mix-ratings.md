@@ -4,14 +4,14 @@ title: Rating energy gels and drink mixes
 image: images/energy-gel-drink-mix-ratings/endurance-energy-gels-drink-mixes.png
 image-alt: Endurance energy gels and drink mixes
 comments: false
-description: Why is a ratings table of endurance energy gels and drink mixes needed? These products are sugar. Sugar tastes good. Surely it's hard to mess up? Surprisingly, gels and mixes can be bad. Flavors can have you questioning how a human, absent extreme duress, approved of its manufacture.
+description: Why is a ratings table of endurance energy gels and drink mixes needed? These products are sugar. Sugar tastes good. Surely it's hard to mess up? Surprisingly, gels and mixes can be bad. Flavors can have you questioning how a human, absent extreme duress, approved of their manufacture.
 tags: [sports]
 discuss_on_twitter: 
 ---
 
 Why is a ratings table of endurance energy gels and drink mixes needed? These products are sugar. Sugar tastes good. Humans evolved to seek it. Endurance exercise elicits a strong desire for it. Surely it's hard to mess up?
 
-Surprisingly, gels and mixes can be bad. Flavors can have you questioning how a human, absent extreme duress, approved of its manufacture. In fact, I once had a lemon flavored drink mix so terrible that I had to pull off to the side of the trail and vomit. I will be petty and ascribe some blame to this mix for my second place finish (in my age group) at the 2024 Downieville Classic cross-country mountain bike race. Was it my fault for trying a new drink mix for the first time on a 95°F day? Was my suspension also improperly tuned? Did I overexert myself on the 8 mile, 3000 ft climb? Should I have crashed fewer times? Yes, yes, yes, and yes, but it's agreed that in sport blame first belongs to equipment, weather, other external factors, day of the week, and only lastly, if at all, to the athlete.
+Surprisingly, gels and mixes can be bad. Flavors can have you questioning how a human, absent extreme duress, approved of their manufacture. In fact, I once had a lemon flavored drink mix so terrible that I had to pull off to the side of the trail and vomit. I will be petty and ascribe some blame to this mix for my second place finish (in my age group) at the 2024 Downieville Classic cross-country mountain bike race. Was it my fault for trying a new drink mix for the first time on a 95°F day? Was my suspension also improperly tuned? Did I overexert myself on the 8 mile, 3000 ft climb? Should I have crashed fewer times? Yes, yes, yes, and yes, but it's agreed that in sport blame first belongs to equipment, weather, other external factors, day of the week, and only lastly, if at all, to the athlete.
 
 As you will notice from the table below, I am a fan of a several Hammer Nutrition gels. Hammer also makes a gel flask that is great for carrying the equivalent of multiple gels, avoiding sticky used gel packets in your pockets, and lowering the average per-serving cost of gels through bulk gel bottle purchases. If you'd like a discount, here is a <a href="https://www.hammernutrition.com/DEREK42410">Hammer Nutrition referral link</a>.
 
