@@ -13,13 +13,18 @@ Feel free to email me directly at first initial last name at gmail.
 
 <h2>Summary Bio</h2>
 
-<p>I am an action-oriented biotech executive, entrepreneur, and technical leader with responsibilities spanning management, corporate strategy, intellectual property, scientific communication, technology development, basic research, and software engineering, including bioinformatic pipeline development and AI implementations.
+<p>Derek Croote, PhD is an action-oriented biotech executive, entrepreneur, and technical leader with responsibilities spanning management, corporate strategy, intellectual property, scientific communication, technology development, basic research, and software engineering, including bioinformatic pipeline development and AI implementations.
 
 <p>In my current role as co-founder and Chief Technical Officer of <a href="https://iggenix.com" target="_blank">IgGenix</a>, I am developing transformative therapies for individuals suffering from allergies. Our internally developed peanut allergy therapeutic, IGNX001, completed a Phase 1 clinical trial in November 2025. I wrote about the <a href="/2024/08/22/accelerate-website.html">study launch here.</a></p>
 
 <h2>Speaker Bio</h2>
 
-<p>Dr. Croote is the co-founder and chief technical officer of clinical-stage antibody therapeutics company IgGenix, which was spun out of Stanford University with exclusively licensed intellectual property developed by Dr. Croote while in the laboratory of Dr. Stephen Quake. Dr. Croote has experience applying mass spectrometry, single-cell transcriptomics, next-generation sequencing, bioinformatics, and antibody engineering to better understand a diverse set of diseases and immunological perturbations including food allergies, flu vaccination, dengue infection, and glioblastoma. He is the lead author of a publication in the peer-reviewed journal Science that describes the first characterization of single human IgE-producing B cells and their allergen-specific antibodies. He received his B.S. from Brown University and Ph.D. from Stanford University where he was a National Science Foundation and Stanford Graduate fellow.</p>
+<p>Derek Croote, PhD is an executive, scientist, entrepreneur, and technical leader with over a decade of experience advancing research that improves human health.
+Trained in bioengineering at Stanford University (PhD, MS) and Brown University (BS), he co-founded and serves as CTO of IgGenix, a clinical-stage antibody therapeutics company.
+There he plays a central role in strategy, vision, fundraising, and execution that brought IgGenix from inception to a Phase 1 clinical trial of its novel peanut allergy therapeutic IGNX001 in just over 5 years.
+His other scientific contributions include publications in top journals such as <span style="font-style: italic;">Science</span> and <span style="font-style: italic;">Journal of Allergy and Clinical Immunology</span>, five issued U.S. patents, and invited presentations at leading international conferences.
+Derek is also a Board member of the nonprofit SETD1B Research Foundation where he serves as Head of Scientific Strategy.
+Beyond the lab, Derek has mentored high school students, graduate fellows, and NSF applicants, contributed to open-source software, and served as a peer reviewer for leading scientific journals.</p>
 
 <h2>Profiles</h2>
 
