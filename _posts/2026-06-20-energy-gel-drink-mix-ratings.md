@@ -36,24 +36,7 @@ As you will notice from the table below, I am a fan of a several Hammer Nutritio
   .energy-gel-ratings-table {
     border-collapse: collapse;
     width: 100%;
-    min-width: 18rem;
     table-layout: fixed;
-  }
-
-  .energy-gel-col-name {
-    width: 26%;
-  }
-
-  .energy-gel-col-rating {
-    width: 10%;
-  }
-
-  .energy-gel-col-caffeine {
-    width: 18%;
-  }
-
-  .energy-gel-col-comment {
-    width: 46%;
   }
 
   .energy-gel-col-label-short {
