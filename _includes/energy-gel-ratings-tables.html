@@ -7,44 +7,46 @@
   {% if type_rows.size > 0 %}
   <section class="energy-gel-type-section">
     <h2>{{ type }}</h2>
-    <table class="energy-gel-ratings-table" id="energy-gel-table-{{ type | slugify }}">
-      <thead>
-        <tr>
-          <th scope="col" class="energy-gel-sortable" data-sort-key="0" data-sort-type="text" tabindex="0">
-            Name <span class="energy-gel-sort-indicator" aria-hidden="true"></span>
-          </th>
-          <th scope="col" class="energy-gel-sortable" data-sort-key="1" data-sort-type="number" tabindex="0"
-            aria-sort="descending">
-            Rating <span class="energy-gel-sort-indicator" aria-hidden="true">▼</span>
-          </th>
-          <th scope="col" class="energy-gel-sortable" data-sort-key="2" data-sort-type="number" tabindex="0">
-            Caffeine (mg) <span class="energy-gel-sort-indicator" aria-hidden="true"></span>
-          </th>
-          <th scope="col" class="energy-gel-sortable" data-sort-key="3" data-sort-type="text" tabindex="0">
-            Comment <span class="energy-gel-sort-indicator" aria-hidden="true"></span>
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for row in type_rows %}
-        <tr>
-          <td>{{ row.Name | strip }}</td>
-          <td>
-            {% assign rating = row.Rating | strip %}
-            {% if rating == "" %}—{% else %}{{ rating }}{% endif %}
-          </td>
-          <td>
-            {% assign caffeine = row.Caffeine_mg | strip %}
-            {% if caffeine == "" %}—{% else %}{{ caffeine }}{% endif %}
-          </td>
-          <td>
-            {% assign comment = row.Comment | strip %}
-            {% if comment == "" %}—{% else %}{{ comment }}{% endif %}
-          </td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+    <div class="energy-gel-table-scroll">
+      <table class="energy-gel-ratings-table" id="energy-gel-table-{{ type | slugify }}">
+        <thead>
+          <tr>
+            <th scope="col" class="energy-gel-sortable" data-sort-key="0" data-sort-type="text" tabindex="0">
+              Name <span class="energy-gel-sort-indicator" aria-hidden="true"></span>
+            </th>
+            <th scope="col" class="energy-gel-sortable" data-sort-key="1" data-sort-type="number" tabindex="0"
+              aria-sort="descending">
+              Rating <span class="energy-gel-sort-indicator" aria-hidden="true">▼</span>
+            </th>
+            <th scope="col" class="energy-gel-sortable" data-sort-key="2" data-sort-type="number" tabindex="0">
+              <span class="energy-gel-caffeine-full">Caffeine (mg)</span><span class="energy-gel-caffeine-short">Caff. (mg)</span> <span class="energy-gel-sort-indicator" aria-hidden="true"></span>
+            </th>
+            <th scope="col" class="energy-gel-sortable" data-sort-key="3" data-sort-type="text" tabindex="0">
+              Comment <span class="energy-gel-sort-indicator" aria-hidden="true"></span>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in type_rows %}
+          <tr>
+            <td>{{ row.Name | strip }}</td>
+            <td>
+              {% assign rating = row.Rating | strip %}
+              {% if rating == "" %}—{% else %}{{ rating }}{% endif %}
+            </td>
+            <td>
+              {% assign caffeine = row.Caffeine_mg | strip %}
+              {% if caffeine == "" %}—{% else %}{{ caffeine }}{% endif %}
+            </td>
+            <td>
+              {% assign comment = row.Comment | strip %}
+              {% if comment == "" %}—{% else %}{{ comment }}{% endif %}
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
   </section>
   {% endif %}
   {% endfor %}

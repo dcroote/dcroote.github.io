@@ -31,7 +31,13 @@ As you will notice from the table below, I am a fan of a several Hammer Nutritio
   .energy-gel-ratings-table {
     border-collapse: collapse;
     width: 100%;
-    table-layout: fixed;
+    table-layout: auto;
+  }
+
+  .energy-gel-table-scroll {
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .energy-gel-ratings-table th,
@@ -61,6 +67,20 @@ As you will notice from the table below, I am a fan of a several Hammer Nutritio
   .energy-gel-sort-indicator {
     font-size: 0.75em;
     opacity: 0.85;
+  }
+
+  .energy-gel-caffeine-short {
+    display: none;
+  }
+
+  @media (max-width: 480px) {
+    .energy-gel-caffeine-full {
+      display: none;
+    }
+
+    .energy-gel-caffeine-short {
+      display: inline;
+    }
   }
 
   .energy-gel-table-controls {

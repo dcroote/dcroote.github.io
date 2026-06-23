@@ -66,7 +66,7 @@
 
     searchLabel.appendChild(searchInput);
     controls.appendChild(searchLabel);
-    section.insertBefore(controls, table);
+    section.insertBefore(controls, table.closest(".energy-gel-table-scroll") || table);
 
     var emptyRow = document.createElement("tr");
     emptyRow.className = "energy-gel-empty-row";
