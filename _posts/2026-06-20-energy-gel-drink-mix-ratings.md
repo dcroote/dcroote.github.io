@@ -28,10 +28,36 @@ As you will notice from the table below, I am a fan of a several Hammer Nutritio
     margin-bottom: 0.75rem;
   }
 
+  .energy-gel-table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
   .energy-gel-ratings-table {
     border-collapse: collapse;
     width: 100%;
+    min-width: 18rem;
     table-layout: fixed;
+  }
+
+  .energy-gel-col-name {
+    width: 26%;
+  }
+
+  .energy-gel-col-rating {
+    width: 10%;
+  }
+
+  .energy-gel-col-caffeine {
+    width: 18%;
+  }
+
+  .energy-gel-col-comment {
+    width: 46%;
+  }
+
+  .energy-gel-col-label-short {
+    display: none;
   }
 
   .energy-gel-ratings-table th,
@@ -41,6 +67,7 @@ As you will notice from the table below, I am a fan of a several Hammer Nutritio
     text-align: left;
     vertical-align: top;
     font-weight: normal;
+    overflow-wrap: anywhere;
   }
 
   .energy-gel-ratings-table thead th {
@@ -126,6 +153,40 @@ As you will notice from the table below, I am a fan of a several Hammer Nutritio
     background-color: #3a3a3a;
     color: #f0f0f0;
     border-color: #555;
+  }
+
+  @media (max-width: 600px) {
+    .energy-gel-sortable {
+      white-space: normal;
+      line-height: 1.25;
+    }
+
+    .energy-gel-col-label-full {
+      display: none;
+    }
+
+    .energy-gel-col-label-short {
+      display: inline;
+    }
+
+    .energy-gel-ratings-table th,
+    .energy-gel-ratings-table td {
+      padding: 0.4rem 0.45rem;
+      font-size: 0.9em;
+    }
+
+    .energy-gel-table-controls {
+      justify-content: stretch;
+    }
+
+    .energy-gel-search-label {
+      flex: 1;
+    }
+
+    .energy-gel-search-input {
+      flex: 1;
+      min-width: 0;
+    }
   }
 </style>
 
