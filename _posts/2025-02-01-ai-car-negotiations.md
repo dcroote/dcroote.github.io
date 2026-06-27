@@ -5,7 +5,7 @@ image: images/ai-car-negotiations/otd-price-negotiations.webp
 image-alt: Visualization of out-the-door price negotiations
 last_modified_at: 2025-02-01 17:00:00 -0700
 comments: false
-description: Leverage AI to craft and deploy a strategic step-by-step car buying negotiation plan that saved us over $4,000 on a new hybrid SUV.
+description: Negotiate a new car purchase using this AI strategy. We avoided the stress of in-person dealership haggling and saved over $4,000 on a new hybrid SUV.
 tags: [AI, finance]
 discuss_on_twitter: https://x.com/DerekCroote/status/1894186422128840932
 ---
