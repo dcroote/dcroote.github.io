@@ -11,6 +11,13 @@ layout: null
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
+    <image>
+      <url>{{ "/images/favicon/apple-touch-icon.png" | absolute_url }}</url>
+      <title>{{ site.title | xml_escape }}</title>
+      <link>{{ site.url }}{{ site.baseurl }}/</link>
+    </image>
+    <atom:logo>{{ "/images/favicon/apple-touch-icon.png" | absolute_url }}</atom:logo>
+    <atom:icon>{{ "/images/favicon/favicon-32x32.png" | absolute_url }}</atom:icon>
     {% for post in site.posts %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
