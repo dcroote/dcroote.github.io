@@ -530,7 +530,10 @@ li {
 }
 
 .license-icon {
+  width: 20px;
   height: 20px;
+  max-width: none;
+  display: inline;
   margin-left: 4px;
   vertical-align: text-bottom;
 }
