@@ -21,7 +21,7 @@ Much of my writing <a href="https://scholar.google.com/citations?user=PevRGmgAAA
 Laughter is immensely important in life.
 
 Writing is also human. Note I didn't use "was" here. The deluge of AI slop is only beginning, and it's a bit sad to see it spread without care or consequence; it has completely taken over LinkedIn, for example. Dynomight sums up my thoughts on the <a href="https://dynomight.net/blink/" target="_blank">role of AI in writing</a> quite well. I recommend giving it a read. <span style="font-weight: bold;">I too pledge that writing on this blog was and will continue to be free of AI.</span> I realize this take may invoke the old man yells at cloud meme,
-but to be clear, I'm not against AI. I just don't like it for writing, and I don't like reading it unless I ask for it.
+but to be clear, I'm not against AI. I find [AI quite useful](/2026/06/07/where-ai-is-useful.html). I just don't like it for writing, and I don't like reading it unless I ask for it.
 
 Lastly, I hope this blog can help others. Perhaps [set up a website](/2023/08/18/website-cheaply.html) of their own, [configure a new computer](/2023/11/21/configuring-a-new-laptop.html), make [better cold brew](/2020/05/09/cold-brew.html), [negotiate a new car purchase](/2025/02/01/ai-car-negotiations.html), [create a children's book](/2023/12/10/childrens-book.html), or something else.
 
