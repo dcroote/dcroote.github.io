@@ -5,7 +5,7 @@ image: images/ten-year-anniversary/ten-year-anniversary.png
 image-alt: Celebrating ten years of this blog.
 comments: false
 description: Reflecting on why I blog and why I will continue to, ten years later.
-tags: []
+tags: [opinions]
 discuss_on_twitter:
 ---
 
