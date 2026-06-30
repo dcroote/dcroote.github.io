@@ -3,6 +3,7 @@
 _site
 Gemfile.lock
 .jekyll-metadata
+vendor
 TODO*
 *.pdn
 images/*/inputs
