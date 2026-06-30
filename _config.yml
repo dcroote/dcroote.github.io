@@ -22,7 +22,11 @@ supabase_publishable_key: "sb_publishable_dxlmntuz2OVBpoXfp6Z8Ig_0UFJK-TH"
 markdown: kramdown
 
 exclude:
+  - Dockerfile
+  - Gemfile
+  - Gemfile.lock
   - supabase
+  - vendor
 
 include: [".well-known", "manifest.json", "sw.js"]
 
