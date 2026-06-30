@@ -5,6 +5,7 @@ image: images/hr_5_activities.png
 image-alt: Activity-dependent heart rate
 comments: true
 tags: [data science, software, sports]
+last_modified_at: 2026-06-30 14:09:00 -0700
 ---
 
 I have been using the <a href="http://www.mioglobal.com/Mio-FUSE-Heart-Rate-Training-Activity-Tracker/Product.aspx" target="_blank">Mio Fuse</a> (similar to a Fitbit Charge HR) for a couple months now and I wanted to illustrate how to perform your own data analysis on raw heart rate data extracted from the device.
@@ -19,9 +20,9 @@ Before we begin, does the following apply to other Mio products besides the Fuse
 
 - On your phone:
   - App: <a href="https://play.google.com/store/apps/details?id=com.mioglobal.android.miogo&hl=en">Mio GO</a> (free)
-  - App: <a href="https://play.google.com/store/apps/details?id=com.estrongs.android.pop&hl=en">ES File Explorer</a> (free)
+  - App: ES File Explorer (free; **Update:** 2026-06-30 no longer available on Google Play)
 - On your computer
-  - Python virtual environment (I use <a href="https://www.continuum.io/why-anaconda">Anaconda</a>) that includes the packages such as `seaborn`, `pandas`, and `matplotlib`
+  - Python virtual environment (I use ~~Anaconda~~ <a href="https://github.com/conda-forge/miniforge" _target="blank">miniforge</a>) after which it is easy to install packages such as `seaborn`, `pandas`, and `matplotlib`
 
 ## Setup instructions
 

@@ -6,6 +6,7 @@ image-alt: Faded Travis to bright GitHub Actions
 comments: false
 discuss_on_twitter: https://twitter.com/DerekCroote/status/1302757104625750016
 tags: [software]
+last_modified_at: 2026-06-30 14:12:00 -0700
 ---
 
 GitHub Actions should simplify continuous integration (CI) for public repositories hosted on GitHub when compared with external services like Travis CI or CircleCI. To test this, I decided to migrate one of my public repositories from Travis CI to GitHub Actions. This post describes my approach and also lists the resources I found helpful. Overall I am satisfied with the outcome, but found getting there somewhat tricky; documentation on workflow syntax and individual Actions is plentiful, but few examples describe how to combine Actions into jobs that accomplish specific tasks. My hope is that this post can help others construct GitHub Actions workflows that require more than testing source code.
@@ -34,7 +35,7 @@ You can view the [full workflow on GitHub](https://github.com/dcroote/stanford-t
 **(2)** For a PR or an untagged commit, the GitHub Actions workflow ends here with success or failure. If instead the commit is tagged and the tag starts with `v` (i.e. uses semantic versioning of the form `v#.#.#`), then this job downloads the previously uploaded artifact, creates a draft Release, and uploads the PDF as a Release asset. The three steps are:
 
 1. Download the artifact from the previous job using the [Download a Build Artifact](https://github.com/marketplace/actions/download-a-build-artifact) GitHub Action.
-2. Create a draft Release using the [Create a Release](https://github.com/marketplace/actions/create-a-release) GitHub Action. The benefit of GitHub Actions over Travis CI is particularly apparent in this step as the Action automatically provides the appropriate GitHub Token for authentication.
+2. Create a draft Release using the [Create a Release](https://github.com/actions/create-release) GitHub Action. The benefit of GitHub Actions over Travis CI is particularly apparent in this step as the Action automatically provides the appropriate GitHub Token for authentication.
 3. Upload the PDF as a Release asset. After this succeeds I can add a changelog to the draft Release and publish. The repository's README will then automatically point to this new PDF because the URL uses `latest`: [https://github.com/dcroote/stanford-thesis-example/releases/latest/download/thesis-example.pdf](https://github.com/dcroote/stanford-thesis-example/releases/latest/download/thesis-example.pdf).
 
 If you have suggestions for improving the workflow, let me know!
