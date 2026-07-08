@@ -6,7 +6,7 @@ image-alt: Celebrating ten years of this blog.
 comments: false
 description: Reflecting on why I blog and why I will continue to, ten years later.
 tags: [opinions]
-discuss_on_twitter:
+discuss_on_twitter: https://x.com/DerekCroote/status/2074562403552137553
 ---
 
 When I began blogging exactly 10 years ago today, I didn't have a goal or destination. I've just enjoyed doing it.
