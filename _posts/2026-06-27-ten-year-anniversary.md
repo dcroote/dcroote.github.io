@@ -4,7 +4,7 @@ title: Ten Year Anniversary
 image: images/ten-year-anniversary/ten-year-anniversary.png
 image-alt: Celebrating ten years of this blog.
 comments: false
-description: Reflecting on why I blog and why I will continue to, ten years later.
+description: Reflecting on why I blog and what motivates me to continue, ten years after my first post.
 tags: [opinions]
 discuss_on_twitter: https://x.com/DerekCroote/status/2074562403552137553
 ---
