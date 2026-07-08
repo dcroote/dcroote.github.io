@@ -1,0 +1,95 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "$repo_root"
+
+if ! command -v exiftool >/dev/null 2>&1; then
+  echo "pre-commit: exiftool is required to strip image metadata." >&2
+  exit 1
+fi
+
+if ! command -v python3 >/dev/null 2>&1; then
+  echo "pre-commit: python3 is required to add image dimensions." >&2
+  exit 1
+fi
+
+strip_args=(
+  -q
+  -q
+  -all=
+  -tagsFromFile
+  @
+  -ICC_Profile:all
+  -ColorSpace
+  -Orientation
+  -XResolution
+  -YResolution
+  -overwrite_original
+)
+
+image_globs=(
+  '*.avif' '*.gif' '*.heic' '*.jpeg' '*.jpg' '*.png' '*.tif' '*.tiff' '*.webp'
+  '*.mov' '*.mp4' '*.m4v' '*.webm'
+)
+failed=0
+tmp_files=()
+
+cleanup() {
+  if (( ${#tmp_files[@]} )); then
+    rm -f "${tmp_files[@]}"
+  fi
+}
+trap cleanup EXIT
+
+while IFS= read -r -d '' path; do
+  extension="${path##*.}"
+  tmp="$(mktemp --suffix=".$extension")"
+  cleaned="$(mktemp --suffix=".$extension")"
+  tmp_files+=("$tmp" "$cleaned")
+
+  if ! git show ":$path" > "$tmp"; then
+    echo "pre-commit: failed to read staged image $path." >&2
+    failed=1
+    continue
+  fi
+
+  cp "$tmp" "$cleaned"
+
+  if ! exiftool "${strip_args[@]}" "$cleaned"; then
+    echo "pre-commit: failed to strip metadata from staged image $path." >&2
+    failed=1
+    continue
+  fi
+
+  if ! cmp -s "$tmp" "$cleaned"; then
+    mode="$(git ls-files -s -- "$path" | awk '{ print $1; exit }')"
+    blob="$(git hash-object -w "$cleaned")"
+
+    git update-index --cacheinfo "$mode" "$blob" "$path"
+    echo "pre-commit: stripped image metadata from $path" >&2
+
+    if [[ -f "$path" ]] && cmp -s "$path" "$tmp"; then
+      cp "$cleaned" "$path"
+    else
+      echo "pre-commit: cleaned only the staged copy of $path because the working tree differs." >&2
+    fi
+  fi
+
+  rm -f "$tmp" "$cleaned"
+done < <(git diff --cached --name-only -z --diff-filter=ACMRT -- "${image_globs[@]}")
+
+if (( failed )); then
+  echo "pre-commit: failed to strip image metadata." >&2
+  exit 1
+fi
+
+mapfile -t staged_posts < <(
+  git diff --cached --name-only --diff-filter=ACMRT -- '_posts/*.md'
+)
+
+if ((${#staged_posts[@]})); then
+  python3 "$repo_root/scripts/add-image-dimensions.py" --staged
+  git add -- "${staged_posts[@]}"
+fi

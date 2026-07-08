@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Stubborn Problems Ep 3 - Kitchen Scale
-image: images/stubborn_problems/ep3_kitchen_scale.png
+image: /images/stubborn_problems/ep3_kitchen_scale.png
 image-alt: Open back of a broken kitchen scale
+image_width: 400
+image_height: 464
 description: Narrowly avoiding a morning coffee crisis.
 comments: false
 last_modified_at: 2025-10-25 15:13:00 -0700

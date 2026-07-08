@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Owned Content
-image: images/owned-content/flower-sidewalk.jpg
+image: /images/owned-content/flower-sidewalk.jpg
 image-alt: A flower growing in the sidewalk.
+image_width: 640
+image_height: 428
 description: Social media, proprietary platforms, and AI threaten the free and open internet.
 comments: false
 tags: [AI, opinions, social media, software]

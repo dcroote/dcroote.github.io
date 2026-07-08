@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Where AI is Useful
-image: images/where-ai-is-useful/desktop-gpus.jpg
+image: /images/where-ai-is-useful/desktop-gpus.jpg
 image-alt: A desktop with two Nvidia GPUs.
+image_width: 1353
+image_height: 990
 comments: false
 description: Is AI taking everyone's job? The truth bears a more moderate tone, but AI is an increasingly useful tool. Here I provide scenarios where I've found AI useful.
 tags: [AI, software]

@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Quickly configure a Namecheap domain for GitHub Pages
-image: images/custom-domain/derekcroote-domain.png
+image: /images/custom-domain/derekcroote-domain.png
 image-alt: www.derekcroote.com
+image_width: 400
+image_height: 200
 description: "Simple tutorial on using a Namecheap domain with GitHub Pages."
 comments: false
 last_modified_at: 2025-10-13 10:05:00 -0700

@@ -1,8 +1,10 @@
 ---
 layout: post
 title: High quality vector graphics in Microsoft Word
-image: images/vector_vs_raster.svg
+image: /images/vector_vs_raster.svg
 image-alt: Comparing vector and raster formats
+image_width: 80
+image_height: 74
 last_modified_at: 2020-12-12 10:43:06 -0800
 comments: false
 description: Use Enhanced MetaFile (.emf) format to embed high quality vector graphics in Microsoft Word

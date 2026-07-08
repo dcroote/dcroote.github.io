@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Verifying Brave Rewards on GitHub Pages using Jekyll
-image: images/brave-bat-partnership.svg
+image: /images/brave-bat-partnership.svg
 image-alt: Brave logo
+image_width: 333
+image_height: 87
 comments: false
 tags: [software]
 ---

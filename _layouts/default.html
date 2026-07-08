@@ -10,7 +10,9 @@
 
     {% include footer.html %}
 
+    {% if page.content contains "language-" %}
     <script src="{{ site.baseurl }}/scripts/prism.js"></script>
+    {% endif %}
     <script>
       const themeToggle = document.getElementById("theme-toggle");
       const root = document.documentElement;

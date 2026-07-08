@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Hidden for Years
-image: images/seq-sifter-easter-egg/seq-sifter-easter-egg.jpeg
+image: /images/seq-sifter-easter-egg/seq-sifter-easter-egg.jpeg
 image-alt:
+image_width: 2048
+image_height: 1149
 description: "A message has been hidden for years in an IgGenix slide- care for a challenge in finding it?"
 comments: false
 last_modified_at: 2025-12-28 15:38:00 -0700

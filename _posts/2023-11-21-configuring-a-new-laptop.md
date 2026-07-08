@@ -3,6 +3,8 @@ layout: post
 title: Configuring a new computer
 image: /images/configuring_laptop/laptop.webp
 image-alt: A sleek, modern laptop with a glossy screen, open on a minimalist desk. The desk is wooden, clean, and there's a small potted plant to the side. Soft, ambient lighting creates a cozy atmosphere. The laptop screen displays a vibrant wallpaper with abstract geometric shapes in blue and green hues. The scene suggests innovation, productivity, and modern technology. The background is softly blurred, emphasizing the laptop and the work environment.
+image_width: 500
+image_height: 500
 comments: false
 last_modified_at: 2026-01-21 08:47:00 -0700
 tags: [software]

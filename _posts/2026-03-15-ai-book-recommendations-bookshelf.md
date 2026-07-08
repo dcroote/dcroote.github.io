@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Have a Bookshelf? Take a Picture and Ask AI for Book Recommendations
-image: images/ai-book-recommendations/bookshelf.jpg
+image: /images/ai-book-recommendations/bookshelf.jpg
 image-alt: Photograph of my bookshelf
+image_width: 1600
+image_height: 1200
 comments: false
 description: With a picture and a prompt, AI can provide some excellent book recommendations.
 tags: [AI, biotech]

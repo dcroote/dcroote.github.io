@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Take it apart!
-image: images/stubborn_problems/disassembled-helicopter-toy.jpg
+image: /images/stubborn_problems/disassembled-helicopter-toy.jpg
 image-alt: A disassembled children's helicopter toy
+image_width: 1200
+image_height: 900
 comments: false
 description: A simple call to action for revealing the pleasing simplicity in the design of children's toys.
 tags: ["engineering"]

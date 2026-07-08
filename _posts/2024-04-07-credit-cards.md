@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Two credit cards
-image: images/credit_cards/cc-graphic.svg
+image: /images/credit_cards/cc-graphic.svg
 image-alt: Vector illustration of the outline of two credit cards
+image_width: 1920
+image_height: 1080
 last_modified_at: 2024-04-25 22:12:00 -0700
 comments: false
 description: A practical guide to maximizing credit card rewards with just two cards. Learn how prioritizing simplicity and profitability can optimize your cashback without the complexity of points systems.

@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Stubborn Problems Ep 4 - Invalid Code
-image: images/stubborn_problems/ep4_time.png
+image: /images/stubborn_problems/ep4_time.png
 image-alt: Clock with the time 00:04
+image_width: 1200
+image_height: 630
 description: "A story of time and two-factor authentication."
 comments: false
 last_modified_at: 2025-10-25 15:13:00 -0700

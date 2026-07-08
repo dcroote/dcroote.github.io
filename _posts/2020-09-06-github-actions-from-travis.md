@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Migrate to GitHub Actions from Travis CI
-image: images/github_actions/travis_to_github_actions.png
+image: /images/github_actions/travis_to_github_actions.png
 image-alt: Faded Travis to bright GitHub Actions
+image_width: 606
+image_height: 303
 comments: false
 discuss_on_twitter: https://twitter.com/DerekCroote/status/1302757104625750016
 tags: [software]

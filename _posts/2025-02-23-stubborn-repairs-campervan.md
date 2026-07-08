@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Stubborn Problems Ep 2 - Old Van
-image: images/stubborn_problems/ep2_320k-mileage.jpg
+image: /images/stubborn_problems/ep2_320k-mileage.jpg
 image-alt: 320k miles on our rented camper van
+image_width: 483
+image_height: 250
 description: The story of a small piece of metal from a generation ago that saved our campervan vacation.
 comments: false
 last_modified_at: 2025-10-25 15:13:00 -0700

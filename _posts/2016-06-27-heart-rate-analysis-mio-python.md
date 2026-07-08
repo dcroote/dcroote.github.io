@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Analyzing Mio Fuse heart rate data in Python
-image: images/hr_5_activities.png
+image: /images/hr_5_activities.png
 image-alt: Activity-dependent heart rate
+image_width: 771
+image_height: 476
 comments: true
 tags: [data science, software, sports]
 last_modified_at: 2026-06-30 14:09:00 -0700

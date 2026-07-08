@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Kids Animal Sounds Game
-image: images/kids-animal-sounds-game/kids-animal-sounds-game.png
+image: /images/kids-animal-sounds-game/kids-animal-sounds-game.png
 image-alt: Interactive kids animal sounds game
+image_width: 1200
+image_height: 630
 description: 'The beauty here is not that AI could build a kids game, though a mere 6 years ago this would have been unimaginable, but rather that AI increasingly moves us from "yes, I could build this, but I don''t really want to spend the time" to the existence of something new and useful.'
 comments: false
 last_modified_at: 2025-11-01 15:38:00 -0700

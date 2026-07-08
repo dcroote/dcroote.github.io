@@ -1,8 +1,10 @@
 ---
 layout: post
 title: How AI Saved Us Thousands on a New Car
-image: images/ai-car-negotiations/otd-price-negotiations.webp
+image: /images/ai-car-negotiations/otd-price-negotiations.webp
 image-alt: Visualization of out-the-door price negotiations
+image_width: 800
+image_height: 419
 last_modified_at: 2025-02-01 17:00:00 -0700
 comments: false
 description: Negotiate a new car purchase using this AI strategy. We avoided the stress of in-person dealership haggling and saved over $4,000 on a new hybrid SUV.

@@ -14,8 +14,10 @@ cat > "$post_file" <<'EOF'
 ---
 layout: post
 title: 
-image: images/
+image: /images/
 image-alt: 
+image_width: 
+image_height: 
 comments: false
 description: 
 tags: []
@@ -32,3 +34,4 @@ discuss_on_twitter:
 EOF
 
 echo "Created $post_file"
+echo "After setting image:, leave image_width/image_height blank — the pre-commit hook fills them."

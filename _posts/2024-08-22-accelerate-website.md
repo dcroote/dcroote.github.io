@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Transition to Clinical Stage
-image: images/clinical-transition/accelerate-study-logo.webp
+image: /images/clinical-transition/accelerate-study-logo.webp
 image-alt: ACCELERATE Peanut Study logo
+image_width: 454
+image_height: 238
 description: It feels somewhat silly that launching the ACCELERATE Peanut Study website imparts such a strong feeling of progress, but it does. It marks a transition. Preclinical to clinical, and I couldn't be more proud of the team.
 comments: false
 tags: [biotech]

@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Stubborn Problems Ep 1 - Broken Toy Whale
-image: images/stubborn_problems/ep1_broken_whale.webp
+image: /images/stubborn_problems/ep1_broken_whale.webp
 image-alt: Fixing a broken toy whale that stopped spraying water
+image_width: 4032
+image_height: 3024
 description: The whale is a bath time favorite of my daughter- it flashes colors and sprays water into the air. One day, the whale stopped spraying.
 comments: false
 last_modified_at: 2025-10-25 15:13:00 -0700

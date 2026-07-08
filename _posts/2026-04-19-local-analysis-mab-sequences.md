@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Local Analysis of mAb Sequences (LAMBS)
-image: images/lambs/screenshot_lambs_single_mab_analysis.png
+image: /images/lambs/screenshot_lambs_single_mab_analysis.png
 image-alt: Screenshot of LAMBS single mAb analysis
+image_width: 1200
+image_height: 1220
 comments: false
 description: Free, private, local, and open source analysis of mAb sequences that doesn't require installation, setup, or bioinformatics expertise.
 tags: [biotech, software]

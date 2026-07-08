@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Rating energy gels and drink mixes
-image: images/energy-gel-drink-mix-ratings/endurance-energy-gels-drink-mixes.png
+image: /images/energy-gel-drink-mix-ratings/endurance-energy-gels-drink-mixes.png
 image-alt: Endurance energy gels and drink mixes
+image_width: 800
+image_height: 649
 comments: false
 description: Why is a ratings table of endurance energy gels and drink mixes needed? These products are sugar. Sugar tastes good. Surely it's hard to mess up? Surprisingly, gels and mixes can be bad. Flavors can have you questioning how a human, absent extreme duress, approved of their manufacture.
 tags: [sports]
