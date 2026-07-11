@@ -6,12 +6,13 @@ image-alt: A sleek, modern laptop with a glossy screen, open on a minimalist des
 image_width: 500
 image_height: 500
 comments: false
+description: An opinionated set of steps and software for quickly configuring a new computer to maximize productivity and ease of use. Many suggestions applicable to Mac, Windows, and Linux.
 last_modified_at: 2026-01-21 08:47:00 -0700
 tags: [software]
 discuss_on_twitter: https://x.com/DerekCroote/status/1727231950057029762
 ---
 
-This post is mostly for my future self, but others may find it useful. Most of the software applications are cross-platform, but some are specific to certain operating systems.
+Here i describe an opinionated set of steps and software for quickly configuring a new computer to maximize productivity and ease of use. Many suggestions applicable to Mac, Windows, and Linux, but some are OS-specific.
 
 ## General
 
