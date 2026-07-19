@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header header--with-subscribe">
   <div class="header-container">
     <h2 style="color: #ffffff">{{ site.author.name }}</h2>
     <div class="nav-left">
@@ -68,5 +68,41 @@
         </li>
       </ul>
     </div>
+    <div class="clear"></div>
+    <div class="header-subscribe">
+      <div class="header-subscribe__copy">
+        <span class="header-subscribe__title">Get new posts by email</span>
+      </div>
+      <form
+        id="header-subscribe-form"
+        class="header-cta header-cta--subscribe"
+        action="https://buttondown.com/api/emails/embed-subscribe/{{ site.buttondown_username }}"
+        method="post"
+      >
+        <label class="visually-hidden" for="header-bd-email">Email address</label>
+        <input
+          id="header-bd-email"
+          class="header-cta__input"
+          type="email"
+          name="email"
+          placeholder="you@example.com"
+          autocomplete="email"
+          required
+        />
+        <div class="header-subscribe-hp" aria-hidden="true">
+          <label for="header-bd-company">Company</label>
+          <input
+            id="header-bd-company"
+            type="text"
+            name="company"
+            tabindex="-1"
+            autocomplete="off"
+          />
+        </div>
+        <input type="hidden" value="1" name="embed" />
+        <button class="header-cta__button" type="submit">Subscribe</button>
+      </form>
+    </div>
   </div>
 </header>
+<script src="{{ '/scripts/subscribe.js' | prepend: site.baseurl }}" defer></script>

@@ -1,4 +1,6 @@
 User-agent: *
 Disallow: /supabase/
+Disallow: /subscribed/
+Disallow: /confirmed/
 
 Sitemap: https://www.derekcroote.com/sitemap.xml
