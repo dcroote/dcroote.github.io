@@ -74,17 +74,12 @@
         <span class="header-subscribe__title">Get new posts by email</span>
       </div>
       <form
+        id="header-subscribe-form"
         class="header-cta header-cta--subscribe"
-        {% if site.buttondown_username and site.buttondown_username != empty %}
         action="https://buttondown.com/api/emails/embed-subscribe/{{ site.buttondown_username }}"
         method="post"
         target="popupwindow"
         onsubmit="window.open('https://buttondown.com/{{ site.buttondown_username }}', 'popupwindow')"
-        {% else %}
-        action="#"
-        method="post"
-        onsubmit="return false;"
-        {% endif %}
       >
         <label class="visually-hidden" for="header-bd-email">Email address</label>
         <input
@@ -96,11 +91,21 @@
           autocomplete="email"
           required
         />
-        {% if site.buttondown_username and site.buttondown_username != empty %}
+        <!-- Honeypot: leave empty. Bots that fill it are blocked client-side. -->
+        <div class="header-subscribe-hp" aria-hidden="true">
+          <label for="header-bd-company">Company</label>
+          <input
+            id="header-bd-company"
+            type="text"
+            name="company"
+            tabindex="-1"
+            autocomplete="off"
+          />
+        </div>
         <input type="hidden" value="1" name="embed" />
-        {% endif %}
         <button class="header-cta__button" type="submit">Subscribe</button>
       </form>
     </div>
   </div>
 </header>
+<script src="{{ '/scripts/subscribe.js' | prepend: site.baseurl }}" defer></script>
