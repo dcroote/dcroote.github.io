@@ -119,6 +119,7 @@ li {
 
 .header-subscribe {
   clear: both;
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 0.5em;
@@ -205,10 +206,6 @@ li {
   width: 1px;
   height: 1px;
   overflow: hidden;
-}
-
-.header-subscribe {
-  position: relative;
 }
 
 @media only screen and (min-width: 601px) {
