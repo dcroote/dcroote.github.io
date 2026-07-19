@@ -12,8 +12,10 @@ body {
 }
 
 .header-container {
-  max-width: 700px;
-  margin: 0px auto;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .nav {
@@ -79,6 +81,13 @@ li {
   color: #eee;
 }
 
+@media only screen and (min-width: 601px) {
+  /* Motto stays on one line so it can define the header content width */
+  .header .description {
+    white-space: nowrap;
+  }
+}
+
 .social-links {
   padding-top: 10px;
   margin-left: 0px;
@@ -101,6 +110,139 @@ li {
 
 .social-links a:active {
   opacity: 0.6;
+}
+
+/* Header subscribe band — darker panel under the photo/nav block */
+.header--with-subscribe {
+  padding-bottom: 28px;
+}
+
+.header-subscribe {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  align-items: stretch;
+  margin-top: 10px;
+  padding: 8px 14px;
+  background-color: #454b57;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.header-subscribe__copy {
+  min-width: 0;
+}
+
+.header-subscribe__title {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.95em;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.header-cta {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.45em;
+  align-items: stretch;
+  width: 100%;
+  min-width: 0;
+}
+
+.header-cta__input {
+  flex: 1 1 auto;
+  min-width: 0;
+  box-sizing: border-box;
+  min-height: 32px;
+  padding: 0.3em 0.65em;
+  border: none;
+  border-radius: 6px;
+  background: #fff;
+  color: #333;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.header-cta__input:focus {
+  outline: 2px solid rgba(179, 222, 255, 0.7);
+  outline-offset: 1px;
+}
+
+.header-cta__input::placeholder {
+  color: #959ba6;
+}
+
+.header-cta__button {
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  min-height: 32px;
+  padding: 0.3em 0.85em;
+  border: none;
+  border-radius: 6px;
+  background-color: #b3deff;
+  color: #515865;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.3;
+  cursor: pointer;
+  transition: opacity 0.15s linear;
+  white-space: nowrap;
+}
+
+.header-cta__button:hover {
+  opacity: 0.85;
+}
+
+@media only screen and (min-width: 601px) {
+  .header-subscribe {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5em 1.25em;
+    margin-top: 12px;
+    padding: 8px 14px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .header-subscribe__copy {
+    flex: 0 1 auto;
+    min-width: 0;
+  }
+
+  .header-cta--subscribe {
+    flex: 0 1 16rem;
+    width: auto;
+    max-width: 16rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header--with-subscribe {
+    padding-bottom: 22px;
+  }
+
+  .header-subscribe {
+    margin-top: 8px;
+    padding: 6px 12px;
+    gap: 0.4em;
+  }
+
+  .header-cta__input {
+    font-size: 16px; /* avoid iOS zoom on focus */
+    min-height: 32px;
+    padding: 0.25em 0.6em;
+  }
+
+  .header-cta__button {
+    min-height: 32px;
+    padding: 0.25em 0.75em;
+  }
 }
 
 .page-content {

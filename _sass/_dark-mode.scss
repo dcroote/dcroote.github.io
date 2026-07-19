@@ -96,7 +96,7 @@ html.dark-mode body {
     border: 1px solid #555;
   }
 
-  button:not(.like-button):not(#theme-toggle) {
+  button:not(.like-button):not(#theme-toggle):not(.header-cta__button) {
     background-color: #4a9eff;
     color: #ffffff;
     border: none;
@@ -105,6 +105,26 @@ html.dark-mode body {
     &:hover {
       background-color: #3a7fcf;
     }
+  }
+
+  .header-cta__button {
+    background-color: #b3deff;
+    color: #515865;
+
+    &:hover {
+      opacity: 0.85;
+      background-color: #b3deff;
+    }
+  }
+
+  .header-cta__input {
+    background-color: #fff;
+    color: #333;
+  }
+
+  .header-subscribe {
+    background-color: #3a3a3a;
+    border-color: #555;
   }
 
   .like-button {
