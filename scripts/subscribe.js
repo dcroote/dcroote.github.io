@@ -3,10 +3,10 @@
   if (!form) return;
 
   var readyAt = Date.now() + 1200;
-  var honeypot = form.querySelector("#header-bd-company");
+  var companyField = form.querySelector("#header-bd-company");
 
   form.addEventListener("submit", function (event) {
-    if (honeypot && honeypot.value) {
+    if (companyField && companyField.value) {
       event.preventDefault();
       return;
     }
