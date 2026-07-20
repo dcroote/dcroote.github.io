@@ -55,5 +55,8 @@
   <link href="{{ site.baseurl }}/css/prism.css" rel="stylesheet" />
   {% endif %}
   <script src="https://analytics.ahrefs.com/analytics.js" data-key="d1KzBf0paHx1wk+Q2tKKFw" async></script>
+  {% if page.noindex %}
+  <meta name="robots" content="noindex, follow" />
+  {% endif %}
   {% seo %}
 </head>
