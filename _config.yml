@@ -15,7 +15,10 @@ twitter:
 description: Perspectives on science, technology, and engineering.
 
 # Newsletter (Buttondown). Your Buttondown username (required for subscribe).
-# Also enable Firewall in the Buttondown dashboard for server-side bot blocking.
+# In the Buttondown dashboard:
+# - Enable Firewall for server-side bot blocking
+# - After subscribing redirect: https://www.derekcroote.com/subscribed/
+# - After confirming redirect: https://www.derekcroote.com/confirmed/
 buttondown_username: ""
 
 # Post likes (Supabase). Leave empty to hide the like button. See supabase/README.md.
