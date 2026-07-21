@@ -115,6 +115,11 @@ html.dark-mode body {
       opacity: 0.85;
       background-color: #b3deff;
     }
+
+    &:disabled,
+    &.header-cta__button--submitting {
+      opacity: 0.75;
+    }
   }
 
   .header-cta__input {

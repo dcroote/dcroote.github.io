@@ -177,9 +177,14 @@ li {
 }
 
 .header-cta__button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   flex: 0 0 auto;
   box-sizing: border-box;
   min-height: 32px;
+  min-width: 6.5em;
   padding: 0.3em 0.85em;
   border: none;
   border-radius: 6px;
@@ -196,6 +201,39 @@ li {
 
 .header-cta__button:hover {
   opacity: 0.85;
+}
+
+.header-cta__button:disabled,
+.header-cta__button--submitting {
+  cursor: not-allowed;
+  opacity: 0.75;
+  pointer-events: none;
+}
+
+.header-cta__button-spinner {
+  display: none;
+  box-sizing: border-box;
+  width: 0.95em;
+  height: 0.95em;
+  border: 2px solid rgba(81, 88, 101, 0.25);
+  border-top-color: #515865;
+  border-radius: 50%;
+  animation: header-cta-spin 0.7s linear infinite;
+}
+
+.header-cta__button--submitting .header-cta__button-label {
+  visibility: hidden;
+}
+
+.header-cta__button--submitting .header-cta__button-spinner {
+  display: block;
+  position: absolute;
+}
+
+@keyframes header-cta-spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .header-subscribe-hp {
