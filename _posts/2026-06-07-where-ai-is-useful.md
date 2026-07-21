@@ -8,7 +8,7 @@ image_height: 990
 comments: false
 description: Is AI taking everyone's job? The truth bears a more moderate tone, but AI is an increasingly useful tool. Here I provide scenarios where I've found AI useful.
 tags: [AI, software]
-last_modified_at: 2026-06-09 08:21:00 -0700
+last_modified_at: 2026-07-21 08:00:00 -0700
 discuss_on_twitter: https://x.com/DerekCroote/status/2066559755997577476
 ---
 
@@ -35,6 +35,7 @@ The truth, of course, bears a more moderate tone, where AI is an increasingly us
 - Replacing traditional search e.g. finding coupons, suggesting adventures, looking up the MSRP of items in a list, learning how something works, determining what forms to file and when, etc.
 - Guiding hardware repairs
 - Diagnosing pneumonia (subsequently confirmed by x-ray)
+- Diagnosing that my low tire pressures indicator light was the result of the tire shop forgetting to reset the Tire Pressure Monitoring System (TPMS) after replacement and then finding the instructions to do it given my car make, model, and year
 
 But what about writing? No. I subscribe to the idea that writing is thinking and abandoning one's voice has far deeper consequences than it might appear.
 
