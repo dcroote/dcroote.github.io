@@ -5,19 +5,6 @@ const TURNSTILE_TEST_HOSTNAME = "example.com";
 const MAX_REQUEST_BYTES = 8_192;
 const MAX_TURNSTILE_TOKEN_LENGTH = 2_048;
 
-async function debugLog(env, entry) {
-  if (!env.DEBUG_LOG_URL) return;
-  try {
-    await fetch(env.DEBUG_LOG_URL, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ ...entry, timestamp: Date.now() }),
-    });
-  } catch {
-    // Debug logging must not affect subscription handling.
-  }
-}
-
 function corsHeaders(origin) {
   return {
     "Access-Control-Allow-Origin": origin,
@@ -47,14 +34,6 @@ function isValidEmail(email) {
 }
 
 async function verifyTurnstile(token, ipAddress, env, fetchImpl) {
-  // #region agent log
-  await debugLog(env, {
-    hypothesisId: "C",
-    location: "subscribe-worker/src/worker.js:verifyTurnstile:entry",
-    message: "Turnstile verification request",
-    data: { tokenLength: token.length, hasIpAddress: Boolean(ipAddress) },
-  });
-  // #endregion
   const body = new FormData();
   body.append("secret", env.TURNSTILE_SECRET);
   body.append("response", token);
@@ -65,30 +44,9 @@ async function verifyTurnstile(token, ipAddress, env, fetchImpl) {
     method: "POST",
     body,
   });
-  // #region agent log
-  await debugLog(env, {
-    hypothesisId: "C",
-    location: "subscribe-worker/src/worker.js:verifyTurnstile:response",
-    message: "Turnstile verification HTTP response",
-    data: { ok: response.ok, status: response.status },
-  });
-  // #endregion
   if (!response.ok) return false;
 
   const result = await response.json();
-  // #region agent log
-  await debugLog(env, {
-    hypothesisId: "A,B,C",
-    location: "subscribe-worker/src/worker.js:verifyTurnstile:result",
-    message: "Turnstile verification result",
-    data: {
-      success: result.success,
-      hostname: result.hostname,
-      action: result.action,
-      errorCodes: result["error-codes"],
-    },
-  });
-  // #endregion
   const isTestMode = env.TURNSTILE_TEST_MODE === "true";
   const hostnameMatches = isTestMode
     ? result.hostname === TURNSTILE_TEST_HOSTNAME
@@ -100,27 +58,6 @@ async function verifyTurnstile(token, ipAddress, env, fetchImpl) {
     result.success === true &&
     hostnameMatches &&
     actionMatches;
-  // #region agent log
-  await debugLog(env, {
-    hypothesisId: "A,B",
-    location: "subscribe-worker/src/worker.js:verifyTurnstile:test-mode",
-    message: "Turnstile test response predicates",
-    data: { isTestMode, hostnameMatches, actionMatches },
-  });
-  // #endregion
-  // #region agent log
-  await debugLog(env, {
-    hypothesisId: "A,B,D",
-    location: "subscribe-worker/src/worker.js:verifyTurnstile:exit",
-    message: "Turnstile validation predicates",
-    data: {
-      successMatches: result.success === true,
-      hostnameMatches: result.hostname === env.TURNSTILE_HOSTNAME,
-      actionMatches: result.action === env.TURNSTILE_ACTION,
-      isValid,
-    },
-  });
-  // #endregion
   return isValid;
 }
 
@@ -140,19 +77,6 @@ async function createButtondownSubscriber(email, ipAddress, env, fetchImpl) {
 
 export async function handleRequest(request, env, fetchImpl = fetch) {
   const origin = request.headers.get("Origin") || "";
-  // #region agent log
-  await debugLog(env, {
-    hypothesisId: "D",
-    location: "subscribe-worker/src/worker.js:handleRequest:entry",
-    message: "Subscription request environment predicates",
-    data: {
-      method: request.method,
-      originMatches: origin === env.ALLOWED_ORIGIN,
-      hasExpectedHostname: Boolean(env.TURNSTILE_HOSTNAME),
-      hasExpectedAction: Boolean(env.TURNSTILE_ACTION),
-    },
-  });
-  // #endregion
   if (origin !== env.ALLOWED_ORIGIN) {
     return new Response("Forbidden", {
       status: 403,
