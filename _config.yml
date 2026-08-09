@@ -22,7 +22,9 @@ description: Perspectives on science, technology, and engineering.
 #   Prefer Filtering=Default; Aggressive only if needed. Keep Attack mode on.
 # - Double opt-in (confirmation email) on.
 # - Subscriber cleanup: https://buttondown.com/settings/subscribing
-buttondown_username: "derekcroote"
+# Set these after deploying subscribe-worker; see subscribe-worker/README.md.
+subscribe_worker_url: ""
+turnstile_site_key: ""
 
 # Post likes (Supabase). Leave empty to hide the like button. See supabase/README.md.
 supabase_url: "https://stobgqjkojlraavbbykk.supabase.co"

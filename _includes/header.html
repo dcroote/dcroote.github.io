@@ -76,8 +76,12 @@
       <form
         id="header-subscribe-form"
         class="header-cta header-cta--subscribe"
-        action="https://buttondown.com/api/emails/embed-subscribe/{{ site.buttondown_username }}"
+        action="{{ site.subscribe_worker_url }}"
         method="post"
+        data-subscribe-url="{{ site.subscribe_worker_url }}"
+        data-turnstile-site-key="{{ site.turnstile_site_key }}"
+        data-turnstile-action="newsletter_subscribe"
+        data-success-url="{{ '/subscribed/' | prepend: site.baseurl }}"
       >
         <label class="visually-hidden" for="header-bd-email">Email address</label>
         <input
@@ -87,6 +91,7 @@
           name="email"
           placeholder="you@example.com"
           autocomplete="email"
+          aria-describedby="header-subscribe-status"
           required
         />
         <div class="header-subscribe-company" aria-hidden="true">
@@ -103,11 +108,20 @@
             spellcheck="false"
           />
         </div>
-        <input type="hidden" value="1" name="embed" />
         <button class="header-cta__button" type="submit">
           <span class="header-cta__button-label">Subscribe</span>
           <span class="header-cta__button-spinner" aria-hidden="true"></span>
         </button>
+        <div
+          id="header-subscribe-turnstile"
+          class="header-subscribe-turnstile"
+        ></div>
+        <p
+          id="header-subscribe-status"
+          class="header-subscribe-status"
+          role="status"
+          aria-live="polite"
+        ></p>
       </form>
     </div>
   </div>

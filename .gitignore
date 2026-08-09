@@ -13,3 +13,6 @@ images/*/inputs
 run.sh
 .vscode
 .DS_Store
+node_modules
+.wrangler
+.dev.vars

@@ -151,6 +151,10 @@ li {
   min-width: 0;
 }
 
+.header-cta--subscribe {
+  flex-wrap: wrap;
+}
+
 .header-cta__input {
   flex: 1 1 auto;
   min-width: 0;
@@ -242,6 +246,26 @@ li {
   width: 1px;
   height: 1px;
   overflow: hidden;
+}
+
+.header-subscribe-turnstile,
+.header-subscribe-status:empty {
+  display: none;
+}
+
+.header-subscribe-turnstile--visible {
+  display: block;
+  flex: 1 0 100%;
+  width: 100%;
+}
+
+.header-subscribe-status {
+  flex: 1 0 100%;
+  margin: 0;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 1.35;
 }
 
 @media only screen and (min-width: 601px) {
