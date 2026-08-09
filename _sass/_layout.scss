@@ -152,7 +152,8 @@ li {
 }
 
 .header-cta--subscribe {
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
 }
 
 .header-cta__input {
@@ -255,12 +256,12 @@ li {
 
 .header-subscribe-turnstile--visible {
   display: block;
-  flex: 1 0 100%;
+  grid-column: 1 / -1;
   width: 100%;
 }
 
 .header-subscribe-status {
-  flex: 1 0 100%;
+  grid-column: 1 / -1;
   margin: 0;
   color: #fff;
   font-family: "Montserrat", sans-serif;
