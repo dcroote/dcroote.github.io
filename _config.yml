@@ -17,6 +17,15 @@ description: Perspectives on science, technology, and engineering.
 # Newsletter (Buttondown).
 # - After subscribing redirect: https://www.derekcroote.com/subscribed/
 # - After confirming redirect: https://www.derekcroote.com/confirmed/
+# Anti-spam (most effective; configure in the Buttondown dashboard):
+# - Enable Firewall: https://buttondown.com/settings/firewall
+#   Prefer Filtering=Default first; use Aggressive during active spam waves.
+#   Keep Attack mode on. Enable IP address filtering if spam continues.
+# - Keep double opt-in (confirmation email) on.
+# - Enable subscriber cleanup: https://buttondown.com/settings/subscribing
+# The site form also has a hidden trap field + short interaction delay in
+# scripts/subscribe.js. Those only stop naive in-browser bots; determined
+# bots POST straight to the embed URL, so Firewall is the real defense.
 buttondown_username: "derekcroote"
 
 # Post likes (Supabase). Leave empty to hide the like button. See supabase/README.md.
