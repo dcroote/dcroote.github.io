@@ -17,6 +17,11 @@ description: Perspectives on science, technology, and engineering.
 # Newsletter (Buttondown).
 # - After subscribing redirect: https://www.derekcroote.com/subscribed/
 # - After confirming redirect: https://www.derekcroote.com/confirmed/
+# - GitHub Pages already 301s https://derekcroote.com → www.derekcroote.com.
+#   So a Buttondown signup whose referrer is the apex (no www) did not come
+#   from this form in a browser. It was a direct POST to Buttondown's public
+#   embed URL. Extra checks in scripts/subscribe.js cannot see or stop that;
+#   turn on Buttondown Firewall instead.
 # Recommended Buttondown settings (dashboard; not shipped in page source):
 # - Firewall: https://buttondown.com/settings/firewall
 #   Prefer Filtering=Default; Aggressive only if needed. Keep Attack mode on.
