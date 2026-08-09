@@ -1,6 +1,7 @@
 const BUTTONDOWN_DEFAULT_URL = "https://api.buttondown.com/v1/subscribers";
 const TURNSTILE_VERIFY_URL =
   "https://challenges.cloudflare.com/turnstile/v0/siteverify";
+const TURNSTILE_TEST_HOSTNAME = "example.com";
 const MAX_REQUEST_BYTES = 8_192;
 const MAX_TURNSTILE_TOKEN_LENGTH = 2_048;
 
@@ -88,10 +89,25 @@ async function verifyTurnstile(token, ipAddress, env, fetchImpl) {
     },
   });
   // #endregion
+  const isTestMode = env.TURNSTILE_TEST_MODE === "true";
+  const hostnameMatches = isTestMode
+    ? result.hostname === TURNSTILE_TEST_HOSTNAME
+    : result.hostname === env.TURNSTILE_HOSTNAME;
+  const actionMatches = isTestMode
+    ? result.action === undefined
+    : result.action === env.TURNSTILE_ACTION;
   const isValid =
     result.success === true &&
-    result.hostname === env.TURNSTILE_HOSTNAME &&
-    result.action === env.TURNSTILE_ACTION;
+    hostnameMatches &&
+    actionMatches;
+  // #region agent log
+  await debugLog(env, {
+    hypothesisId: "A,B",
+    location: "subscribe-worker/src/worker.js:verifyTurnstile:test-mode",
+    message: "Turnstile test response predicates",
+    data: { isTestMode, hostnameMatches, actionMatches },
+  });
+  // #endregion
   // #region agent log
   await debugLog(env, {
     hypothesisId: "A,B,D",

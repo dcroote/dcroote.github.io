@@ -41,11 +41,12 @@ function createFetchMock(options = {}) {
   const fetchMock = async (url, init) => {
     calls.push({ url: String(url), init });
     if (String(url) === TURNSTILE_URL) {
-      return Response.json({
+      const result = {
         success: options.turnstileSuccess !== false,
-        action: "newsletter_subscribe",
         hostname: options.hostname || "www.derekcroote.com",
-      });
+      };
+      if (!options.omitAction) result.action = "newsletter_subscribe";
+      return Response.json(result);
     }
 
     assert.equal(String(url), BUTTONDOWN_URL);
@@ -119,6 +120,64 @@ test("rejects failed Turnstile verification before calling Buttondown", async ()
   });
   assert.equal(calls.length, 1);
   assert.equal(calls[0].url, TURNSTILE_URL);
+});
+
+test("accepts Cloudflare's always-pass response only in explicit test mode", async () => {
+  const env = createEnv();
+  env.TURNSTILE_TEST_MODE = "true";
+  const { calls, fetchMock } = createFetchMock({
+    hostname: "example.com",
+    omitAction: true,
+  });
+  const response = await handleRequest(
+    createRequest({
+      email: "reader@example.com",
+      company: "",
+      turnstileToken: "always-pass-test-token",
+    }),
+    env,
+    fetchMock,
+  );
+
+  assert.equal(response.status, 200);
+  assert.equal(calls.length, 2);
+});
+
+test("rejects Cloudflare's always-pass response in production mode", async () => {
+  const { calls, fetchMock } = createFetchMock({
+    hostname: "example.com",
+    omitAction: true,
+  });
+  const response = await handleRequest(
+    createRequest({
+      email: "reader@example.com",
+      company: "",
+      turnstileToken: "always-pass-test-token",
+    }),
+    createEnv(),
+    fetchMock,
+  );
+
+  assert.equal(response.status, 400);
+  assert.equal(calls.length, 1);
+});
+
+test("test mode rejects responses that do not match the test response shape", async () => {
+  const env = createEnv();
+  env.TURNSTILE_TEST_MODE = "true";
+  const { calls, fetchMock } = createFetchMock({ hostname: "example.com" });
+  const response = await handleRequest(
+    createRequest({
+      email: "reader@example.com",
+      company: "",
+      turnstileToken: "unexpected-test-token",
+    }),
+    env,
+    fetchMock,
+  );
+
+  assert.equal(response.status, 400);
+  assert.equal(calls.length, 1);
 });
 
 test("rejects requests from other browser origins", async () => {

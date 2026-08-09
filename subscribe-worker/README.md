@@ -52,6 +52,11 @@ Develop locally:
 npm run worker:dev
 ```
 
+When using Cloudflare's always-pass test keys for a local end-to-end test, add
+`--var TURNSTILE_TEST_MODE:true` to the Wrangler command. This mode accepts only
+the test response's `example.com` hostname and omitted action. It is
+intentionally absent from `wrangler.toml`.
+
 Cloudflare's production settings live in `wrangler.toml`. The rate limiter
 allows five attempts per IP per minute. Turnstile tokens must be issued for
 `www.derekcroote.com` with the `newsletter_subscribe` action.
