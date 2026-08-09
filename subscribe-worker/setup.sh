@@ -16,15 +16,15 @@ if [[ -z "$TURNSTILE_SITE_KEY" ]]; then
   exit 1
 fi
 
-npm install
+pnpm install
 
-if ! npx wrangler whoami >/dev/null 2>&1; then
+if ! pnpm exec wrangler whoami >/dev/null 2>&1; then
   echo "Opening Cloudflare login..."
-  npx wrangler login
+  pnpm exec wrangler login
 fi
 
 echo "Deploying the subscription Worker..."
-DEPLOY_OUTPUT="$(npm run worker:deploy 2>&1)"
+DEPLOY_OUTPUT="$(pnpm worker:deploy 2>&1)"
 printf '%s\n' "$DEPLOY_OUTPUT"
 
 WORKER_URL="$(
@@ -38,8 +38,10 @@ fi
 
 echo
 echo "Paste each secret when Wrangler prompts. Input is hidden."
-npx wrangler secret put TURNSTILE_SECRET --config subscribe-worker/wrangler.toml
-npx wrangler secret put BUTTONDOWN_API_KEY --config subscribe-worker/wrangler.toml
+pnpm exec wrangler secret put TURNSTILE_SECRET \
+  --config subscribe-worker/wrangler.toml
+pnpm exec wrangler secret put BUTTONDOWN_API_KEY \
+  --config subscribe-worker/wrangler.toml
 
 WORKER_URL="$WORKER_URL" TURNSTILE_SITE_KEY="$TURNSTILE_SITE_KEY" ruby <<'RUBY'
 path = "_config.yml"

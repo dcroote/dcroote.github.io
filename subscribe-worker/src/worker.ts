@@ -5,7 +5,44 @@ const TURNSTILE_TEST_HOSTNAME = "example.com";
 const MAX_REQUEST_BYTES = 8_192;
 const MAX_TURNSTILE_TOKEN_LENGTH = 2_048;
 
-function corsHeaders(origin) {
+interface RateLimiter {
+  limit(options: { key: string }): Promise<{ success: boolean }>;
+}
+
+export interface Env {
+  ALLOWED_ORIGIN: string;
+  BUTTONDOWN_API_KEY: string;
+  BUTTONDOWN_API_URL?: string;
+  SUBSCRIBE_RATE_LIMITER: RateLimiter;
+  TURNSTILE_ACTION: string;
+  TURNSTILE_HOSTNAME: string;
+  TURNSTILE_SECRET: string;
+  TURNSTILE_TEST_MODE?: string;
+}
+
+interface TurnstileResult {
+  success?: boolean;
+  hostname?: string;
+  action?: string;
+}
+
+interface SubscriptionRequest {
+  email: string;
+  company: string;
+  turnstileToken: string;
+}
+
+interface ButtondownPayload {
+  email_address: string;
+  ip_address?: string;
+}
+
+export type FetchImpl = (
+  input: string,
+  init?: RequestInit,
+) => Promise<Response>;
+
+function corsHeaders(origin: string): Record<string, string> {
   return {
     "Access-Control-Allow-Origin": origin,
     "Access-Control-Allow-Methods": "POST, OPTIONS",
@@ -16,7 +53,11 @@ function corsHeaders(origin) {
   };
 }
 
-function jsonResponse(origin, status, body) {
+function jsonResponse(
+  origin: string,
+  status: number,
+  body: Record<string, unknown>,
+): Response {
   return new Response(JSON.stringify(body), {
     status,
     headers: {
@@ -26,14 +67,37 @@ function jsonResponse(origin, status, body) {
   });
 }
 
-function isValidEmail(email) {
+function isValidEmail(email: string): boolean {
   return (
     email.length <= 254 &&
     /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
   );
 }
 
-async function verifyTurnstile(token, ipAddress, env, fetchImpl) {
+function parseSubscriptionRequest(body: unknown): SubscriptionRequest | null {
+  if (!body || typeof body !== "object") return null;
+
+  const record = body as Record<string, unknown>;
+  return {
+    email:
+      typeof record.email === "string"
+        ? record.email.trim().toLowerCase()
+        : "",
+    company:
+      typeof record.company === "string" ? record.company.trim() : "",
+    turnstileToken:
+      typeof record.turnstileToken === "string"
+        ? record.turnstileToken.trim()
+        : "",
+  };
+}
+
+async function verifyTurnstile(
+  token: string,
+  ipAddress: string,
+  env: Env,
+  fetchImpl: FetchImpl,
+): Promise<boolean> {
   const body = new FormData();
   body.append("secret", env.TURNSTILE_SECRET);
   body.append("response", token);
@@ -46,7 +110,7 @@ async function verifyTurnstile(token, ipAddress, env, fetchImpl) {
   });
   if (!response.ok) return false;
 
-  const result = await response.json();
+  const result = (await response.json()) as TurnstileResult;
   const isTestMode = env.TURNSTILE_TEST_MODE === "true";
   const hostnameMatches = isTestMode
     ? result.hostname === TURNSTILE_TEST_HOSTNAME
@@ -54,15 +118,17 @@ async function verifyTurnstile(token, ipAddress, env, fetchImpl) {
   const actionMatches = isTestMode
     ? result.action === undefined
     : result.action === env.TURNSTILE_ACTION;
-  const isValid =
-    result.success === true &&
-    hostnameMatches &&
-    actionMatches;
-  return isValid;
+
+  return result.success === true && hostnameMatches && actionMatches;
 }
 
-async function createButtondownSubscriber(email, ipAddress, env, fetchImpl) {
-  const payload = { email_address: email };
+function createButtondownSubscriber(
+  email: string,
+  ipAddress: string,
+  env: Env,
+  fetchImpl: FetchImpl,
+): Promise<Response> {
+  const payload: ButtondownPayload = { email_address: email };
   if (ipAddress) payload.ip_address = ipAddress;
 
   return fetchImpl(env.BUTTONDOWN_API_URL || BUTTONDOWN_DEFAULT_URL, {
@@ -75,7 +141,11 @@ async function createButtondownSubscriber(email, ipAddress, env, fetchImpl) {
   });
 }
 
-export async function handleRequest(request, env, fetchImpl = fetch) {
+export async function handleRequest(
+  request: Request,
+  env: Env,
+  fetchImpl: FetchImpl = fetch,
+): Promise<Response> {
   const origin = request.headers.get("Origin") || "";
   if (origin !== env.ALLOWED_ORIGIN) {
     return new Response("Forbidden", {
@@ -96,7 +166,10 @@ export async function handleRequest(request, env, fetchImpl = fetch) {
   }
 
   if (!env.BUTTONDOWN_API_KEY || !env.TURNSTILE_SECRET) {
-    return jsonResponse(origin, 500, { ok: false, error: "configuration" });
+    return jsonResponse(origin, 500, {
+      ok: false,
+      error: "configuration",
+    });
   }
 
   const contentType = request.headers.get("Content-Type") || "";
@@ -108,24 +181,30 @@ export async function handleRequest(request, env, fetchImpl = fetch) {
     return jsonResponse(origin, 400, { ok: false, error: "request" });
   }
 
-  let body;
+  let body: unknown;
   try {
     body = await request.json();
   } catch {
     return jsonResponse(origin, 400, { ok: false, error: "request" });
   }
 
-  const email = typeof body.email === "string" ? body.email.trim().toLowerCase() : "";
-  const company = typeof body.company === "string" ? body.company.trim() : "";
-  const token =
-    typeof body.turnstileToken === "string" ? body.turnstileToken.trim() : "";
+  const subscription = parseSubscriptionRequest(body);
+  if (!subscription) {
+    return jsonResponse(origin, 400, { ok: false, error: "request" });
+  }
+
+  const { company, email, turnstileToken } = subscription;
 
   // Silently accept honeypot submissions so simple bots do not adapt.
   if (company) {
     return jsonResponse(origin, 200, { ok: true });
   }
 
-  if (!isValidEmail(email) || !token || token.length > MAX_TURNSTILE_TOKEN_LENGTH) {
+  if (
+    !isValidEmail(email) ||
+    !turnstileToken ||
+    turnstileToken.length > MAX_TURNSTILE_TOKEN_LENGTH
+  ) {
     return jsonResponse(origin, 400, { ok: false, error: "request" });
   }
 
@@ -137,18 +216,29 @@ export async function handleRequest(request, env, fetchImpl = fetch) {
     return jsonResponse(origin, 429, { ok: false, error: "rate_limit" });
   }
 
-  let turnstileIsValid;
+  let turnstileIsValid: boolean;
   try {
-    turnstileIsValid = await verifyTurnstile(token, ipAddress, env, fetchImpl);
+    turnstileIsValid = await verifyTurnstile(
+      turnstileToken,
+      ipAddress,
+      env,
+      fetchImpl,
+    );
   } catch {
-    return jsonResponse(origin, 503, { ok: false, error: "verification" });
+    return jsonResponse(origin, 503, {
+      ok: false,
+      error: "verification",
+    });
   }
 
   if (!turnstileIsValid) {
-    return jsonResponse(origin, 400, { ok: false, error: "verification" });
+    return jsonResponse(origin, 400, {
+      ok: false,
+      error: "verification",
+    });
   }
 
-  let buttondownResponse;
+  let buttondownResponse: Response;
   try {
     buttondownResponse = await createButtondownSubscriber(
       email,
@@ -170,7 +260,7 @@ export async function handleRequest(request, env, fetchImpl = fetch) {
 }
 
 export default {
-  fetch(request, env) {
+  fetch(request: Request, env: Env): Promise<Response> {
     return handleRequest(request, env);
   },
 };

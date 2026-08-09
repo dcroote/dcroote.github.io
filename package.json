@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
+  "packageManager": "pnpm@10.33.3",
   "description": "Development tools for derekcroote.com",
   "scripts": {
-    "test": "node --test subscribe-worker/test/*.test.js",
+    "test": "tsx --test subscribe-worker/test/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "check": "pnpm typecheck && pnpm test",
     "worker:deploy": "wrangler deploy --config subscribe-worker/wrangler.toml",
     "worker:dev": "wrangler dev --config subscribe-worker/wrangler.toml"
   },
@@ -19,6 +22,16 @@
   },
   "homepage": "https://github.com/dcroote/dcroote.github.io#readme",
   "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260809.1",
+    "@types/node": "^26.2.0",
+    "tsx": "^4.23.11",
+    "typescript": "^7.0.2",
     "wrangler": "^4.120.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "workerd"
+    ]
   }
 }

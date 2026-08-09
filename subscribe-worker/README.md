@@ -37,19 +37,31 @@ browser JavaScript. They are stored only as encrypted Worker secrets.
 Run the Worker tests:
 
 ```sh
-npm test
+pnpm test
+```
+
+Type-check the Worker and its tests:
+
+```sh
+pnpm typecheck
+```
+
+Run both checks:
+
+```sh
+pnpm check
 ```
 
 Deploy code updates after the one-time setup:
 
 ```sh
-npm run worker:deploy
+pnpm worker:deploy
 ```
 
 Develop locally:
 
 ```sh
-npm run worker:dev
+pnpm worker:dev
 ```
 
 When using Cloudflare's always-pass test keys for a local end-to-end test, add

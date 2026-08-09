@@ -1,5 +1,5 @@
 name = "derekcroote-subscribe"
-main = "src/worker.js"
+main = "src/worker.ts"
 compatibility_date = "2026-08-08"
 workers_dev = true
 

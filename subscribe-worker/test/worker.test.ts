@@ -1,14 +1,30 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import { handleRequest } from "../src/worker.js";
+import {
+  handleRequest,
+  type Env,
+  type FetchImpl,
+} from "../src/worker.ts";
 
 const ORIGIN = "https://www.derekcroote.com";
 const TURNSTILE_URL =
   "https://challenges.cloudflare.com/turnstile/v0/siteverify";
 const BUTTONDOWN_URL = "https://api.buttondown.test/v1/subscribers";
 
-function createEnv(rateLimitSuccess = true) {
+interface FetchMockOptions {
+  buttondownStatus?: number;
+  hostname?: string;
+  omitAction?: boolean;
+  turnstileSuccess?: boolean;
+}
+
+interface FetchCall {
+  url: string;
+  init: RequestInit;
+}
+
+function createEnv(rateLimitSuccess = true): Env {
   return {
     ALLOWED_ORIGIN: ORIGIN,
     BUTTONDOWN_API_KEY: "buttondown-secret",
@@ -24,7 +40,10 @@ function createEnv(rateLimitSuccess = true) {
   };
 }
 
-function createRequest(body, origin = ORIGIN) {
+function createRequest(
+  body: Record<string, string>,
+  origin = ORIGIN,
+): Request {
   return new Request("https://subscribe.example.workers.dev", {
     method: "POST",
     headers: {
@@ -36,12 +55,19 @@ function createRequest(body, origin = ORIGIN) {
   });
 }
 
-function createFetchMock(options = {}) {
-  const calls = [];
-  const fetchMock = async (url, init) => {
-    calls.push({ url: String(url), init });
-    if (String(url) === TURNSTILE_URL) {
-      const result = {
+function createFetchMock(options: FetchMockOptions = {}): {
+  calls: FetchCall[];
+  fetchMock: FetchImpl;
+} {
+  const calls: FetchCall[] = [];
+  const fetchMock: FetchImpl = async (url, init = {}) => {
+    calls.push({ url, init });
+    if (url === TURNSTILE_URL) {
+      const result: {
+        success: boolean;
+        hostname: string;
+        action?: string;
+      } = {
         success: options.turnstileSuccess !== false,
         hostname: options.hostname || "www.derekcroote.com",
       };
@@ -49,7 +75,7 @@ function createFetchMock(options = {}) {
       return Response.json(result);
     }
 
-    assert.equal(String(url), BUTTONDOWN_URL);
+    assert.equal(url, BUTTONDOWN_URL);
     return new Response(null, { status: options.buttondownStatus || 201 });
   };
 
@@ -73,12 +99,17 @@ test("creates an unactivated Buttondown subscriber after verification", async ()
   assert.equal(calls.length, 2);
 
   const buttondownCall = calls[1];
-  assert.equal(buttondownCall.init.headers.Authorization, "Token buttondown-secret");
-  assert.deepEqual(JSON.parse(buttondownCall.init.body), {
+  const headers = new Headers(buttondownCall.init.headers);
+  const payload = JSON.parse(String(buttondownCall.init.body)) as Record<
+    string,
+    unknown
+  >;
+  assert.equal(headers.get("Authorization"), "Token buttondown-secret");
+  assert.deepEqual(payload, {
     email_address: "reader@example.com",
     ip_address: "203.0.113.10",
   });
-  assert.equal("type" in JSON.parse(buttondownCall.init.body), false);
+  assert.equal("type" in payload, false);
 });
 
 test("silently discards honeypot submissions", async () => {
