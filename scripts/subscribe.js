@@ -3,7 +3,7 @@
   if (!form) return;
 
   var SETTLE_MS = 600;
-  var urlField = form.querySelector("#header-bd-url");
+  var companyField = form.querySelector("#header-bd-company");
   var emailField = form.querySelector("#header-bd-email");
   var submitButton = form.querySelector(".header-cta__button");
   var readyAt = 0;
@@ -49,7 +49,7 @@
   form.addEventListener("submit", function (event) {
     if (allowSubmit) return;
 
-    if (urlField && urlField.value) {
+    if (companyField && companyField.value) {
       event.preventDefault();
       return;
     }
