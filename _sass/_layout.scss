@@ -151,6 +151,11 @@ li {
   min-width: 0;
 }
 
+.header-cta--subscribe {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
 .header-cta__input {
   flex: 1 1 auto;
   min-width: 0;
@@ -242,6 +247,26 @@ li {
   width: 1px;
   height: 1px;
   overflow: hidden;
+}
+
+.header-subscribe-turnstile,
+.header-subscribe-status:empty {
+  display: none;
+}
+
+.header-subscribe-turnstile--visible {
+  display: block;
+  grid-column: 1 / -1;
+  width: 100%;
+}
+
+.header-subscribe-status {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 1.35;
 }
 
 @media only screen and (min-width: 601px) {
