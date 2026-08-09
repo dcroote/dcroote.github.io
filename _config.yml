@@ -17,6 +17,11 @@ description: Perspectives on science, technology, and engineering.
 # Newsletter (Buttondown).
 # - After subscribing redirect: https://www.derekcroote.com/subscribed/
 # - After confirming redirect: https://www.derekcroote.com/confirmed/
+# Recommended Buttondown settings (dashboard; not shipped in page source):
+# - Firewall: https://buttondown.com/settings/firewall
+#   Prefer Filtering=Default; Aggressive only if needed. Keep Attack mode on.
+# - Double opt-in (confirmation email) on.
+# - Subscriber cleanup: https://buttondown.com/settings/subscribing
 buttondown_username: "derekcroote"
 
 # Post likes (Supabase). Leave empty to hide the like button. See supabase/README.md.
