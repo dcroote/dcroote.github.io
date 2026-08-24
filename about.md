@@ -7,7 +7,7 @@ image:
   path: /images/og-image.png
   width: 1200
   height: 630
-  alt: About Derek Croote
+image-alt: Black-and-white headshot of Derek Croote beside Blog by Derek Croote and the tagline Science, engineering, and data. Sometimes with humor.
 ---
 
 <p>Thanks for visiting the site! You can find social profiles, project links, and flavors of my bio below. </p>

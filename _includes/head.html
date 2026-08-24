@@ -59,4 +59,11 @@
   <meta name="robots" content="noindex, follow" />
   {% endif %}
   {% seo %}
+  {% comment %}
+  Keep image-alt separate from Jekyll SEO Tag's image object because Schema.org ImageObject has no alt property.
+  {% endcomment %}
+  {% if page.image-alt %}
+  <meta property="og:image:alt" content="{{ page.image-alt | escape }}" />
+  <meta name="twitter:image:alt" content="{{ page.image-alt | escape }}" />
+  {% endif %}
 </head>
