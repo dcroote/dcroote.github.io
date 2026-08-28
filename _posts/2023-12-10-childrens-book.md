@@ -12,8 +12,6 @@ tags: [AI]
 discuss_on_twitter: https://x.com/DerekCroote/status/1742214643651895661
 ---
 
-<script src="/scripts/page-flip.browser.js"></script>
-
 A father's way of connecting with his daughter, wrapped in a story of a frog's unexpected adventure.
 
 I hope she can one day appreciate it as a story that is uniquely hers.
@@ -52,6 +50,7 @@ This was a fun and meaningful project enabled by technologies that materialized 
 
 Credit to OpenAI's DALL·E for illustrations, Shutterfly for printing the physical board book, and <a href="https://github.com/Nodlik" target="_blank">@Nodlik</a> for the flipbook animation code.
 
+<script src="/scripts/page-flip.browser.js"></script>
 <script type="application/javascript">
 const pageWidth = document.getElementById('book').offsetWidth / 2;
 const pageFlip = new St.PageFlip(document.getElementById('book'),

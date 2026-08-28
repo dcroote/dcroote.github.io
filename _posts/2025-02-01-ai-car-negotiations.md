@@ -61,7 +61,7 @@ Following instructions, I kicked off the process by emailing 3 dealers on a Wedn
 
 Here is how it went, visualized. Each point represents a dealer's OTD price offer:
 
-<img src="/images/ai-car-negotiations/otd-price-negotiations.svg" alt="Visualization of out-the-door price negotiations" class="centered_img" />
+<img loading="lazy" decoding="async" src="/images/ai-car-negotiations/otd-price-negotiations.svg" alt="Visualization of out-the-door price negotiations" class="centered_img" width="576" height="480" />
 
 In the end we saved over $4K on the OTD price, including receiving a higher-than-expected $1500 for the trade-in.
 

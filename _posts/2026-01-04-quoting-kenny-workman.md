@@ -25,7 +25,7 @@ a harness denotes the full execution wrapper around a base model: the system pro
 
 The results:
 
-<img src="/images/quoting-kenny-workman/harness-comparison.jpeg" alt="A chart depicting the impact of harness design on SpatialBench benchmark scores." class="centered_img" width="1456" height="834" />
+<img loading="lazy" decoding="async" src="/images/quoting-kenny-workman/harness-comparison.jpeg" alt="A chart depicting the impact of harness design on SpatialBench benchmark scores." class="centered_img" width="1456" height="834" />
 
 I find it striking how impactful harness design is on benchmark performance and it suggests we're still very early in the optimization of AI models for biological tasks.
 

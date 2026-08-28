@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Ten Year Anniversary
-image: images/ten-year-anniversary/ten-year-anniversary.png
+image: /images/ten-year-anniversary/ten-year-anniversary.png
 image-alt: Celebrating ten years of this blog.
+image_width: 800
+image_height: 800
 comments: false
 description: Reflecting on why I blog and what motivates me to continue, ten years after my first post.
 tags: [opinions]

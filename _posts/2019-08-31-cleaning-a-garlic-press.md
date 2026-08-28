@@ -22,22 +22,26 @@ I have a cheap garlic press, which means that after each use garlic is stuck in 
 
 This is a simple design consisting of an extruded base and an array of posts (extruded circles). There are 7 rows of 9 posts, with alternating rows offset from one another. The full model is [available on Onshape](https://cad.onshape.com/documents/cb2f7780bde13603780e855c/w/8bb77d57f5a67c7b4d3e95ad/e/037f1c0159a5ebba17e23b8f), which is a free online service if you don't mind your designs being public.
 
-[![CAD sketch and rendering](/images/garlic_press/cad_combined.png "Click for a larger version")](/images/garlic_press/cad_combined.png)
+<a href="/images/garlic_press/cad_combined.png">
+<img src="/images/garlic_press/cad_combined.png" alt="CAD sketch and rendering" title="Click for a larger version" class="centered_img" width="2035" height="729" loading="lazy" decoding="async" />
+</a>
 
 ## Outcome
 
 The design required a few iterations in order to perfect the post spacing and post diameter. Version two was particularly disappointing as many of the posts snapped off after the first use. The design was ultimately successful, however, and final product can be seen below. It clears all of the garlic in a single poke, meaning I have realized a 63X improvement in cleaning speed. Time well spent.
 
-[![Photos of final garlic press cleaner design](/images/garlic_press/garlic_press_photos.png "Click for a larger version")](/images/garlic_press/garlic_press_photos.png)
+<a href="/images/garlic_press/garlic_press_photos.png">
+<img src="/images/garlic_press/garlic_press_photos.png" alt="Photos of final garlic press cleaner design" title="Click for a larger version" class="centered_img" width="2400" height="1173" loading="lazy" decoding="async" />
+</a>
 
 ## 2021 Update
 
 After over a year of use, I accidentally dropped the 3D printed garlic press cleaner on the floor, breaking a number of posts. Stubbornly, I reprinted another with Shapeways using the MJF Plastic PA12 Glass Beads material to improve stiffness and structural integrity. Photos below.
 
-<img src="/images/garlic_press/broken_and_reprinted_3d_printed_garlic_press_cleaner.png" alt="Photos of broken and reprinted garlic press cleaners" class="centered_img" width="800" height="294" />
+<img loading="lazy" decoding="async" src="/images/garlic_press/broken_and_reprinted_3d_printed_garlic_press_cleaner.png" alt="Photos of broken and reprinted garlic press cleaners" class="centered_img" width="800" height="294" />
 
 ## 2022 Update
 
 I'm still stubborn: After dropping the last cleaner, I had another 3D-printed using Craftcloud. Amusingly, the cumulative cost of 3D printing is now multiple times that of the garlic press itself.
 
-<img src="/images/garlic_press/reprinted_3d_printed_garlic_press_cleaner_again.jpg" alt="Photos of another reprinted garlic press cleaner" class="centered_img" width="400" height="267" />
+<img loading="lazy" decoding="async" src="/images/garlic_press/reprinted_3d_printed_garlic_press_cleaner_again.jpg" alt="Photos of another reprinted garlic press cleaner" class="centered_img" width="400" height="267" />

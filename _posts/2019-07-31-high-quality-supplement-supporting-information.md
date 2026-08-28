@@ -15,7 +15,7 @@ tags: [software]
 
 To maintain quality, integrity, and aesthetics, vector graphic formats such as PDF or EPS are generally preferred for artwork and data visualizations over raster (pixel-based) formats such as png, gif, or jpeg. The reason becomes especially apparent at high magnification. As shown in the extreme example below, vector formats maintain smooth curves (left), while raster formats become pixelated (right).
 
-<img class="centered_img" src="/images/vector_vs_raster.svg" alt="[img] Vector graphic compared to raster graphic" />
+<img loading="lazy" decoding="async" class="centered_img" src="/images/vector_vs_raster.svg" alt="[img] Vector graphic compared to raster graphic" width="80" height="74" />
 
 There are many reasons to want high quality graphics embedded in a document; my issue was that unlike the main article of a peer-reviewed scientific publication, the Supplementary / Supporting Information is often not edited for style or typeset by the journal. This leaves the author responsible for incorporating supplementary figures as high quality graphics.
 

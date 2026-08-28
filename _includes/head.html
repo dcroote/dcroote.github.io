@@ -19,8 +19,22 @@
     type="font/woff2"
     crossorigin
   />
-  <link rel="stylesheet" href="{{ "/css/Raleway.css" | prepend: site.baseurl }}">
+  {% if page.path == "index.html" %}
+    {% assign lcp_src = site.posts.first.image %}
+    {% if lcp_src %}
+      {% unless lcp_src contains "://" %}
+        {% assign lcp_src = lcp_src | prepend: "/" | replace: "//", "/" %}
+      {% endunless %}
+      <link
+        rel="preload"
+        as="image"
+        href="{{ lcp_src | prepend: site.baseurl }}"
+        fetchpriority="high"
+      />
+    {% endif %}
+  {% endif %}
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="preconnect" href="https://analytics.ahrefs.com" />
   <link
     rel="alternate"
     type="application/atom+xml"
@@ -53,6 +67,9 @@
 
   {% if page.content contains "language-" %}
   <link href="{{ site.baseurl }}/css/prism.css" rel="stylesheet" />
+  {% endif %}
+  {% if page.layout == "post" and site.supabase_url != "" and site.supabase_publishable_key != "" %}
+  <link rel="preconnect" href="{{ site.supabase_url }}" crossorigin />
   {% endif %}
   <script src="https://analytics.ahrefs.com/analytics.js" data-key="d1KzBf0paHx1wk+Q2tKKFw" async></script>
   {% if page.noindex %}

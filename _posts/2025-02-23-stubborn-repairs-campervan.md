@@ -56,7 +56,7 @@ So what was it?
 The solution was a metal <a href="https://www.oreillyauto.com/detail/c/dorman-help/hardware---fasteners/retaining-clips---connectors/hold-down-clips-clamps/115bcf9d8125/dorman-help-car-seat-retainer/mtm0/74356">car seat retainer</a>, also called a car seat locking clip, which is an ancient yet simple device that locks the shoulder and waist portions of the seat belt together.
 All it requires is all of one's strength while kneeling in the car seat in order to attach the clip with enough belt tension to hold the car seat securely.
 
-<img src="/images/stubborn_problems/ep2_car-seat-locking-clip-instructions.jpg" width="600" height="793" alt="Car seat locking clip instruction sheet" class="centered_img" />
+<img loading="lazy" decoding="async" src="/images/stubborn_problems/ep2_car-seat-locking-clip-instructions.jpg" width="600" height="793" alt="Car seat locking clip instruction sheet" class="centered_img" />
 
 It was functional, but still a colossal pain because we needed to repeatedly install and uninstall it to travel and lay the seats down for nap and sleep.
 

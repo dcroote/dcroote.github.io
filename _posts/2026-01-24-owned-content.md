@@ -20,7 +20,7 @@ As a final thought, two years ago I think folks would have been confused by my d
 
 This blog doesn't have that many posts, and I doubt a tremendous number of readers, but it's an enjoyable outlet, and over time, a [fully owned](/2021/12/24/github-pages-custom-domain.html) archive of thought, experience, and knowledge.
 
-<img src="/images/owned-content/flower-sidewalk.jpg" alt="A flower growing in the sidewalk." class="centered_img" width="640" height="428" />
+<img loading="lazy" decoding="async" src="/images/owned-content/flower-sidewalk.jpg" alt="A flower growing in the sidewalk." class="centered_img" width="640" height="428" />
 
 <p style="font-size: 0.9em; text-align: center;">
   Image by <a href="https://pixabay.com/users/habunman-10229249/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3806919">peter jung</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3806919">Pixabay</a>

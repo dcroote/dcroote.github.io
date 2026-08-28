@@ -20,7 +20,7 @@ I wanted to track specific trials. I wanted notifications when trials changed, a
 
 So I built it. Introducing, Trial Inference!
 
-<a href="https://www.trialinference.com/?utm_source=dc_blog"><img src="/images/trial_inference/trial-inference-logo.png" width="344" height="91" alt="Trial Inference Logo" class="centered_img" /></a>
+<a href="https://www.trialinference.com/?utm_source=dc_blog"><img loading="lazy" decoding="async" src="/images/trial_inference/trial-inference-logo.png" width="344" height="91" alt="Trial Inference Logo" class="centered_img" /></a>
 
 <a href="https://www.trialinference.com/?utm_source=dc_blog">Trial Inference</a> is designed for clinical operations specialists, physicians, KOLs, and BD teams who want to accelerate clinical analyses, clinical trial monitoring, competitive intelligence, enrollment prediction, and more.
 
