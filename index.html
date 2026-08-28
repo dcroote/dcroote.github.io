@@ -27,8 +27,7 @@ image-alt: Black-and-white headshot of Derek Croote beside Blog by Derek Croote 
               src="{{ post.image }}"
               alt="{{ post.image-alt | default: 'Article image representation' }}"
               {% if post.image_width and post.image_height %}width="{{ post.image_width }}" height="{{ post.image_height }}"{% endif %}
-              loading="lazy"
-              decoding="async"
+              {% if forloop.first %}fetchpriority="high"{% else %}loading="lazy" decoding="async"{% endif %}
             />
           </a>
         </div>

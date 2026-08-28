@@ -139,7 +139,7 @@ In each workout dictionary object, there is a wealth of data:
 
 I thought it would be interesting to plot my how my heart rate varied when performing 5 different activities of increasing intensity. For each activity I performed 3 replicates, each for five minutes. I attempted to allow enough time in between replicates for my heart rate to return to a somewhat stable value (ideally resting), but as you can tell from the plot below, I was a bit impatient. The time series plot below was created using the python package `seaborn` where the shading along each curve represents the 68% confidence interval for my heart rate at a given time.
 
-<img class="centered_img" src="/images/hr_5_activities.png" alt="[img] Heart rate time series for 5 activities" />
+<img class="centered_img" src="/images/hr_5_activities.png" alt="[img] Heart rate time series for 5 activities" width="771" height="476" />
 
 We can draw a couple of conclusions from the data. From analyzing 15 minutes of sitting data, my resting heart rate is about 55 beats per minute. Unsurprisingly, it takes longer to reach a steady state heart rate for more intense activities. Also, although we cannot draw a conclusion about true accuracy of the heart rate data (without a chest strap, for example), qualitatively the precision is quite good even for higher intensities.
 
@@ -147,7 +147,7 @@ We can draw a couple of conclusions from the data. From analyzing 15 minutes of 
 
 Another question I had was how the Mio steps count compared to the distance estimate. Na&iuml;vely, we could plot all of the points from the walking, jogging, and running trials and look at the correlation, as shown below.
 
-<img class="centered_img" src="/images/steps_vs_dist.png" alt="[img] Correlation between steps and distance" />
+<img class="centered_img" src="/images/steps_vs_dist.png" alt="[img] Correlation between steps and distance" width="368" height="368" />
 
 <pre><code class="language-python">LinregressResult(
     slope=1.4623468919589022,
@@ -160,7 +160,7 @@ Another question I had was how the Mio steps count compared to the distance esti
 
 As expected, steps and distance correlate well, with an R<sup>2</sup> value of 0.985. However, if we look a little closer at the linear regression, we see that the intercept is -400, which is to say that if we take no steps, the estimated distance is -400 meters. Clearly, something isn't right. The assumption in performing this linear correlation is that the distance covered per step is constant. However, if we consider the three activities that contributed data: walking, jogging, and running, this is not true: stride length during running is certainly greater than walking. Consequently, I performed a number of additional trials for each activity in which I varied the number of steps. By plotting a linear regression for each activity, rather than for all activities combined, we can see that indeed stride length is different (as measured by the slope of each line).
 
-<img class="centered_img" src="/images/steps_vs_dist_by_activity.png" alt="[img] Correlation between steps and distance by activity" />
+<img class="centered_img" src="/images/steps_vs_dist_by_activity.png" alt="[img] Correlation between steps and distance by activity" width="529" height="464" />
 
 Interestingly, this outcome suggests that my stride length during running and jogging is approximately equivalent, an outcome that is plausible, but one I am slightly suspicious of. One way to test this is to perform each activity on a track over a known distance, counting the number of steps manually. However, that set of experiments is fitting for another post that can simultaneously address questions of Mio distance estimation accuracy.
 

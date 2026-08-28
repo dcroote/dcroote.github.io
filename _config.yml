@@ -33,6 +33,8 @@ supabase_publishable_key: "sb_publishable_dxlmntuz2OVBpoXfp6Z8Ig_0UFJK-TH"
 
 # Build settings
 markdown: kramdown
+sass:
+  style: compressed
 
 exclude:
   - Dockerfile

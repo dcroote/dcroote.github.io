@@ -19,7 +19,14 @@
     type="font/woff2"
     crossorigin
   />
-  <link rel="stylesheet" href="{{ "/css/Raleway.css" | prepend: site.baseurl }}">
+  {% if page.path == "index.html" and site.posts.first.image %}
+  <link
+    rel="preload"
+    as="image"
+    href="{{ site.posts.first.image | prepend: site.baseurl }}"
+    fetchpriority="high"
+  />
+  {% endif %}
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link
     rel="alternate"
