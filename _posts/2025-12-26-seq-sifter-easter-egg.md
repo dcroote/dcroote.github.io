@@ -25,7 +25,7 @@ In the holiday spirit, I will donate $50 to the charity of choice for the first 
 </blockquote>
 
 <br />
-<img loading="lazy" decoding="async"
+<img
   src="/images/seq-sifter-easter-egg/seq-sifter-easter-egg.jpeg"
   width="2048"
   height="1149"

@@ -18,7 +18,7 @@ I had a great experience recently in using AI, specifically Gemini 3 Pro and Cla
 The attached image is a bookshelf. First, list the books depicted. Next, based on that list, provide ten recommendations that belong to the &#60;insert genre here&#62; genre.
 </div>
 
-<img loading="lazy" decoding="async" src="/images/ai-book-recommendations/bookshelf.jpg" alt="Photograph of my bookshelf" class="centered_img" width="800" height="600" />
+<img src="/images/ai-book-recommendations/bookshelf.jpg" alt="Photograph of my bookshelf" class="centered_img" width="800" height="600" />
 
 Why list the books first? The idea is to force the names of the books into the model's context and maximize the probability they form the basis for the recommendations.
 

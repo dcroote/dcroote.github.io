@@ -30,7 +30,7 @@ But before submitting to the undoubtedly disastrous brew that would have resulte
 
 Inspecting carefully, I noticed one of the battery contacts had fouled. Some quick sanding later and it was alive. Crisis averted.
 
-<img loading="lazy" decoding="async" src="/images/stubborn_problems/ep3_kitchen_scale.png" width="400" height="464" alt="Open back of a broken kitchen scale" class="centered_img" />
+<img src="/images/stubborn_problems/ep3_kitchen_scale.png" width="400" height="464" alt="Open back of a broken kitchen scale" class="centered_img" />
 
 ### Footnotes
 

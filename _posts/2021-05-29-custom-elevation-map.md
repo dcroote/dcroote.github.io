@@ -105,7 +105,7 @@ ax.set_xticklabels('')
 # save as svg for laser cutting
 f.savefig('output/contours.svg')
 </code></pre>
-<img loading="lazy" decoding="async" src="/images/elevation_map/elevation_heatmap_and_contours.png" alt="Heatmap and contours produced in python" class="centered_img" width="739" height="451" />
+<img src="/images/elevation_map/elevation_heatmap_and_contours.png" alt="Heatmap and contours produced in python" class="centered_img" width="739" height="451" />
 
 ## 3. Laser cutting the wood pieces
 
@@ -114,14 +114,14 @@ For the following steps I originally used Illustrator, but today would use the f
 In the first `svg` file I deleted all contours except the central lake: this would be the template for the recessed epoxy fill and serve as the map's base. To overcome some jagged points along the edge, I made liberal use of the Simplify path function (in Inkscape: Path -> Simplify; repeat as necessary). I then readied the file for upload to the laser cutting service Ponoko, which at the time (2017), had reasonably strict requirements of documents, such as requiring that all lines intended for cutting (as opposed to, for example, engraving) be blue and a specific stroke weight (screenshot below). As of this writing (2021), the document upload process is significantly smoother and has web-based interactivity.
 
 In the second `svg` file, I removed the lake contour, deleted some small contours, and spatially separated the remaining elevation contours, again making liberal use of the path simplify function.
-<img loading="lazy" decoding="async" src="/images/elevation_map/elevation_map_slices.png" alt="Elevation map contours for laser cutting" class="centered_img" width="740" height="360" />
+<img src="/images/elevation_map/elevation_map_slices.png" alt="Elevation map contours for laser cutting" class="centered_img" width="740" height="360" />
 
 Lastly, I made sure that the `svg` scaling and dimensions were correct for the size I wanted. Having previously been a teaching assistant for an undergraduate design class at Stanford, I can still recall quite a few hilariously missized prints and cuts arising from insufficient attention to dimensions, most amusingly the inconsistent use of millimeters and inches.
 
 ## 4. Stain and glue the wood pieces
 
 Careful not to overdue it because the wood was only a walnut <span style="font-style: italic;">veneer</span>, I briefly sanded the pieces with increasingly fine grit sandpaper and applied a dark stain to accent the blues of the eventual lake water.
-<img loading="lazy" decoding="async" src="/images/elevation_map/elevation_map_stain_and_glue.jpg" alt="Stained elevation contours being glued into place" class="centered_img" width="740" height="743" />
+<img src="/images/elevation_map/elevation_map_stain_and_glue.jpg" alt="Stained elevation contours being glued into place" class="centered_img" width="740" height="743" />
 
 ## 5. Pour the lake
 
@@ -130,7 +130,7 @@ My dad helped quite a bit here by providing ample advice as well as the epoxy, b
 ## Finished product
 
 With an added stand, the final product:
-<img loading="lazy" decoding="async" src="/images/elevation_map/elevation_map_complete.jpg" alt="Finished custom 3D wood elevation map" class="centered_img" width="1080" height="1029" />
+<img src="/images/elevation_map/elevation_map_complete.jpg" alt="Finished custom 3D wood elevation map" class="centered_img" width="1080" height="1029" />
 
 Overall this was quite a fun project. It was not particularly expensive and was reasonably accessible using contract laser cutting, supplies available at a hardware store, and some basic graphics editing and python programming.
 

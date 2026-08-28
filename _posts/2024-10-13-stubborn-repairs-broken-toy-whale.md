@@ -33,7 +33,7 @@ Instead, I decided to take the whale apart to inspect the motor.
 Upon opening the toy whale the cause was immediately obvious, and it struck me how I've encountered this problem countless times before. I grew up on a lake overrun by seaweed that routinely clogged jet ski intakes and choked props.
 Here, in similar fashion, a wad of hair (pictured, lower left) had wound itself around the motor shaft.
 
-<img loading="lazy" decoding="async" src="/images/stubborn_problems/ep1_broken_whale.webp" alt="A wad of hair wound around the motor shaft of a toy whale, preventing it from spraying." class="centered_img" width="4032" height="3024" />
+<img src="/images/stubborn_problems/ep1_broken_whale.webp" alt="A wad of hair wound around the motor shaft of a toy whale, preventing it from spraying." class="centered_img" width="4032" height="3024" />
 
 ## Solution
 

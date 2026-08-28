@@ -40,7 +40,7 @@ WAIT.
 
 I look at my phone. I look back at their phone. Their phone was 4 minutes off!!!
 
-<img loading="lazy" decoding="async" src="/images/stubborn_problems/ep4_time.png" width="200" height="104" alt="Clock with the time 00:04" class="centered_img" />
+<img src="/images/stubborn_problems/ep4_time.png" width="200" height="104" alt="Clock with the time 00:04" class="centered_img" />
 
 We discover in their phone's settings that somehow, for reasons unknown, their phone was no longer set to automatically update the date and time. Apparently, in the relatively short time since their travel, their phone's clock had diverged from the true time and, in doing so, generated codes that could never match the corresponding code on the service's servers.
 

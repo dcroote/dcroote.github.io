@@ -13,7 +13,7 @@ last_modified_at: 2026-06-30 14:12:00 -0700
 
 GitHub Actions should simplify continuous integration (CI) for public repositories hosted on GitHub when compared with external services like Travis CI or CircleCI. To test this, I decided to migrate one of my public repositories from Travis CI to GitHub Actions. This post describes my approach and also lists the resources I found helpful. Overall I am satisfied with the outcome, but found getting there somewhat tricky; documentation on workflow syntax and individual Actions is plentiful, but few examples describe how to combine Actions into jobs that accomplish specific tasks. My hope is that this post can help others construct GitHub Actions workflows that require more than testing source code.
 
-<img loading="lazy" decoding="async" src="/images/github_actions/travis_to_github_actions.png" alt="Migrate to GitHub Actions from Travis CI" class="centered_img" width="606" height="303" />
+<img src="/images/github_actions/travis_to_github_actions.png" alt="Migrate to GitHub Actions from Travis CI" class="centered_img" width="606" height="303" />
 
 ## The test repository
 
