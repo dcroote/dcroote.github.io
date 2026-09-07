@@ -19,5 +19,5 @@ Instead, based on [this GitHub issue comment](https://github.com/keybase/keybase
 
 <pre><code class="language-yaml">include: [".well-known"]</code></pre>
 
-The verification was then successful as the verification file is visible in its [expected location](https://dcroote.github.io/.well-known/brave-rewards-verification.txt).
+The verification was then successful as the verification file is visible in its [expected location](https://www.derekcroote.com/.well-known/brave-rewards-verification.txt).
 The full commit showing these changes can be seen [here](https://github.com/dcroote/dcroote.github.io/commit/c8eac2b3c937cb4d0ebf5b3b2b018bfdc8ff3416).
