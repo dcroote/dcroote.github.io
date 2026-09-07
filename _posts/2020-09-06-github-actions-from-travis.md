@@ -21,7 +21,7 @@ After writing my PhD thesis in LaTeX, I published a thesis template designed to 
 
 ## Previous implementation
 
-[Previously](https://github.com/dcroote/stanford-thesis-example/blob/aa4d62bb17849f89c460a47ce88b5c5f05586054/.travis.yml), I used Travis CI to pull a Docker image and compile a PDF from LaTeX source files. For tagged commits, a distinct GitHub account with write privileges to the repository (a [Machine user](https://developer.github.com/v3/guides/managing-deploy-keys/#machine-users)) then uploaded the compiled PDF as a Release asset. Using Docker within Travis CI to compile the PDF worked well, but having to create a new GitHub account for the sole purpose of deploying to GitHub Releases, as is [recommended for security purposes](https://docs.travis-ci.com/user/deployment-v2/providers/releases/#authenticating-with-an-oauth-token), was not ideal and further required the [Travis gem to encrypt a personal access token](https://docs.travis-ci.com/user/environment-variables#defining-encrypted-variables-in-travisyml).
+[Previously](https://github.com/dcroote/stanford-thesis-example/blob/aa4d62bb17849f89c460a47ce88b5c5f05586054/.travis.yml), I used Travis CI to pull a Docker image and compile a PDF from LaTeX source files. For tagged commits, a distinct GitHub account with write privileges to the repository (a [Machine user](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys#machine-users)) then uploaded the compiled PDF as a Release asset. Using Docker within Travis CI to compile the PDF worked well, but having to create a new GitHub account for the sole purpose of deploying to GitHub Releases, as is [recommended for security purposes](https://docs.travis-ci.com/user/deployment-v2/providers/releases/#authenticating-with-an-oauth-token), was not ideal and further required the [Travis gem to encrypt a personal access token](https://docs.travis-ci.com/user/environment-variables#defining-encrypted-variables-in-travisyml).
 
 ## Current implementation (2020/09/06)
 
@@ -44,7 +44,7 @@ If you have suggestions for improving the workflow, let me know!
 
 ## Helpful resources:
 
-- GitHub Docs on: [Workflow syntax reference for GitHub Actions](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions), especially the job [if conditional](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idif)
-- GitHub Docs on: [Persisting workflow data using artifacts](https://docs.github.com/en/actions/configuring-and-managing-workflows/persisting-workflow-data-using-artifacts)
-- GitHub Docs on: [Context and expression syntax for GitHub Actions](https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions)
-- Stack Overflow: [github actions: how to check if current push has new tag (is new release)?](https://stackoverflow.com/a/58478262)
+- GitHub Docs on: [Workflow syntax reference for GitHub Actions](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax), especially the job [if conditional](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#jobsjob_idif)
+- GitHub Docs on: [Persisting workflow data using artifacts](https://docs.github.com/en/actions/tutorials/store-and-share-data)
+- GitHub Docs on: [Context and expression syntax for GitHub Actions](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts)
+- Stack Overflow: [github actions: how to check if current push has new tag (is new release)?](https://stackoverflow.com/questions/58475748/github-actions-how-to-check-if-current-push-has-new-tag-is-new-release/58478262)

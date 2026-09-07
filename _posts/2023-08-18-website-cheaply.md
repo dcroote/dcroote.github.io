@@ -16,15 +16,15 @@ Free hosting of custom domain websites? Many companies advertise "free website h
 This abbreviated tutorial describes the set of tools and services that allows you to build and host a custom domain website for free (beyond the cost of the domain name itself).
 I applied this flow to quickly launch a website for my wife, but note that it does assume some familiarity with `git`, `docker`, and web development owing to use of the following services:
 
-- Custom domain: [Namecheap](https://namecheap.com).
-- Static site generator: [Hugo](https://gohugo.io) and [Docker](https://docker.com)
+- Custom domain: [Namecheap](https://www.namecheap.com/).
+- Static site generator: [Hugo](https://gohugo.io) and [Docker](https://www.docker.com/)
 - Site template: [Hugo Themes](https://themes.gohugo.io)
 - Code hosting: [GitHub](https://github.com)
 - Website hosting: [Render](https://render.com)
 
 A big thanks to all of the open source developers and the overall ecosystem of services that make this sort of thing possible, it really is incredible.
 
-## 1. Buy a custom domain on [Namecheap](https://namecheap.com)
+## 1. Buy a custom domain on [Namecheap](https://www.namecheap.com/)
 
 This is the only step that costs money. Of course it doesn't have to be Namecheap, but [as I've said before](/2021/12/24/github-pages-custom-domain.html), I like their product and they have good default privacy.
 
@@ -41,7 +41,7 @@ klakegg/hugo:0.111.2 new site name-of-my-awesome-site -f=yaml
 
 ## 3. Find a suitable Hugo template
 
-There are a lot of great options at [Hugo Themes](https://themes.gohugo.io). Follow the [creating a site instructions](https://gohugo.io/getting-started/quick-start/#create-a-site) from Hugo for commands to add your theme. I ended up using the [Hugo Profile](https://themes.gohugo.io/hugo-profile/) theme by [@gurusabarish](https://github.com/gurusabarish).
+There are a lot of great options at [Hugo Themes](https://themes.gohugo.io). Follow the [creating a site instructions](https://gohugo.io/getting-started/quick-start/#create-a-site) from Hugo for commands to add your theme. I ended up using the [Hugo Profile](https://themes.gohugo.io/themes/hugo-profile/) theme by [@gurusabarish](https://github.com/gurusabarish).
 
 ## 4. Customize the site based on the template
 
