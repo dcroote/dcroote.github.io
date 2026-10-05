@@ -8,6 +8,7 @@ image_height: 649
 comments: false
 description: Why is a ratings table of endurance energy gels and drink mixes needed? These products are sugar. Sugar tastes good. Surely it's hard to mess up? Surprisingly, gels and mixes can be bad. Flavors can have you questioning how a human, absent extreme duress, approved of their manufacture.
 tags: [sports]
+last_modified_at: 2026-10-05 09:40:00 -0700
 discuss_on_twitter: 
 ---
 
